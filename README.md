@@ -136,7 +136,7 @@ El objetivo de este proyecto es realizar una **prueba de hipótesis no paramétr
 ### Preguntas clave
 1. ¿Sigue la variable de total de goles por partido una distribución normal en ambos grupos?
 2. ¿Qué prueba de hipótesis es la adecuada para comparar dos distribuciones numéricas independientes no normales?
-3. ¿Existe evidencia estadística suficiente para rechazar la hipótesis nula ($H_0$) con un nivel de significancia $\alpha = 0.10$?
+3. ¿Existe evidencia estadística suficiente para rechazar la hipótesis nula ($H_0$) con un nivel de significancia $\alpha$ = 0.10?
 4. ¿Se marcan estadísticamente más goles por partido en la Copa Mundial Femenina que en la Masculina?
 
 ### Metodología
