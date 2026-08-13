@@ -1,4 +1,4 @@
-# Max | Portafolio de Data Science
+# Maximiliano Rojas Taboada | Portafolio de Data Science
 
 ## Acerca de mí
 
@@ -83,10 +83,20 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
 * **Segmentación biológica natural:** Separación de género implícita: Sin supervisión, K-Means separó naturalmente la variabilidad de especies y el dimorfismo sexual interno.
 * **Conservación de varianza con PCA:** La proyección 2D captura más del **80% de la varianza total** del dataset, mostrando cuatro agrupaciones aisladas entre sí con sus centroides correctamente posicionados.
 
-### Eficiencia en la reducción de dimensionalidad:
+### Visualizaciones destacadas
+1. **Método del Codo para $k$ óptimo:** Determinación de $k = 4$ mediante la inercia del modelo.
+![Método del Codo](Metodo_codo.png)
+
+3. **Varianza explicada por Componentes Principales:**
+![Varianza Explicada PCA](varianza_pca.png)
+
 **Conservación de varianza con PCA:** La primera componente principal (PC1) explica la mayor proporción de la variabilidad, y en conjunto con PC2 capturan más del 80% de la varianza total del dataset.
 
+5. **Proyección 2D con PCA y Centroides:** Visualización de los cuatro clusters formados y la ubicación de sus centroides.
+![Clusters 2D con PCA](clusters_pca.png)
+
 **Interpretabilidad visual:** La proyección 2D confirma cuatro agrupaciones compactas y aisladas entre sí, con los centroides ($X$ rojas) perfectamente posicionados en el centro de densidad de cada grupo.
+### 
 
 ---
 
@@ -157,4 +167,12 @@ El objetivo de este proyecto es realizar una **prueba de hipótesis no paramétr
 ### Conclusiones y recomendaciones
 * **Valor $p$ calculado:** La prueba U de Mann-Whitney arrojó un **$p\text{-value}$ = *0.0051* (*0.0051066098*)**.
 * **Decisión Estadística:** Dado que $p\text{-value} \le$ *0.10* (*0.0051* $\le$ *0.10*), se procede a **rechazar la hipótesis nula ($H_0$)** (result: 'reject').
-* **Conclusión:** Existe evidencia estadísticamente significativa para afirmar que en los partidos de la Copa Mundial Femenina de la FIFA se anotan más goles por partido en promedio/mediana que en los torneos masculinos desde 2002. Debido a que el resultado del $p\text{-value}$ (*0.0051*) es incluso significativamente inferior a un nivel de exigencia común del $1\%$ ($\alpha$ = *0.01*), lo que proporciona un sólido respaldo metodológico para sustentar el artículo de investigación deportiva. 
+* **Conclusión:** Existe evidencia estadísticamente significativa para afirmar que en los partidos de la Copa Mundial Femenina de la FIFA se anotan más goles por partido en promedio/mediana que en los torneos masculinos desde 2002. Debido a que el resultado del $p\text{-value}$ (*0.0051*) es incluso significativamente inferior a un nivel de exigencia común del $1\%$ ($\alpha$ = *0.01*), lo que proporciona un sólido respaldo metodológico para sustentar el artículo de investigación deportiva.
+
+### Visualizaciones destacadas
+
+1. **Distribución de Goles en el Fútbol Masculino:** Histogramas que muestran el sesgo a la derecha y no-normalidad de los datos.
+![Histograma Goles Masculino](gol_m.png)
+
+2. **Distribución de Goles en el Fútbol Femenino:**
+![Histograma Goles Femenino](grafica_h_gol.png)
