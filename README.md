@@ -152,7 +152,7 @@ El objetivo de este proyecto es realizar una **prueba de hipótesis no paramétr
   * Planteamiento de hipótesis:
     * **$H_0$:** El número medio/mediana de goles en partidos femeninos es igual al masculino.
     * **$H_A$:** El número medio/mediana de goles en partidos femeninos es mayor que en el masculino.
-  * Evaluación contra un nivel de significancia \alpha = 0.10.
+  * Evaluación contra un nivel de significancia $\alpha$ = 0.10.
 
 ### Conclusiones y recomendaciones
 * **Valor $p$ calculado:** La prueba U de Mann-Whitney arrojó un **$p\text{-value} = 0.0051$ ($0.0051066098$)**.
