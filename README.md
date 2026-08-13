@@ -41,10 +41,10 @@ El objetivo de este proyecto es determinar la variable edafoclimática del suelo
 ### Conclusiones y recomendaciones
 #### Rendimiento univariado de características:
 **Capacidad predictiva por variable:** La evaluación del $F_1$-score ponderado identificó diferencias significativas en el impacto de cada parámetro del suelo:
-  * **Potasio ($K$):** $0.2511$ (Mayor poder predictivo univariado).
-  * **Fósforo ($P$):** $0.1360$.
-  * **Nitrógeno ($N$):** $0.0946$.
-  * **pH ($ph$):** $0.0453$.
+  * **Potasio ($K$):** 0.2511 (Mayor poder predictivo univariado).
+  * **Fósforo ($P$):** 0.1360.
+  * **Nitrógeno ($N$):** 0.0946.
+  * **pH ($ph$):** 0.0453.
 **Característica determinante:** El potasio ($K$) se consolidó como la variable de mayor relevancia en el conjunto de datos (best_predictive_feature = {'K': 0.25109})
 ### Relevancia técnica y comercial:
 Optimización de costos en campo: Si un agricultor cuenta con presupuesto limitado y solo puede medir una propiedad química del suelo, se recomienda priorizar el potasio ($K$), ya que ofrece casi el doble de capacidad discriminatoria que el fósforo.
@@ -61,13 +61,13 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
 `LIMPIEZA DE DATOS` `TRANSFORMACIÓN DE DATOS` `APRENDIZAJE NO SUPERVISADO` `REDUCCIÓN DE DIMENSIONALIDAD` `VISUALIZACIÓN DE DATOS`
 
 ### Preguntas clave
-1. ¿Cuál es la cantidad óptima de clusters (**k*) para agrupar los datos morfológicos y de sexo de los pingüinos?
+1. ¿Cuál es la cantidad óptima de clusters ($k$) para agrupar los datos morfológicos y de sexo de los pingüinos?
 2. ¿Cómo se distribuyen los promedios morfológicos de cada variable en las agrupaciones identificadas?
 3. ¿Qué porcentaje de la varianza total del conjunto de datos retienen las componentes principales?
 4. ¿Permiten las componentes principales proyectar los datos en 2D con una clara separación entre clusters y centroides?
 
 ### Metodología
-* **Preprocesamiento de datos:** Análisis exploratorio de los 332 registros limpios del archivo `penguins.csv` y conversión de la variable categórica `sex` mediante *One-Hot Encoding* (`sex_MALE`).
+* **Preprocesamiento de datos:** Análisis exploratorio de los 332 registros limpios del archivo *penguins.csv* y conversión de la variable categórica *sex* mediante *One-Hot Encoding* ('sex_MALE').
 * **Estandarización de características:** Escalado de variables numéricas con `StandardScaler` para equilibrar el peso de las magnitudes físicas (como la masa corporal en gramos frente al pico en milímetros).
 * **Determinación de clusters ($k$ óptimo):** Evaluación de la inercia mediante el **Método del Codo (*Elbow Method*)** para valores de $k$ entre 1 y 9, identificando el punto de inflexión significativo en $k = 4$.
 * **Modelado No Supervisado:** Entrenamiento del algoritmo K-Means ($k = 4$, `random_state = 42`),asignación de etiquetas y cálculo de la tabla resumen de promedios (`stat_penguins`).
