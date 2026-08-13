@@ -70,7 +70,7 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
 * **Preprocesamiento de datos:** Análisis exploratorio de los 332 registros limpios del archivo *penguins.csv* y conversión de la variable categórica *sex* mediante *One-Hot Encoding* ('sex_MALE').
 * **Estandarización de características:** Escalado de variables numéricas con `StandardScaler` para equilibrar el peso de las magnitudes físicas (como la masa corporal en gramos frente al pico en milímetros).
 * **Determinación de clusters ($k$ óptimo):** Evaluación de la inercia mediante el **Método del Codo (*Elbow Method*)** para valores de $k$ entre 1 y 9, identificando el punto de inflexión significativo en $k = 4$.
-* **Modelado No Supervisado:** Entrenamiento del algoritmo K-Means ($k = 4$, `random_state = 42`),asignación de etiquetas y cálculo de la tabla resumen de promedios (`stat_penguins`).
+* **Modelado No Supervisado:** Entrenamiento del algoritmo K-Means ($k = 4$, $random_state$ = 42`),asignación de etiquetas y cálculo de la tabla resumen de promedios (`stat_penguins`).
 * **Reducción de dimensionalidad y visualización:** Aplicación de PCA (`n_components = 2`) sobre los datos escalados para proyectar el espacio multidimensional en un plano 2D y ubicar la posición de los centroides.
 
 ### Conclusiones y recomendaciones
