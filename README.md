@@ -117,7 +117,7 @@ El objetivo de este proyecto es construir un **modelo de regresión supervisado*
 ### Conclusiones y recomendaciones
 #### Desempeño del modelo y selección de variables:
 * **Reducción efectiva de dimensionalidad:** La regularización Lasso filtró automáticamente las 14 variables iniciales a solo 4 características clave: Index(['amount', 'amount_2', 'length_2', 'rental_rate_2'])
-* **Cumplimiento de la meta de negocio:** El modelo final RandomForestRegressor alcanzó un MSE de 2.39 en el conjunto de prueba, superando exitosamente el umbral máximo de 3.0 exigido por la empresa
+* **Cumplimiento de la meta de negocio:** El modelo final RandomForestRegressor alcanzó un *MSE* de 2.39 en el conjunto de prueba, superando exitosamente el umbral máximo de 3.0 exigido por la empresa
 
 ### Impacto y recomendaciones operativas:
 * **Optimización de inventario:** La capacidad de predecir la duración del alquiler permite calcular con precisión el retorno de películas y evitar quiebres de stock en tienda.
@@ -141,18 +141,18 @@ El objetivo de este proyecto es realizar una **prueba de hipótesis no paramétr
 
 ### Metodología
 * **Preprocesamiento y filtrado de datos:**
-  * Carga y conversión de la columna `date` a formato datetime en ambos conjuntos de datos (`men_results.csv` y `women_results.csv`).
+  * Carga y conversión de la columna *date* a formato datetime en ambos conjuntos de datos (*men_results.csv* y *women_results.csv*).
   * Filtrado de observaciones para considerar exclusivamente partidos del torneo **'FIFA World Cup'** jugados después del **2002-01-01**.
-  * Creación de la variable objetivo `total_score` sumando los goles locales y visitantes (`home_score` + `away_score`).
+  * Creación de la variable objetivo *total_score* sumando los goles locales y visitantes (*home_score* + *away_score*).
 * **Evaluación de Normalidad:**
-  * Construcción de histogramas de frecuencias para `total_score` en ambos grupos.
+  * Construcción de histogramas de frecuencias para *total_score* en ambos grupos.
   * Confirmación visual de que la distribución de goles está sesgada hacia la derecha y no sigue una distribución normal, descartando el uso de pruebas paramétricas como la $t$ de Student. 
 * **Prueba de Hipótesis No Paramétrica:**
-  * Ejecución de la prueba **U de Mann-Whitney** unilateral hacia la derecha (`alternative = 'greater'`) para evaluar si la distribución de goles femeninos es mayor que la de hombres.
+  * Ejecución de la prueba **U de Mann-Whitney** unilateral hacia la derecha (*alternative = 'greater'*) para evaluar si la distribución de goles femeninos es mayor que la de hombres.
   * Planteamiento de hipótesis:
     * **$H_0$:** El número medio/mediana de goles en partidos femeninos es igual al masculino.
     * **$H_A$:** El número medio/mediana de goles en partidos femeninos es mayor que en el masculino.
-  * Evaluación contra un nivel de significancia $\alpha = 0.10$.
+  * Evaluación contra un nivel de significancia \alpha = 0.10.
 
 ### Conclusiones y recomendaciones
 * **Valor $p$ calculado:** La prueba U de Mann-Whitney arrojó un **$p\text{-value} = 0.0051$ ($0.0051066098$)**.
