@@ -76,10 +76,10 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
 ### Conclusiones y recomendaciones
 * **Caracterización por cluster (*k = 4*):**
 * **Segmentación morfológica precisa:** El modelo identificó *k = 4* grupos clave diferenciados por tamaño general y sexo:
-  * **Cluster 0:** Especie pequeña/mediana machos (pico corto pero profundo: 43.88 mm largo / 19.11 mm profundidad, masa: 4006.60 g).
-  * **Cluster 1:** Especie grande hembras (pico delgado: 45.56 mm largo / 14.24 mm profundidad, aletas largas: 212.71 mm, masa: 4679.74 g).
-  * **Cluster 2:** Especie pequeña hembras (pico más corto y menor tamaño general: $40.22\text{ mm}$ largo, masa: $3419.16\text{ g}$).
-  * **Cluster 3:** Especie grande machos (los especímenes de mayor tamaño y masa corporal: $221.54\text{ mm}$ aleta, masa: $5484.84\text{ g}$).
+  * **Cluster 0:** Especie pequeña/mediana machos (pico corto pero profundo: 43.88 mm largo / 19.11 mm profundidad, masa: 4,006.60 g).
+  * **Cluster 1:** Especie grande hembras (pico delgado: 45.56 mm largo / 14.24 mm profundidad, aletas largas: 212.71 mm, masa: 4,679.74 g).
+  * **Cluster 2:** Especie pequeña hembras (pico más corto y menor tamaño general: 40.22 mm largo, masa: 3,419.16 g).
+  * **Cluster 3:** Especie grande machos (los especímenes de mayor tamaño y masa corporal: 221.54 mm aleta, masa: 5,484.84 g).
 * **Segmentación biológica natural:** Separación de género implícita: Sin supervisión, K-Means separó naturalmente la variabilidad de especies y el dimorfismo sexual interno.
 * **Conservación de varianza con PCA:** La proyección 2D captura más del **80% de la varianza total** del dataset, mostrando cuatro agrupaciones aisladas entre sí con sus centroides correctamente posicionados.
 
@@ -105,12 +105,12 @@ El objetivo de este proyecto es construir un **modelo de regresión supervisado*
 4. ¿Es posible lograr un error cuadrático medio (MSE) inferior al objetivo de 3.0 requerido por el negocio?
 
 ### Metodología
-* **Análisis Exploratorio y Ingeniería de características (EDA & Feature Engineering):
-  * Exploración inicial del dataset ($15,861$ registros) para verificar tipos de datos, distribuciones y ausencia de nulos.  
-  * Conversión de las columnas **rental_date* y **return_date* a formato fecha para calcular la variable objetivo **rental_length_days* (duración en días).
-  * Extracción de variables binarias a partir de texto no estructurado en **special_features* (**deleted_scenes* y **behind_the_scenes*).
-* **Preprocesamiento y división del dataset:** Eliminación de variables de fecha y texto para conformar la matriz de características $X$ (14 variables) y división en datos de entrenamiento ($80\%$) y prueba ($20\%$) con **random_state = 9*. 
-* **Separación de Datos:** División en subconjuntos de entrenamiento y prueba (80/20) definiendo `X` e `y`con **random_state = 9*.
+* **Análisis Exploratorio y Ingeniería de características (EDA & Feature Engineering):**
+  * Exploración inicial del dataset (15,861 registros) para verificar tipos de datos, distribuciones y ausencia de nulos.  
+  * Conversión de las columnas *rental_date* y *return_date* a formato fecha para calcular la variable objetivo *rental_length_days* (duración en días).
+  * Extracción de variables binarias a partir de texto no estructurado en *special_features* (*deleted_scenes* y *behind_the_scenes*).
+* **Preprocesamiento y división del dataset:** Eliminación de variables de fecha y texto para conformar la matriz de características $X$ (14 variables) y división en datos de entrenamiento (80%) y prueba (20%) con *random_state = 9*. 
+* **Separación de Datos:** División en subconjuntos de entrenamiento y prueba (80/20) definiendo **X** e **y**con *random_state = 9*.
 * **Selección de características mediante Regularización Lasso:** Selección de características mediante Regularización Lasso: Entrenamiento de un modelo Lasso ($\alpha = 0.3$, **random_state = 9*) para descartar variables irrelevantes ajustando sus coeficientes a cero.
 * **Modelado predictivo y evaluación:** Modelado predictivo y evaluación: Entrenamiento de un modelo de ensamble **RandomForestRegressor* ($100$ estimadores, **random_state = 9*) utilizando únicamente las características optimizadas por Lasso y evaluación del desempeño en el conjunto de prueba mediante el **Error Cuadrático Medio (MSE)**.
 
