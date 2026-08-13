@@ -76,8 +76,8 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
 ### Conclusiones y recomendaciones
 * **Caracterización por cluster (*k = 4*):**
 * **Segmentación morfológica precisa:** El modelo identificó *k = 4* grupos clave diferenciados por tamaño general y sexo:
-  * **Cluster 0:** Especie pequeña/mediana machos (pico corto pero profundo: 43.88\text{ mm} largo / 19.11\text{ mm} profundidad, masa: $4006.60\text{ g}$).
-  * **Cluster 1:** Especie grande hembras (pico delgado: 45.56\text{ mm} largo / 14.24\text{ mm} profundidad, aletas largas: 212.71\text{ mm}, masa: 4679.74\text{ g}).
+  * **Cluster 0:** Especie pequeña/mediana machos (pico corto pero profundo: 43.88 mm largo / 19.11 mm profundidad, masa: 4006.60 g).
+  * **Cluster 1:** Especie grande hembras (pico delgado: 45.56 mm largo / 14.24 mm profundidad, aletas largas: 212.71 mm, masa: 4679.74 g).
   * **Cluster 2:** Especie pequeña hembras (pico más corto y menor tamaño general: $40.22\text{ mm}$ largo, masa: $3419.16\text{ g}$).
   * **Cluster 3:** Especie grande machos (los especímenes de mayor tamaño y masa corporal: $221.54\text{ mm}$ aleta, masa: $5484.84\text{ g}$).
 * **Segmentación biológica natural:** Separación de género implícita: Sin supervisión, K-Means separó naturalmente la variabilidad de especies y el dimorfismo sexual interno.
