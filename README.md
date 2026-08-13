@@ -21,7 +21,7 @@ A través de mi trabajo me especializo en:
 
 ## 1. Modelado Predictivo para la Optimización de Cultivos Agrícolas
 
-El objetivo de este proyecto es determinar la variable edafoclimática del suelo con mayor capacidad predictiva individual para clasificar 22 tipos de cultivo mediante Regresión Logística multiclase. El estudio busca ayudar a los agricultores a tomar decisiones informadas sobre la selección de cultivos cuando cuentan con recursos o presupuestos limitados para análisis de laboratorio.
+El objetivo de este proyecto es determinar la variable edafoclimática del suelo con mayor capacidad predictiva individual para clasificar **22 tipos de cultivo** mediante **Regresión Logística multiclase**. El estudio busca ayudar a los agricultores a tomar decisiones informadas sobre la selección de cultivos cuando cuentan con recursos o presupuestos limitados para análisis de laboratorio.
 
 ### Herramientas y tipo de proyecto
 `PYTHON` `PANDAS` `SCIKIT-LEARN` `LOGISTIC REGRESSION` 
@@ -33,10 +33,10 @@ El objetivo de este proyecto es determinar la variable edafoclimática del suelo
 3. ¿Qué métrica de evaluación refleja de mejor manera el rendimiento de un modelo multiclase balanceado?
 
 ### Metodología
-**Análisis Exploratorio de Datos (EDA):** Verificación de ausencia de valores nulos en los 2,200 registros y confirmación de un balance de clases perfecto (100 observaciones por cada uno de los 22 cultivos).
-**División del conjunto de datos:** Separación en conjuntos de entrenamiento (80%) y prueba (20%) con random_state = 42 para asegurar la reproducibilidad de los resultados.
-**Modelado univariado:** Entrenamiento de cuatro modelos independientes de LogisticRegression (algoritmo multinomial, max_iter = 200), uno por cada característica química/física del suelo.
-**Evaluación de desempeño:** Cálculo del $F_1$-score ponderado (weighted F1-score) sobre el conjunto de prueba para evaluar la precisión discriminatoria individual de cada variable.
+* **Análisis Exploratorio de Datos (EDA):** Verificación de ausencia de valores nulos en los 2,200 registros y confirmación de un balance de clases perfecto (100 observaciones por cada uno de los 22 cultivos).
+* **División del conjunto de datos:** Separación en conjuntos de entrenamiento (80%) y prueba (20%) con random_state = 42 para asegurar la reproducibilidad de los resultados.
+* **Modelado univariado:** Entrenamiento de cuatro modelos independientes de LogisticRegression (algoritmo multinomial, max_iter = 200), uno por cada característica química/física del suelo.
+* **Evaluación de desempeño:** Cálculo del $F_1$-score ponderado (weighted F1-score) sobre el conjunto de prueba para evaluar la precisión discriminatoria individual de cada variable.
 
 ### Conclusiones y recomendaciones
 #### Rendimiento univariado de características:
