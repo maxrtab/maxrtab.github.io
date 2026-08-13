@@ -155,6 +155,6 @@ El objetivo de este proyecto es realizar una **prueba de hipótesis no paramétr
   * Evaluación contra un nivel de significancia $\alpha$ = 0.10.
 
 ### Conclusiones y recomendaciones
-* **Valor $p$ calculado:** La prueba U de Mann-Whitney arrojó un **$p\text{-value} = 0.0051$ ($0.0051066098$)**.
-* **Decisión Estadística:** Dado que $p\text{-value} \le 0.10$ ($0.0051 \le 0.10$), se procede a **rechazar la hipótesis nula ($H_0$)** (result: 'reject').
+* **Valor $p$ calculado:** La prueba U de Mann-Whitney arrojó un **$p\text{-value}$ = 0.0051 (0.0051066098)**.
+* **Decisión Estadística:** Dado que $p\text{-value} \le$ 0.10 ($0.0051 \le$ 0.10), se procede a **rechazar la hipótesis nula ($H_0$)** (result: 'reject').
 * **Conclusión:** Existe evidencia estadísticamente significativa para afirmar que en los partidos de la Copa Mundial Femenina de la FIFA se anotan más goles por partido en promedio/mediana que en los torneos masculinos desde 2002. Debido a que el resultado del $p\text{-value}$ (0.0051) es incluso significativamente inferior a un nivel de exigencia común del $1\%$ ($\alpha$ = 0.01), lo que proporciona un sólido respaldo metodológico para sustentar el artículo de investigación deportiva. 
