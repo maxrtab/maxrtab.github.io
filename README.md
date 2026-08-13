@@ -67,17 +67,17 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
 4. ¿Permiten las componentes principales proyectar los datos en 2D con una clara separación entre clusters y centroides?
 
 ### Metodología
-* **Preprocesamiento de datos:** Análisis exploratorio de los 332 registros limpios del archivo *penguins.csv* y conversión de la variable categórica *sex* mediante *One-Hot Encoding* ('sex_MALE').
+* **Preprocesamiento de datos:** Análisis exploratorio de los 332 registros limpios del archivo *penguins.csv* y conversión de la variable categórica *"sex"* mediante *One-Hot Encoding* ('sex_MALE').
 * **Estandarización de características:** Escalado de variables numéricas con `StandardScaler` para equilibrar el peso de las magnitudes físicas (como la masa corporal en gramos frente al pico en milímetros).
-* **Determinación de clusters ($k$ óptimo):** Evaluación de la inercia mediante el **Método del Codo (*Elbow Method*)** para valores de $k$ entre 1 y 9, identificando el punto de inflexión significativo en $k = 4$.
-* **Modelado No Supervisado:** Entrenamiento del algoritmo K-Means ($k = 4$, $random_state$ = 42`),asignación de etiquetas y cálculo de la tabla resumen de promedios (`stat_penguins`).
-* **Reducción de dimensionalidad y visualización:** Aplicación de PCA (`n_components = 2`) sobre los datos escalados para proyectar el espacio multidimensional en un plano 2D y ubicar la posición de los centroides.
+* **Determinación de clusters ($k$ óptimo):** Evaluación de la inercia mediante el **Método del Codo (*Elbow Method*)** para valores de $k$ entre 1 y 9, identificando el punto de inflexión significativo en *k = 4*.
+* **Modelado No Supervisado:** Entrenamiento del algoritmo K-Means (*k = 4*, *random_state = 42*),asignación de etiquetas y cálculo de la tabla resumen de promedios (*stat_penguins*).
+* **Reducción de dimensionalidad y visualización:** Aplicación de PCA (*n_components = 2*) sobre los datos escalados para proyectar el espacio multidimensional en un plano 2D y ubicar la posición de los centroides.
 
 ### Conclusiones y recomendaciones
-* **Caracterización por cluster ($k = 4$):**
-* **Segmentación morfológica precisa:** El modelo identificó $k = 4$ grupos clave diferenciados por tamaño general y sexo:
-  * **Cluster 0:** Especie pequeña/mediana machos (pico corto pero profundo: $43.88\text{ mm}$ largo / $19.11\text{ mm}$ profundidad, masa: $4006.60\text{ g}$).
-  * **Cluster 1:** Especie grande hembras (pico delgado: $45.56\text{ mm}$ largo / $14.24\text{ mm}$ profundidad, aletas largas: $212.71\text{ mm}$, masa: $4679.74\text{ g}$).
+* **Caracterización por cluster (*k = 4*):**
+* **Segmentación morfológica precisa:** El modelo identificó *k = 4* grupos clave diferenciados por tamaño general y sexo:
+  * **Cluster 0:** Especie pequeña/mediana machos (pico corto pero profundo: 43.88\text{ mm} largo / 19.11\text{ mm} profundidad, masa: $4006.60\text{ g}$).
+  * **Cluster 1:** Especie grande hembras (pico delgado: 45.56\text{ mm} largo / 14.24\text{ mm} profundidad, aletas largas: 212.71\text{ mm}, masa: 4679.74\text{ g}).
   * **Cluster 2:** Especie pequeña hembras (pico más corto y menor tamaño general: $40.22\text{ mm}$ largo, masa: $3419.16\text{ g}$).
   * **Cluster 3:** Especie grande machos (los especímenes de mayor tamaño y masa corporal: $221.54\text{ mm}$ aleta, masa: $5484.84\text{ g}$).
 * **Segmentación biológica natural:** Separación de género implícita: Sin supervisión, K-Means separó naturalmente la variabilidad de especies y el dimorfismo sexual interno.
