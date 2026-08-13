@@ -111,7 +111,7 @@ El objetivo de este proyecto es construir un **modelo de regresión supervisado*
   * Extracción de variables binarias a partir de texto no estructurado en *special_features* (*deleted_scenes* y *behind_the_scenes*).
 * **Preprocesamiento y división del dataset:** Eliminación de variables de fecha y texto para conformar la matriz de características $X$ (14 variables) y división en datos de entrenamiento (80%) y prueba (20%) con *random_state = 9*. 
 * **Separación de Datos:** División en subconjuntos de entrenamiento y prueba (80/20) definiendo *X* e *y* con *random_state = 9*.
-* **Selección de características mediante Regularización Lasso:** Selección de características mediante Regularización Lasso: Entrenamiento de un modelo Lasso (\alpha = 0.3, *random_state = 9*) para descartar variables irrelevantes ajustando sus coeficientes a cero.
+* **Selección de características mediante Regularización Lasso:** Selección de características mediante Regularización Lasso: Entrenamiento de un modelo Lasso ($\alpha$ = 0.3, *random_state = 9*) para descartar variables irrelevantes ajustando sus coeficientes a cero.
 * **Modelado predictivo y evaluación:** Modelado predictivo y evaluación: Entrenamiento de un modelo de ensamble RandomForestRegressor (*100 estimadores, random_state = 9*) utilizando únicamente las características optimizadas por Lasso y evaluación del desempeño en el conjunto de prueba mediante el *Error Cuadrático Medio (MSE)*.
 
 ### Conclusiones y recomendaciones
