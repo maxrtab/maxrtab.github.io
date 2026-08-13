@@ -2,7 +2,7 @@
 
 ## Acerca de mí
 
-¡Hola! Soy **Max**, apasionado por transformar datos complejos en soluciones analíticas de alto impacto. Mi enfoque se centra en **Data Science**, **Machine Learning** y **Estadística Aplicada**, combinando el rigor matemático con el desarrollo de código limpio y reproducible en **Python**.
+¡Hola! Soy **Maximiliano Rojas Taboada**, apasionado por transformar datos complejos en soluciones analíticas de alto impacto. Mi enfoque se centra en **Data Science**, **Machine Learning** y **Estadística Aplicada**, combinando el rigor matemático con el desarrollo de código limpio y reproducible en **Python**.
 
 A través de mi trabajo me especializo en:
 * **Modelado Predictivo:** Desarrollo y ajuste de algoritmos supervisados (Regresión, Árboles de Decisión, Random Forest, AdaBoost) para resolver problemas de clasificación y regresión.
