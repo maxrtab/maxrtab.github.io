@@ -117,7 +117,7 @@ El objetivo de este proyecto es construir un **modelo de regresión supervisado*
 ### Conclusiones y recomendaciones
 #### Desempeño del modelo y selección de variables:
 * **Reducción efectiva de dimensionalidad:** La regularización Lasso filtró automáticamente las 14 variables iniciales a solo 4 características clave: Index(['amount', 'amount_2', 'length_2', 'rental_rate_2'])
-* **Cumplimiento de la meta de negocio:** El modelo final `RandomForestRegressor` alcanzó un MSE de 2.39 en el conjunto de prueba, superando exitosamente el umbral máximo de 3.0 exigido por la empresa
+* **Cumplimiento de la meta de negocio:** El modelo final RandomForestRegressor alcanzó un MSE de 2.39 en el conjunto de prueba, superando exitosamente el umbral máximo de 3.0 exigido por la empresa
 
 ### Impacto y recomendaciones operativas:
 * **Optimización de inventario:** La capacidad de predecir la duración del alquiler permite calcular con precisión el retorno de películas y evitar quiebres de stock en tienda.
