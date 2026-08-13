@@ -111,13 +111,13 @@ El objetivo de este proyecto es construir un **modelo de regresión supervisado*
   * Extracción de variables binarias a partir de texto no estructurado en *special_features* (*deleted_scenes* y *behind_the_scenes*).
 * **Preprocesamiento y división del dataset:** Eliminación de variables de fecha y texto para conformar la matriz de características $X$ (14 variables) y división en datos de entrenamiento (80%) y prueba (20%) con *random_state = 9*. 
 * **Separación de Datos:** División en subconjuntos de entrenamiento y prueba (80/20) definiendo *X* e *y* con *random_state = 9*.
-* **Selección de características mediante Regularización Lasso:** Selección de características mediante Regularización Lasso: Entrenamiento de un modelo Lasso ($\alpha = 0.3$, *random_state = 9*) para descartar variables irrelevantes ajustando sus coeficientes a cero.
-* **Modelado predictivo y evaluación:** Modelado predictivo y evaluación: Entrenamiento de un modelo de ensamble RandomForestRegressor (100 estimadores, *random_state = 9*) utilizando únicamente las características optimizadas por Lasso y evaluación del desempeño en el conjunto de prueba mediante el *Error Cuadrático Medio (MSE)*.
+* **Selección de características mediante Regularización Lasso:** Selección de características mediante Regularización Lasso: Entrenamiento de un modelo Lasso (\alpha = 0.3, *random_state = 9*) para descartar variables irrelevantes ajustando sus coeficientes a cero.
+* **Modelado predictivo y evaluación:** Modelado predictivo y evaluación: Entrenamiento de un modelo de ensamble RandomForestRegressor (*100 estimadores, random_state = 9*) utilizando únicamente las características optimizadas por Lasso y evaluación del desempeño en el conjunto de prueba mediante el *Error Cuadrático Medio (MSE)*.
 
 ### Conclusiones y recomendaciones
 #### Desempeño del modelo y selección de variables:
 * **Reducción efectiva de dimensionalidad:** La regularización Lasso filtró automáticamente las 14 variables iniciales a solo 4 características clave: Index(['amount', 'amount_2', 'length_2', 'rental_rate_2'])
-* **Cumplimiento de la meta de negocio:** El modelo final `RandomForestRegressor` alcanzó un MSE de $2.39$ en el conjunto de prueba, superando exitosamente el umbral máximo de $3.0$ exigido por la empresa
+* **Cumplimiento de la meta de negocio:** El modelo final `RandomForestRegressor` alcanzó un MSE de 2.39 en el conjunto de prueba, superando exitosamente el umbral máximo de 3.0 exigido por la empresa
 
 ### Impacto y recomendaciones operativas:
 * **Optimización de inventario:** La capacidad de predecir la duración del alquiler permite calcular con precisión el retorno de películas y evitar quiebres de stock en tienda.
