@@ -199,6 +199,7 @@ El objetivo de este proyecto es construir un **modelo de regresión supervisado*
 * **Estrategias comerciales:** El peso predictivo de las variables financieras (amount y rental_rate) confirma que la tarifa de alquiler condiciona directamente el tiempo de retención del DVD, lo que permite diseñar políticas de precios para incentivar devoluciones más rápidas en títulos de alta demanda.
 
 **Explora más detalles del proyecto en el [repositorio completo](https://github.com/maxrtab/prediccion-alquiler-dvd-adaboost).**
+
 ---
 
 ## 4. Análisis Estadístico de Goles en el Fútbol Internacional
