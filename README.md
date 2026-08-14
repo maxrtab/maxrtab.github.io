@@ -76,24 +76,32 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
 ### Conclusiones y recomendaciones
 * **Caracterización por cluster (*k = 4*):**
 * **Segmentación morfológica precisa:** El modelo identificó *k = 4* grupos clave diferenciados por tamaño general y sexo:
+  
   * **Cluster 0:** Especie pequeña/mediana machos (pico corto pero profundo: 43.88 mm largo / 19.11 mm profundidad, masa: 4,006.60 g).
   * **Cluster 1:** Especie grande hembras (pico delgado: 45.56 mm largo / 14.24 mm profundidad, aletas largas: 212.71 mm, masa: 4,679.74 g).
   * **Cluster 2:** Especie pequeña hembras (pico más corto y menor tamaño general: 40.22 mm largo, masa: 3,419.16 g).
   * **Cluster 3:** Especie grande machos (los especímenes de mayor tamaño y masa corporal: 221.54 mm aleta, masa: 5,484.84 g).
+  * 
 * **Segmentación biológica natural:** Separación de género implícita: Sin supervisión, K-Means separó naturalmente la variabilidad de especies y el dimorfismo sexual interno.
 * **Conservación de varianza con PCA:** La proyección 2D captura más del **80% de la varianza total** del dataset, mostrando cuatro agrupaciones aisladas entre sí con sus centroides correctamente posicionados.
 
 ### Visualizaciones destacadas
-1. **Método del Codo para $k$ óptimo:** Determinación de $k = 4$ mediante la inercia del modelo.
-![Método del Codo](Metodo_codo.png)
+1. **Método del Codo para $k$ óptimo:** Determinación de $k$ = 4 mediante la inercia del modelo.
+<p align="center">
+  <img src="Metodo_codo.png" width="550" alt="Método del Codo">
+</p>
 
-3. **Varianza explicada por Componentes Principales:**
-![Varianza Explicada PCA](varianza_pca.png)
+2. **Varianza explicada por Componentes Principales:**
+<p align="center">
+  <img src="varianza_pca.png" width="550" alt="Varianza Explicada PCA">
+</p>
 
 **Conservación de varianza con PCA:** La primera componente principal (PC1) explica la mayor proporción de la variabilidad, y en conjunto con PC2 capturan más del 80% de la varianza total del dataset.
 
-5. **Proyección 2D con PCA y Centroides:** Visualización de los cuatro clusters formados y la ubicación de sus centroides.
-![Clusters 2D con PCA](clusters_pca.png)
+3. **Proyección 2D con PCA y Centroides:** Visualización de los cuatro clusters formados y la ubicación de sus centroides.
+<p align="center">
+  <img src="clusters_pca.png" width="600" alt="Clusters 2D con PCA">
+</p>
 
 **Interpretabilidad visual:** La proyección 2D confirma cuatro agrupaciones compactas y aisladas entre sí, con los centroides ($X$ rojas) perfectamente posicionados en el centro de densidad de cada grupo.
 ### 
@@ -172,7 +180,11 @@ El objetivo de este proyecto es realizar una **prueba de hipótesis no paramétr
 ### Visualizaciones destacadas
 
 1. **Distribución de Goles en el Fútbol Masculino:** Histogramas que muestran el sesgo a la derecha y no-normalidad de los datos.
-![Histograma Goles Masculino](gol_m.png)
+<p align="center">
+  <img src="gol_m.png" width="550" alt="Histograma Goles Masculino">
+</p>
 
 2. **Distribución de Goles en el Fútbol Femenino:**
-![Histograma Goles Femenino](grafica_h_gol.png)
+<p align="center">
+  <img src="grafica_h_gol.png" width="550" alt="Histograma Goles Femenino">
+</p>
