@@ -1,24 +1,27 @@
-<!-- Foto flotante a la derecha -->
-<img src="https://images.weserv.nl/?url=raw.githubusercontent.com/maxrtab/maxrtab.github.io/main/MifotoMax.jpeg&w=200&h=200&fit=cover&mask=circle" width="200" align="right" alt="Maximiliano Rojas Taboada" />
+<!-- Encabezado en tabla sin bordes visibles -->
+<table width="100%" style="border: none; border-collapse: collapse; background: transparent;">
+  <tr style="border: none;">
+    <td width="70%" valign="middle" style="border: none;">
+      <h1>¡Hola! Soy Maximiliano Rojas Taboada 👋</h1>
+      <h3>Data Scientist | Machine Learning & AI Specialist</h3>
+      <p>
+        ¡Te doy la bienvenida a mi portafolio de Ciencia de Datos e Inteligencia Artificial! 
+        Aquí encontrarás proyectos donde transformo datos complejos en modelos predictivos, 
+        análisis estadísticos y soluciones accionables, combinando el rigor del método científico con la tecnología.
+      </p>
+      <!-- Botones de contacto -->
+      <p>
+        <a href="https://www.linkedin.com/in/TU-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-f4ebe1?style=flat&logo=linkedin&logoColor=000000" alt="LinkedIn" /></a>
+        <a href="mailto:maxrt520@gmail.com"><img src="https://img.shields.io/badge/Email-f4ebe1?style=flat&logo=mail&logoColor=000000" alt="Email" /></a>
+      </p>
+    </td>
+    <td width="30%" align="center" valign="middle" style="border: none;">
+      <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/maxrtab/maxrtab.github.io/main/MifotoMax.jpeg&w=200&h=200&fit=cover&mask=circle" width="180" alt="Maximiliano Rojas Taboada" />
+    </td>
+  </tr>
+</table>
 
-<!-- Texto a la izquierda -->
-<h1>¡Hola! Soy Maximiliano Rojas Taboada</h1>
-<h3>Data Scientist | Machine Learning & AI Specialist</h3>
-
-<p>
-  ¡Te doy la bienvenida a mi portafolio de Ciencia de Datos e Inteligencia Artificial! 
-  Aquí encontrarás proyectos donde transformo datos complejos en modelos predictivos, 
-  análisis estadísticos y soluciones accionables, combinando el rigor del método científico con la tecnología.
-</p>
-
-<!-- Botones de contacto -->
-<p>
-  <a href="https://www.linkedin.com/in/tu-perfil"><img src="https://img.shields.io/badge/LinkedIn-f4ebe1?style=flat&logo=linkedin&logoColor=000000" alt="LinkedIn" /></a>
-  <a href="mailto:maxrt520@gmail.com"><img src="https://img.shields.io/badge/Email-f4ebe1?style=flat&logo=mail&logoColor=000000" alt="Email" /></a>
-</p>
-
-<!-- Esto empuja la línea divisoria por debajo de la foto -->
-<br clear="all" />
+<br />
 
 ---
 
