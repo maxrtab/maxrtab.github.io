@@ -1,27 +1,24 @@
-<!-- Encabezado en tabla sin bordes visibles -->
-<table width="100%" style="border: none; border-collapse: collapse; background: transparent;">
-  <tr style="border: none;">
-    <td width="70%" valign="middle" style="border: none;">
-      <h1>¡Hola! Soy Maximiliano Rojas Taboada 👋</h1>
+<!-- Encabezado Estilo "Hi, I'm Hannah" (Lado a Lado) -->
+<table border="0">
+  <tr>
+    <td width="65%" valign="middle">
+      <h1>¡Hola! Soy Maximiliano Rojas Taboada</h1>
       <h3>Data Scientist | Machine Learning & AI Specialist</h3>
       <p>
         ¡Te doy la bienvenida a mi portafolio de Ciencia de Datos e Inteligencia Artificial! 
         Aquí encontrarás proyectos donde transformo datos complejos en modelos predictivos, 
         análisis estadísticos y soluciones accionables, combinando el rigor del método científico con la tecnología.
       </p>
-      <!-- Botones de contacto -->
-      <p>
-        <a href="https://www.linkedin.com/in/TU-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-f4ebe1?style=flat&logo=linkedin&logoColor=000000" alt="LinkedIn" /></a>
-        <a href="mailto:maxrt520@gmail.com"><img src="https://img.shields.io/badge/Email-f4ebe1?style=flat&logo=mail&logoColor=000000" alt="Email" /></a>
-      </p>
+      <br>
+      <!-- Botones de contacto con estilo hueso -->
+      <a href="https://www.linkedin.com/in/maximilianorojastaboada"><img src="https://img.shields.io/badge/LinkedIn-f4ebe1?style=flat&logo=linkedin&logoColor=000000" alt="LinkedIn" /></a>
+      <a href="mailto:maxrt520@gmail.com"><img src="https://img.shields.io/badge/Email-f4ebe1?style=flat&logo=mail&logoColor=000000" alt="Email" /></a>
     </td>
-    <td width="30%" align="center" valign="middle" style="border: none;">
-      <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/maxrtab/maxrtab.github.io/main/MifotoMax.jpeg&w=200&h=200&fit=cover&mask=circle" width="180" alt="Maximiliano Rojas Taboada" />
+    <td width="35%" align="center" valign="middle">
+      <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/maxrtab/maxrtab.github.io/main/MifotoMax.jpeg&w=220&h=220&fit=cover&mask=circle" width="220" alt="Maximiliano Rojas Taboada">
     </td>
   </tr>
 </table>
-
-<br />
 
 ---
 
