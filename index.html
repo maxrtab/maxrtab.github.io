@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maximiliano Rojas Taboada | Portafolio Ciencia de Datos</title>
+  <style>
+    /* Estilos Generales */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      background-color: #ffffff;
+      color: #2d3748;
+      line-height: 1.6;
+    }
+    
+    /* Navegación Superior */
+    header {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-name {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #1a202c;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #4a5568;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+    nav a:hover {
+      color: #000000;
+    }
+    
+    /* Contenedor Principal */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px 40px 20px;
+    }
+
+    /* Recuadros Redondeados (Tarjetas) */
+    .card {
+      border-radius: 24px;
+      padding: 45px;
+      margin-bottom: 35px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    /* Recuadro 1: Hero / Bienvenida */
+    .card-hero {
+      background-color: #f9f6f0; /* Tono hueso estilo la plantilla */
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .hero-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 20px;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+    .hero-text h1 {
+      font-size: 2.2rem;
+      color: #1a202c;
+      margin-bottom: 8px;
+    }
+    .hero-text h3 {
+      font-size: 1.15rem;
+      color: #4a5568;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .hero-text p {
+      color: #4a5568;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    /* Botones Interactivos */
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background-color: #1a202c;
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background-color: #2d3748;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .btn-secondary {
+      background-color: #ffffff;
+      color: #1a202c;
+      border: 1px solid #e2e8f0;
+    }
+    .btn-secondary:hover {
+      background-color: #f7fafc;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    }
+
+    /* Recuadro 2: Acerca de mí */
+    .card-about {
+      background-color: #f0f4f8; /* Tono de contraste suave */
+    }
+    .card-about h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #1a202c;
+    }
+    .card-about p {
+      margin-bottom: 16px;
+      color: #4a5568;
+      font-size: 1.02rem;
+    }
+    
+    .skills-section {
+      margin-top: 25px;
+    }
+    .skills-section h4 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: #2d3748;
+    }
+    .skill-tag {
+      display: inline-block;
+      background-color: #ffffff;
+      color: #2d3748;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin: 4px 4px 8px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+      transition: all 0.2s ease;
+    }
+    .skill-tag:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      background-color: #1a202c;
+      color: #ffffff;
+    }
+
+    /* Responsivo para celulares */
+    @media (max-width: 768px) {
+      .card-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+      }
+      .hero-img {
+        width: 160px;
+        height: 160px;
+      }
+      .btn-group {
+        justify-content: center;
+      }
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+      nav a {
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navegación Superior -->
+  <header>
+    <div class="logo-name">Maximiliano Rojas Taboada</div>
+    <nav>
+      <a href="https://www.linkedin.com/in/maximilianorojastaboada" target="_blank">LinkedIn</a>
+      <a href="https://github.com/maxrtab" target="_blank">GitHub</a>
+      <a href="#proyectos">Mis Proyectos</a>
+      <a href="mailto:maxrt520@gmail.com">Contacto</a>
+      <a href="#" target="_blank">CV</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    
+    <!-- Recuadro 1: Bienvenida -->
+    <section class="card card-hero">
+      <img src="MifotoMax.jpeg" alt="Maximiliano Rojas Taboada" class="hero-img">
+      <div class="hero-text">
+        <h1>¡Hola! Soy Maximiliano Rojas Taboada</h1>
+        <h3>Data Scientist | Machine Learning & AI Specialist</h3>
+        <p>¡Te doy la bienvenida a mi portafolio de Ciencia de Datos e Inteligencia Artificial! Aquí encontrarás proyectos donde transformo datos complejos en modelos predictivos, análisis estadísticos y soluciones accionables, combinando el rigor del método científico con la tecnología.</p>
+        <div class="btn-group">
+          <a href="#proyectos" class="btn btn-primary">Ver Mis Proyectos</a>
+          <a href="mailto:maxrt520@gmail.com" class="btn btn-secondary">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recuadro 2: Acerca de mí -->
+    <section class="card card-about">
+      <h2>Acerca de mí</h2>
+      <p>Soy <strong>Egresado en Diseño Molecular y Nanoquímica</strong> con un <strong>Diplomado en Inteligencia Artificial</strong> por la Universidad Anáhuac. Apasionado por la intersección entre la ciencia y la tecnología, me especializo en aplicar herramientas de <strong>Ciencia de Datos, Machine Learning y Deep Learning</strong> al análisis y optimización de sistemas complejos.</p>
+      
+      <p>Cuento con experiencia práctica en todo el ciclo de vida de los datos: desde <strong>Análisis Exploratorio de Datos (EDA)</strong>, <strong>Ingeniería de Características</strong> y <strong>Modelado Predictivo</strong>, hasta el manejo avanzado de <strong>Excel</strong> adquirido en el sector bancario.</p>
+
+      <div class="skills-section">
+        <h4>Habilidades tecnológicas</h4>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Scikit-Learn</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">SciPy</span>
+        <span class="skill-tag">Matplotlib</span>
+        <span class="skill-tag">Seaborn</span>
+        <span class="skill-tag">Excel Avanzado</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+      </div>
+
+      <div class="skills-section" style="margin-top: 15px;">
+        <h4>Competencias clave</h4>
+        <p style="margin-bottom: 0;">Pensamiento analítico, adaptación a entornos cambiantes, comunicación efectiva y trabajo colaborativo.</p>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
