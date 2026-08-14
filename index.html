@@ -254,134 +254,135 @@
         <p style="margin-bottom: 0;">Pensamiento analítico, adaptación a entornos cambiantes, comunicación efectiva y trabajo colaborativo.</p>
       </div>
     </section>
-  </div>
-  
-    <!-- SECCIÓN DE PROYECTOS (ESTILO UNIFICADO CON TUS TARJETAS) -->
-      <div id="proyectos">
-        <h2 style="font-size: 1.8rem; margin: 40px 0 20px 0; color: #1a202c;">Mis Proyectos</h2>
-  
-        <!-- PROYECTO 1: Tono Hueso (#f9f6f0) -->
-        <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 15px;">
-          <h3 style="font-size: 1.5rem; color: #1a202c;">1. Modelado Predictivo para la Optimización de Cultivos Agrícolas</h3>
-          
-          <p>Determiné la variable edafoclimática del suelo con mayor capacidad predictiva univariada para clasificar <strong>22 tipos de cultivo</strong> mediante <strong>Regresión Logística multiclase</strong>, permitiendo optimizar costos de análisis de laboratorio para agricultores.</p>
-  
-          <div class="skills-section" style="margin-top: 5px;">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">Scikit-Learn</span>
-            <span class="skill-tag">Logistic Regression</span>
-            <span class="skill-tag">EDA</span>
-            <span class="skill-tag">Modelo Predictivo</span>
-          </div>
-  
-          <div style="margin-top: 10px;">
-            <h4 style="font-size: 1.05rem; color: #2d3748; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
-            <ul style="color: #4a5568; line-height: 1.6; padding-left: 20px;">
-              <li><strong>Potasio (K) determinante:</strong> Logró el mayor poder predictivo univariado con un <strong>Weighted F₁-score de 0.2511</strong> (frente a 0.1360 del Fósforo y 0.0946 del Nitrógeno).</li>
-              <li><strong>Impacto comercial:</strong> Priorizar la medición de potasio permite realizar una preselección eficiente del cultivo con presupuesto limitado antes de realizar análisis químicos complejos.</li>
-            </ul>
-          </div>
-  
-          <div style="margin-top: 15px;">
-            <a href="https://github.com/maxrtab/Optimizing-Crop-Yields" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
-          </div>
-        </section>
-  
-        <!-- PROYECTO 2: Tono Azul Suave (#f0f4f8) -->
-        <section class="card card-about" style="flex-direction: column; align-items: flex-start; gap: 15px;">
-          <h3 style="font-size: 1.5rem; color: #1a202c;">2. Agrupación de Especies de Pingüinos con Aprendizaje No Supervisado (K-Means & PCA)</h3>
-          
-          <p>Agrupación morfológica y segmentación de dimorfismo sexual en especímenes de pingüinos de Palmer aplicando <strong>K-Means</strong> y reducción de dimensionalidad con <strong>PCA</strong> sin necesidad de etiquetas previas.</p>
-  
-          <div class="skills-section" style="margin-top: 5px;">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Scikit-Learn</span>
-            <span class="skill-tag">K-Means</span>
-            <span class="skill-tag">PCA</span>
-            <span class="skill-tag">Matplotlib</span>
-            <span class="skill-tag">Aprendizaje No Supervisado</span>
-          </div>
-  
-          <div style="margin-top: 10px;">
-            <h4 style="font-size: 1.05rem; color: #2d3748; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
-            <ul style="color: #4a5568; line-height: 1.6; padding-left: 20px;">
-              <li><strong>k = 4 óptimo:</strong> Identificado mediante el Método del Codo, diferenciando con precisión combinaciones de especie y dimorfismo sexual (macho/hembra).</li>
-              <li><strong>Explicabilidad con PCA:</strong> Las primeras 2 componentes principales retienen más del <strong>80% de la varianza total</strong>, proyectando clusters aislados y centroides definidos.</li>
-            </ul>
-          </div>
-  
-          <div style="display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap; width: 100%;">
-            <img src="Metodo_codo.png" alt="Método del Codo" style="width: 31%; min-width: 200px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-            <img src="varianza_pca.png" alt="Varianza PCA" style="width: 31%; min-width: 200px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-            <img src="clusters_pca.png" alt="Clusters PCA" style="width: 31%; min-width: 200px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-          </div>
-  
-          <div style="margin-top: 15px;">
-            <a href="https://github.com/maxrtab/Clustering-Penguin-Species" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
-          </div>
-        </section>
-  
-        <!-- PROYECTO 3: Tono Hueso (#f9f6f0) -->
-        <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 15px;">
-          <h3 style="font-size: 1.5rem; color: #1a202c;">3. Predicción de Días de Alquiler de Películas DVD</h3>
-          
-          <p>Construcción de un modelo de regresión supervisado para predecir el tiempo de retención de alquileres de DVD, optimizando la gestión de inventario y evitando quiebres de stock.</p>
-  
-          <div class="skills-section" style="margin-top: 5px;">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Scikit-Learn</span>
-            <span class="skill-tag">Random Forest</span>
-            <span class="skill-tag">Lasso Regularization</span>
-            <span class="skill-tag">Feature Engineering</span>
-          </div>
-  
-          <div style="margin-top: 10px;">
-            <h4 style="font-size: 1.05rem; color: #2d3748; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
-            <ul style="color: #4a5568; line-height: 1.6; padding-left: 20px;">
-              <li><strong>Reducción de variables con Lasso:</strong> Filtrado automático de 14 variables iniciales a solo 4 características financieras/morfológicas clave.</li>
-              <li><strong>Meta superada:</strong> El modelo <code>RandomForestRegressor</code> alcanzó un <strong>MSE de 2.39</strong> en prueba, superando el requerimiento del negocio (MSE ≤ 3.0).</li>
-            </ul>
-          </div>
-  
-          <div style="margin-top: 15px;">
-            <a href="https://github.com/maxrtab/Rental-Length-Prediction" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
-          </div>
-        </section>
-  
-        <!-- PROYECTO 4: Tono Azul Suave (#f0f4f8) -->
-        <section class="card card-about" style="flex-direction: column; align-items: flex-start; gap: 15px;">
-          <h3 style="font-size: 1.5rem; color: #1a202c;">4. Análisis Estadístico de Goles en el Fútbol Internacional</h3>
-          
-          <p>Prueba de hipótesis no paramétrica para determinar si en los partidos internacionales de fútbol femenino se marcan significativamente más goles por partido que en los masculinos desde 2002.</p>
-  
-          <div class="skills-section" style="margin-top: 5px;">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">SciPy</span>
-            <span class="skill-tag">Mann-Whitney U Test</span>
-            <span class="skill-tag">Prueba de Hipótesis</span>
-            <span class="skill-tag">Estadística Inferencial</span>
-          </div>
-  
-          <div style="margin-top: 10px;">
-            <h4 style="font-size: 1.05rem; color: #2d3748; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
-            <ul style="color: #4a5568; line-height: 1.6; padding-left: 20px;">
-              <li><strong>Prueba U de Mann-Whitney:</strong> Arrojó un <strong>p-value de 0.0051</strong> (mucha menor significancia que el α = 0.10 establecido).</li>
-              <li><strong>Conclusión estadística:</strong> Se rechazó H₀, confirmando con solidez metodológica que en los partidos femeninos de Copas del Mundo se anotan más goles por partido en promedio.</li>
-            </ul>
-          </div>
-  
-          <div style="display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap; width: 100%;">
-            <img src="gol_m.png" alt="Distribución Masculina" style="width: 48%; min-width: 220px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-            <img src="grafica_h_gol.png" alt="Distribución Femenina" style="width: 48%; min-width: 220px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-          </div>
-  
-          <div style="margin-top: 15px;">
-            <a href="https://github.com/maxrtab/International-Football-Goal-Analysis" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
-          </div>
-        </section>
-  
-      </div>
+
+    <!-- SECCIÓN DE PROYECTOS (AQUÍ DENTRO DEL CONTAINER) -->
+    <div id="proyectos">
+      <h2 style="font-size: 1.8rem; margin: 40px 0 20px 0; color: #1a202c;">Mis Proyectos</h2>
+
+      <!-- PROYECTO 1: Tono Hueso (#f9f6f0) -->
+      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 15px;">
+        <h3 style="font-size: 1.5rem; color: #1a202c;">1. Modelado Predictivo para la Optimización de Cultivos Agrícolas</h3>
+        
+        <p>Determiné la variable edafoclimática del suelo con mayor capacidad predictiva univariada para clasificar <strong>22 tipos de cultivo</strong> mediante <strong>Regresión Logística multiclase</strong>, permitiendo optimizar costos de análisis de laboratorio para agricultores.</p>
+
+        <div class="skills-section" style="margin-top: 5px;">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">Scikit-Learn</span>
+          <span class="skill-tag">Logistic Regression</span>
+          <span class="skill-tag">EDA</span>
+          <span class="skill-tag">Modelo Predictivo</span>
+        </div>
+
+        <div style="margin-top: 10px;">
+          <h4 style="font-size: 1.05rem; color: #2d3748; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+          <ul style="color: #4a5568; line-height: 1.6; padding-left: 20px;">
+            <li><strong>Potasio (K) determinante:</strong> Logró el mayor poder predictivo univariado con un <strong>Weighted F₁-score de 0.2511</strong> (frente a 0.1360 del Fósforo y 0.0946 del Nitrógeno).</li>
+            <li><strong>Impacto comercial:</strong> Priorizar la medición de potasio permite realizar una preselección eficiente del cultivo con presupuesto limitado antes de realizar análisis químicos complejos.</li>
+          </ul>
+        </div>
+
+        <div style="margin-top: 15px;">
+          <a href="https://github.com/maxrtab/Optimizing-Crop-Yields" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
+        </div>
+      </section>
+
+      <!-- PROYECTO 2: Tono Azul Suave (#f0f4f8) -->
+      <section class="card card-about" style="flex-direction: column; align-items: flex-start; gap: 15px;">
+        <h3 style="font-size: 1.5rem; color: #1a202c;">2. Agrupación de Especies de Pingüinos con Aprendizaje No Supervisado (K-Means & PCA)</h3>
+        
+        <p>Agrupación morfológica y segmentación de dimorfismo sexual en especímenes de pingüinos de Palmer aplicando <strong>K-Means</strong> y reducción de dimensionalidad con <strong>PCA</strong> sin necesidad de etiquetas previas.</p>
+
+        <div class="skills-section" style="margin-top: 5px;">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Scikit-Learn</span>
+          <span class="skill-tag">K-Means</span>
+          <span class="skill-tag">PCA</span>
+          <span class="skill-tag">Matplotlib</span>
+          <span class="skill-tag">Aprendizaje No Supervisado</span>
+        </div>
+
+        <div style="margin-top: 10px;">
+          <h4 style="font-size: 1.05rem; color: #2d3748; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+          <ul style="color: #4a5568; line-height: 1.6; padding-left: 20px;">
+            <li><strong>k = 4 óptimo:</strong> Identificado mediante el Método del Codo, diferenciando con precisión combinaciones de especie y dimorfismo sexual (macho/hembra).</li>
+            <li><strong>Explicabilidad con PCA:</strong> Las primeras 2 componentes principales retienen más del <strong>80% de la varianza total</strong>, proyectando clusters aislados y centroides definidos.</li>
+          </ul>
+        </div>
+
+        <div style="display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap; width: 100%;">
+          <img src="Metodo_codo.png" alt="Método del Codo" style="width: 31%; min-width: 200px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+          <img src="varianza_pca.png" alt="Varianza PCA" style="width: 31%; min-width: 200px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+          <img src="clusters_pca.png" alt="Clusters PCA" style="width: 31%; min-width: 200px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        </div>
+
+        <div style="margin-top: 15px;">
+          <a href="https://github.com/maxrtab/Clustering-Penguin-Species" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
+        </div>
+      </section>
+
+      <!-- PROYECTO 3: Tono Hueso (#f9f6f0) -->
+      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 15px;">
+        <h3 style="font-size: 1.5rem; color: #1a202c;">3. Predicción de Días de Alquiler de Películas DVD</h3>
+        
+        <p>Construcción de un modelo de regresión supervisado para predecir el tiempo de retención de alquileres de DVD, optimizando la gestión de inventario y evitando quiebres de stock.</p>
+
+        <div class="skills-section" style="margin-top: 5px;">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Scikit-Learn</span>
+          <span class="skill-tag">Random Forest</span>
+          <span class="skill-tag">Lasso Regularization</span>
+          <span class="skill-tag">Feature Engineering</span>
+        </div>
+
+        <div style="margin-top: 10px;">
+          <h4 style="font-size: 1.05rem; color: #2d3748; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+          <ul style="color: #4a5568; line-height: 1.6; padding-left: 20px;">
+            <li><strong>Reducción de variables con Lasso:</strong> Filtrado automático de 14 variables iniciales a solo 4 características financieras/morfológicas clave.</li>
+            <li><strong>Meta superada:</strong> El modelo <code>RandomForestRegressor</code> alcanzó un <strong>MSE de 2.39</strong> en prueba, superando el requerimiento del negocio (MSE ≤ 3.0).</li>
+          </ul>
+        </div>
+
+        <div style="margin-top: 15px;">
+          <a href="https://github.com/maxrtab/Rental-Length-Prediction" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
+        </div>
+      </section>
+
+      <!-- PROYECTO 4: Tono Azul Suave (#f0f4f8) -->
+      <section class="card card-about" style="flex-direction: column; align-items: flex-start; gap: 15px;">
+        <h3 style="font-size: 1.5rem; color: #1a202c;">4. Análisis Estadístico de Goles en el Fútbol Internacional</h3>
+        
+        <p>Prueba de hipótesis no paramétrica para determinar si en los partidos internacionales de fútbol femenino se marcan significativamente más goles por partido que en los masculinos desde 2002.</p>
+
+        <div class="skills-section" style="margin-top: 5px;">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SciPy</span>
+          <span class="skill-tag">Mann-Whitney U Test</span>
+          <span class="skill-tag">Prueba de Hipótesis</span>
+          <span class="skill-tag">Estadística Inferencial</span>
+        </div>
+
+        <div style="margin-top: 10px;">
+          <h4 style="font-size: 1.05rem; color: #2d3748; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+          <ul style="color: #4a5568; line-height: 1.6; padding-left: 20px;">
+            <li><strong>Prueba U de Mann-Whitney:</strong> Arrojó un <strong>p-value de 0.0051</strong> (mucha menor significancia que el α = 0.10 establecido).</li>
+            <li><strong>Conclusión estadística:</strong> Se rechazó H₀, confirmando con solidez metodológica que en los partidos femeninos de Copas del Mundo se anotan más goles por partido en promedio.</li>
+          </ul>
+        </div>
+
+        <div style="display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap; width: 100%;">
+          <img src="gol_m.png" alt="Distribución Masculina" style="width: 48%; min-width: 220px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+          <img src="grafica_h_gol.png" alt="Distribución Femenina" style="width: 48%; min-width: 220px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        </div>
+
+        <div style="margin-top: 15px;">
+          <a href="https://github.com/maxrtab/International-Football-Goal-Analysis" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
+        </div>
+      </section>
+
+    </div> <!-- Cierre de #proyectos -->
+
+  </div> <!-- Cierre del container principal -->
 
 </body>
 </html>
