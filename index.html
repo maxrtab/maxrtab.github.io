@@ -288,30 +288,61 @@
       <h2 style="font-size: 1.8rem; margin: 40px 0 20px 0; color: #1a202c;">Mis Proyectos</h2>
 
       <!-- PROYECTO 1 -->
-      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 15px;">
+      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 20px;">
         <h3 style="font-size: 1.5rem; color: #1a202c;">1. Modelado Predictivo para la Optimización de Cultivos Agrícolas</h3>
         
-        <p>Determiné la variable edafoclimática del suelo con mayor capacidad predictiva univariada para clasificar <strong>22 tipos de cultivo</strong> mediante <strong>Regresión Logística multiclase</strong>, permitiendo optimizar costos de análisis de laboratorio para agricultores.</p>
+        <p style="color: #2d3748;">
+          El objetivo de este proyecto es determinar la variable edafoclimática del suelo con mayor capacidad predictiva individual para clasificar <strong>22 tipos de cultivo</strong> mediante <strong>Regresión Logística multiclase</strong>. El estudio busca ayudar a los agricultores a tomar decisiones informadas sobre la selección de cultivos cuando cuentan con recursos o presupuestos limitados para análisis de laboratorio.
+        </p>
 
-        <div class="skills-section" style="margin-top: 5px;">
+        <!-- Etiquetas tecnológicas -->
+        <div class="skills-section" style="margin-top: 0;">
           <span class="skill-tag">Python</span>
           <span class="skill-tag">Pandas</span>
           <span class="skill-tag">Scikit-Learn</span>
           <span class="skill-tag">Logistic Regression</span>
-          <span class="skill-tag">EDA</span>
-          <span class="skill-tag">Modelo Predictivo</span>
+          <span class="skill-tag">Análisis Exploratorio</span>
+          <span class="skill-tag">Evaluación de Features</span>
+          <span class="skill-tag">Modelado Predictivo</span>
+          <span class="skill-tag">Aprendizaje Supervisado</span>
         </div>
 
-        <div style="margin-top: 10px;">
-          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+        <!-- Hallazgos y Resultados Clave (Visibles de inmediato) -->
+        <div style="width: 100%;">
+          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
           <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
-            <li><strong>Potasio (K) determinante:</strong> Logró el mayor poder predictivo univariado con un <strong>Weighted F₁-score de 0.2511</strong> (frente a 0.1360 del Fósforo y 0.0946 del Nitrógeno).</li>
-            <li><strong>Impacto comercial:</strong> Priorizar la medición de potasio permite realizar una preselección eficiente del cultivo con presupuesto limitado antes de realizar análisis químicos complejos.</li>
+            <li><strong>Potasio (K) determinante:</strong> La evaluación del <em>Weighted F₁-score</em> identificó al Potasio como la variable de mayor relevancia con un puntaje de <strong>0.2511</strong> (frente a 0.1360 del Fósforo, 0.0946 del Nitrógeno y 0.0453 del pH).</li>
+            <li><strong>Optimización de costos en campo:</strong> Si un agricultor cuenta con presupuesto limitado para análisis de laboratorio, priorizar la medición de Potasio ofrece casi el doble de capacidad discriminatoria que cualquier otro elemento para una preselección eficiente del cultivo.</li>
           </ul>
         </div>
 
-        <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/Optimizing-Crop-Yields" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
+        <!-- Acordeón Desplegable: Preguntas clave y Metodología -->
+        <details style="width: 100%; background-color: #ffffff; padding: 16px 20px; border-radius: 12px; border: 1px solid #e2e8f0; cursor: pointer;">
+          <summary style="font-weight: 600; color: #1a202c; font-size: 0.95rem;">
+            Ver preguntas clave y metodología del proyecto
+          </summary>
+          
+          <div style="margin-top: 15px; border-top: 1px solid #edf2f7; padding-top: 15px; cursor: default;">
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Preguntas clave:</h5>
+            <ol style="color: #2d3748; line-height: 1.6; padding-left: 20px; margin-bottom: 15px; font-size: 0.92rem;">
+              <li>¿Cuál es la distribución y balanceo de las categorías de cultivos en el conjunto de datos?</li>
+              <li>De las cuatro variables del suelo (<em>N</em>, <em>P</em>, <em>K</em>, <em>pH</em>), ¿cuál posee el mayor poder predictivo univariado para clasificar los cultivos?</li>
+              <li>¿Qué métrica de evaluación refleja de mejor manera el rendimiento de un modelo multiclase balanceado?</li>
+            </ol>
+
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Metodología resumida:</h5>
+            <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px; font-size: 0.92rem;">
+              <li><strong>Análisis Exploratorio (EDA):</strong> Verificación de nulos en los 2,200 registros y confirmación de balance perfecto (100 observaciones por cultivo).</li>
+              <li><strong>División de datos:</strong> Entrenamiento (80%) y prueba (20%) con <code>random_state = 42</code>.</li>
+              <li><strong>Modelado univariado:</strong> Entrenamiento de 4 modelos independientes de <code>LogisticRegression</code> (algoritmo multinomial, <code>max_iter = 200</code>), uno por cada propiedad del suelo.</li>
+              <li><strong>Evaluación:</strong> Cálculo del <em>Weighted F₁-score</em> sobre el conjunto de prueba para medir la precisión discriminatoria individual.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- Botón al repositorio -->
+        <div style="margin-top: 5px;">
+          <a href="https://github.com/maxrtab/optimizacion-cultivos-ml" target="_blank" class="btn btn-primary">Ver Repositorio Completo en GitHub ↗</a>
         </div>
       </section>
 
