@@ -22,8 +22,20 @@ Cuento con experiencia práctica en todo el ciclo de vida de los datos: desde **
 * **Análisis Cuantitativo:** Inferencia Estadística, Pruebas de Hipótesis y Tratamiento de Datos Complejos.
 
 ### Habilidades Tecnológicas
-* **Lenguajes y Librerías:** `PYTHON` / `PANDAS` / `NUMPY` / `SCIKIT-LEARN` / `TENSORFLOW` / `SCIPY` / `MATPLOTLIB` / `SEABORN`
-* **Herramientas de Gestión:** `EXCEL AVANZADO` / `SQL` / `GIT` / `GITHUB`
+<p align="left">
+  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat&logo=python&logoColor=000000" alt="Python" />
+  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat&logo=pandas&logoColor=000000" alt="Pandas" />
+  <img src="https://img.shields.io/badge/NUMPY-f4ebe1?style=flat&logo=numpy&logoColor=000000" alt="NumPy" />
+  <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/TENSORFLOW-f4ebe1?style=flat&logo=tensorflow&logoColor=000000" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/SCIPY-f4ebe1?style=flat&logo=scipy&logoColor=000000" alt="SciPy" />
+  <img src="https://img.shields.io/badge/MATPLOTLIB-f4ebe1?style=flat&logoColor=000000" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/SEABORN-f4ebe1?style=flat&logoColor=000000" alt="Seaborn" />
+  <img src="https://img.shields.io/badge/EXCEL_AVANZADO-f4ebe1?style=flat&logo=microsoft-excel&logoColor=000000" alt="Excel" />
+  <img src="https://img.shields.io/badge/SQL-f4ebe1?style=flat&logoColor=000000" alt="SQL" />
+  <img src="https://img.shields.io/badge/GIT-f4ebe1?style=flat&logo=git&logoColor=000000" alt="Git" />
+  <img src="https://img.shields.io/badge/GITHUB-f4ebe1?style=flat&logo=github&logoColor=000000" alt="GitHub" />
+</p>
 
 ---
 
