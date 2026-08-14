@@ -36,8 +36,16 @@ Cuento con experiencia práctica en todo el ciclo de vida de los datos: desde **
 El objetivo de este proyecto es determinar la variable edafoclimática del suelo con mayor capacidad predictiva individual para clasificar **22 tipos de cultivo** mediante **Regresión Logística multiclase**. El estudio busca ayudar a los agricultores a tomar decisiones informadas sobre la selección de cultivos cuando cuentan con recursos o presupuestos limitados para análisis de laboratorio.
 
 ### Herramientas y tipo de proyecto
-`PYTHON` `PANDAS` `SCIKIT-LEARN` `LOGISTIC REGRESSION` 
-`ANÁLISIS EXPLORATORIO DE DATOS` `EVALUACIÓN DE FEATURES` `MODELADO PREDICTIVO` `APRENDIZAJE SUPERVISADO`
+<p align="left">
+  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat&logo=python&logoColor=000000" alt="Python" />
+  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat&logo=pandas&logoColor=000000" alt="Pandas" />
+  <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/LOGISTIC_REGRESSION-f4ebe1?style=flat&logoColor=000000" alt="Logistic Regression" />
+  <img src="https://img.shields.io/badge/ANÁLISIS_EXPLORATORIO-f4ebe1?style=flat&logoColor=000000" alt="EDA" />
+  <img src="https://img.shields.io/badge/EVALUACIÓN_DE_FEATURES-f4ebe1?style=flat&logoColor=000000" alt="Features" />
+  <img src="https://img.shields.io/badge/MODELADO_PREDICTIVO-f4ebe1?style=flat&logoColor=000000" alt="Modelado" />
+  <img src="https://img.shields.io/badge/APRENDIZAJE_SUPERVISADO-f4ebe1?style=flat&logoColor=000000" alt="Supervisado" />
+</p>
 
 ### Preguntas clave
 1. ¿Cuál es la distribución y balanceo de las categorías de cultivos en el conjunto de datos?
@@ -69,8 +77,19 @@ Implementación práctica: Priorizar la medición de potasio permite realizar un
 El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos de Palmer mediante **K-Means y PCA (Análisis de Componentes Principales)** a partir de sus dimensiones físicas y sexo. El estudio busca comprender la **estructura natural de los datos morfológicos**, identificar patrones de **dimorfismo sexual** e interpretar cómo se relacionan las características físicas sin requerir etiquetas previas.
 
 ### Herramientas y tipo de proyecto
-`PYTHON` `PANDAS` `MATPLOTLIB` `SCIKIT-LEARN` `K-MEANS` `PCA`
-`LIMPIEZA DE DATOS` `TRANSFORMACIÓN DE DATOS` `APRENDIZAJE NO SUPERVISADO` `REDUCCIÓN DE DIMENSIONALIDAD` `VISUALIZACIÓN DE DATOS`
+<p align="left">
+  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat&logo=python&logoColor=000000" alt="Python" />
+  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat&logo=pandas&logoColor=000000" alt="Pandas" />
+  <img src="https://img.shields.io/badge/MATPLOTLIB-f4ebe1?style=flat&logoColor=000000" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/K--MEANS-f4ebe1?style=flat&logoColor=000000" alt="K-Means" />
+  <img src="https://img.shields.io/badge/PCA-f4ebe1?style=flat&logoColor=000000" alt="PCA" />
+  <img src="https://img.shields.io/badge/LIMPIEZA_DE_DATOS-f4ebe1?style=flat&logoColor=000000" alt="Limpieza de Datos" />
+  <img src="https://img.shields.io/badge/TRANSFORMACIÓN_DE_DATOS-f4ebe1?style=flat&logoColor=000000" alt="Transformación" />
+  <img src="https://img.shields.io/badge/APRENDIZAJE_NO_SUPERVISADO-f4ebe1?style=flat&logoColor=000000" alt="No Supervisado" />
+  <img src="https://img.shields.io/badge/REDUCCIÓN_DE_DIMENSIONALIDAD-f4ebe1?style=flat&logoColor=000000" alt="Dimensionalidad" />
+  <img src="https://img.shields.io/badge/VISUALIZACIÓN_DE_DATOS-f4ebe1?style=flat&logoColor=000000" alt="Visualización" />
+</p>
 
 ### Preguntas clave
 1. ¿Cuál es la cantidad óptima de clusters ($k$) para agrupar los datos morfológicos y de sexo de los pingüinos?
@@ -125,8 +144,19 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
 El objetivo de este proyecto es construir un **modelo de regresión supervisado** que prediga con precisión el número de días que un cliente mantendrá un DVD alquilado. La empresa de alquiler requiere un modelo con un **MSE de 3.0 o menor** en el conjunto de prueba para **optimizar la gestión de inventario** y la planificación logística.
 
 ### Herramientas y tipo de proyecto
-`PYTHON` `PANDAS` `NUMPY` `SCIKIT-LEARN` `LASSO` `RANDOM FOREST`
-`ANÁLISIS EXPLORATORIO DE DATOS` `INGENIERÍA DE CARACTERÍSTICAS` `MODELOS PREDICTIVOS` `APRENDIZAJE SUPERVISADO` `REGRESIÓN`
+<p align="left">
+  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat&logo=python&logoColor=000000" alt="Python" />
+  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat&logo=pandas&logoColor=000000" alt="Pandas" />
+  <img src="https://img.shields.io/badge/NUMPY-f4ebe1?style=flat&logo=numpy&logoColor=000000" alt="NumPy" />
+  <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/LASSO-f4ebe1?style=flat&logoColor=000000" alt="Lasso" />
+  <img src="https://img.shields.io/badge/RANDOM_FOREST-f4ebe1?style=flat&logoColor=000000" alt="Random Forest" />
+  <img src="https://img.shields.io/badge/ANÁLISIS_EXPLORATORIO-f4ebe1?style=flat&logoColor=000000" alt="EDA" />
+  <img src="https://img.shields.io/badge/INGENIERÍA_DE_CARACTERÍSTICAS-f4ebe1?style=flat&logoColor=000000" alt="Feature Engineering" />
+  <img src="https://img.shields.io/badge/MODELO_PREDICTIVO-f4ebe1?style=flat&logoColor=000000" alt="Modelado" />
+  <img src="https://img.shields.io/badge/APRENDIZAJE_SUPERVISADO-f4ebe1?style=flat&logoColor=000000" alt="Supervisado" />
+  <img src="https://img.shields.io/badge/REGRESIÓN-f4ebe1?style=flat&logoColor=000000" alt="Regresión" />
+</p>
 
 ### Preguntas clave
 1. ¿Cómo se calcula la duración exacta del alquiler a partir de los datos de fecha y hora registrados?
@@ -160,8 +190,18 @@ El objetivo de este proyecto es construir un **modelo de regresión supervisado*
 El objetivo de este proyecto es realizar una **prueba de hipótesis no paramétrica** para determinar si en los partidos internacionales de **fútbol femenino** se marcan significativamente más goles por partido que en los de **fútbol masculino** en Copas del Mundo de la FIFA posteriores al 1 de enero de 2002. El análisis busca validar estadísticamente esta premisa para la redacción de un artículo de periodismo deportivo respaldado en datos.
 
 ### Herramientas y tipo de proyecto
-`PYTHON` `PANDAS` `MATPLOTLIB` `SCIPY` `MANN-WHITNEY U TEST`
-`LIMPIEZA DE DATOS` `FILTRADO TEMPORAL` `PRUEBA DE NORMALIDAD` `ESTADÍSTICA INFERENCIAL` `PRUEBA DE HIPÓTESIS`
+<p align="left">
+  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat&logo=python&logoColor=000000" alt="Python" />
+  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat&logo=pandas&logoColor=000000" alt="Pandas" />
+  <img src="https://img.shields.io/badge/MATPLOTLIB-f4ebe1?style=flat&logoColor=000000" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/SCIPY-f4ebe1?style=flat&logo=scipy&logoColor=000000" alt="SciPy" />
+  <img src="https://img.shields.io/badge/MANN--WHITNEY_U_TEST-f4ebe1?style=flat&logoColor=000000" alt="Mann-Whitney U Test" />
+  <img src="https://img.shields.io/badge/LIMPIEZA_DE_DATOS-f4ebe1?style=flat&logoColor=000000" alt="Limpieza de Datos" />
+  <img src="https://img.shields.io/badge/FILTRADO_TEMPORAL-f4ebe1?style=flat&logoColor=000000" alt="Filtrado Temporal" />
+  <img src="https://img.shields.io/badge/PRUEBA_DE_NORMALIDAD-f4ebe1?style=flat&logoColor=000000" alt="Normalidad" />
+  <img src="https://img.shields.io/badge/ESTADÍSTICA_INFERENCIAL-f4ebe1?style=flat&logoColor=000000" alt="Inferencia" />
+  <img src="https://img.shields.io/badge/PRUEBA_DE_HIPÓTESIS-f4ebe1?style=flat&logoColor=000000" alt="Prueba de Hipótesis" />
+</p>
 
 ### Preguntas clave
 1. ¿Sigue la variable de total de goles por partido una distribución normal en ambos grupos?
