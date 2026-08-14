@@ -150,6 +150,7 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
   **Interpretabilidad visual:** La proyección 2D confirma cuatro agrupaciones compactas y aisladas entre sí, con los centroides ($X$ rojas) perfectamente posicionados en el centro de densidad de cada grupo.
 
 **Explora más detalles del proyecto en el [repositorio completo](https://github.com/maxrtab/segmentacion-pinguinos-kmeans-pca).**
+
 ---
 
 ## 3. Predicción de Días de Alquiler de Películas DVD
