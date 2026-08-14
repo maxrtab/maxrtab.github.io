@@ -2,7 +2,7 @@
 <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/maxrtab/maxrtab.github.io/main/MifotoMax.jpeg&w=200&h=200&fit=cover&mask=circle" width="200" align="right" alt="Maximiliano Rojas Taboada" />
 
 <!-- Texto a la izquierda -->
-<h1>¡Hola! Soy Maximiliano Rojas Taboada 👋</h1>
+<h1>¡Hola! Soy Maximiliano Rojas Taboada</h1>
 <h3>Data Scientist | Machine Learning & AI Specialist</h3>
 
 <p>
