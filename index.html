@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maximiliano Rojas Taboada | Portafolio Ciencia de Datos</title>
   <style>
-    /* Estilos Generales */
+    /* Estilos Generales y Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
     * {
       box-sizing: border-box;
       margin: 0;
@@ -35,13 +38,13 @@
     nav a {
       margin-left: 20px;
       text-decoration: none;
-      color: #4a5568;
+      color: #718096; /* Gris atenuado inicial */
       font-weight: 500;
       font-size: 0.95rem;
-      transition: color 0.2s ease;
+      transition: color 0.25s ease;
     }
     nav a:hover {
-      color: #000000;
+      color: #000000; /* Transición a negro marcado */
     }
     
     /* Contenedor Principal */
@@ -64,7 +67,7 @@
 
     /* Recuadro 1: Hero / Bienvenida */
     .card-hero {
-      background-color: #f9f6f0; /* Tono hueso estilo la plantilla */
+      background-color: #f9f6f0;
       display: flex;
       align-items: center;
       gap: 40px;
@@ -84,12 +87,12 @@
     }
     .hero-text h3 {
       font-size: 1.15rem;
-      color: #4a5568;
+      color: #2d3748;
       font-weight: 600;
       margin-bottom: 16px;
     }
     .hero-text p {
-      color: #4a5568;
+      color: #2d3748;
       font-size: 1rem;
       margin-bottom: 24px;
     }
@@ -115,7 +118,7 @@
       color: #ffffff;
     }
     .btn-primary:hover {
-      background-color: #2d3748;
+      background-color: #000000;
       transform: translateY(-3px);
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
@@ -132,7 +135,7 @@
 
     /* Recuadro 2: Acerca de mí */
     .card-about {
-      background-color: #f0f4f8; /* Tono de contraste suave */
+      background-color: #f0f4f8;
     }
     .card-about h2 {
       font-size: 1.8rem;
@@ -141,7 +144,7 @@
     }
     .card-about p {
       margin-bottom: 16px;
-      color: #4a5568;
+      color: #2d3748;
       font-size: 1.02rem;
     }
     
@@ -151,7 +154,7 @@
     .skills-section h4 {
       font-size: 1.1rem;
       margin-bottom: 12px;
-      color: #2d3748;
+      color: #1a202c;
     }
     .skill-tag {
       display: inline-block;
@@ -172,6 +175,29 @@
       color: #ffffff;
     }
 
+    /* Footer Estilizado */
+    footer {
+      max-width: 1000px;
+      margin: 20px auto 40px auto;
+      padding: 25px 20px 0 20px;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      color: #718096;
+    }
+    .footer-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #718096;
+      font-weight: 500;
+      transition: color 0.25s ease;
+    }
+    .footer-links a:hover {
+      color: #000000;
+    }
+
     /* Responsivo para celulares */
     @media (max-width: 768px) {
       .card-hero {
@@ -186,11 +212,12 @@
       .btn-group {
         justify-content: center;
       }
-      header {
+      header, footer {
         flex-direction: column;
         gap: 15px;
+        text-align: center;
       }
-      nav a {
+      nav a, .footer-links a {
         margin: 0 10px;
       }
     }
@@ -206,7 +233,8 @@
       <a href="https://github.com/maxrtab" target="_blank">GitHub</a>
       <a href="#proyectos">Mis Proyectos</a>
       <a href="mailto:maxrt520@gmail.com">Contacto</a>
-      <a href="#" target="_blank">CV</a>
+      <!-- Enlace directo para descargar el CV -->
+      <a href="CV_Maximiliano_Rojas.pdf" download="CV_Maximiliano_Rojas.pdf">CV</a>
     </nav>
   </header>
 
@@ -255,11 +283,11 @@
       </div>
     </section>
 
-    <!-- SECCIÓN DE PROYECTOS (AQUÍ DENTRO DEL CONTAINER) -->
+    <!-- SECCIÓN DE PROYECTOS -->
     <div id="proyectos">
       <h2 style="font-size: 1.8rem; margin: 40px 0 20px 0; color: #1a202c;">Mis Proyectos</h2>
 
-      <!-- PROYECTO 1: Tono Hueso (#f9f6f0) -->
+      <!-- PROYECTO 1 -->
       <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 15px;">
         <h3 style="font-size: 1.5rem; color: #1a202c;">1. Modelado Predictivo para la Optimización de Cultivos Agrícolas</h3>
         
@@ -275,8 +303,8 @@
         </div>
 
         <div style="margin-top: 10px;">
-          <h4 style="font-size: 1.05rem; color: #2d3748; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
-          <ul style="color: #4a5568; line-height: 1.6; padding-left: 20px;">
+          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+          <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
             <li><strong>Potasio (K) determinante:</strong> Logró el mayor poder predictivo univariado con un <strong>Weighted F₁-score de 0.2511</strong> (frente a 0.1360 del Fósforo y 0.0946 del Nitrógeno).</li>
             <li><strong>Impacto comercial:</strong> Priorizar la medición de potasio permite realizar una preselección eficiente del cultivo con presupuesto limitado antes de realizar análisis químicos complejos.</li>
           </ul>
@@ -287,7 +315,7 @@
         </div>
       </section>
 
-      <!-- PROYECTO 2: Tono Azul Suave (#f0f4f8) -->
+      <!-- PROYECTO 2 -->
       <section class="card card-about" style="flex-direction: column; align-items: flex-start; gap: 15px;">
         <h3 style="font-size: 1.5rem; color: #1a202c;">2. Agrupación de Especies de Pingüinos con Aprendizaje No Supervisado (K-Means & PCA)</h3>
         
@@ -303,8 +331,8 @@
         </div>
 
         <div style="margin-top: 10px;">
-          <h4 style="font-size: 1.05rem; color: #2d3748; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
-          <ul style="color: #4a5568; line-height: 1.6; padding-left: 20px;">
+          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+          <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
             <li><strong>k = 4 óptimo:</strong> Identificado mediante el Método del Codo, diferenciando con precisión combinaciones de especie y dimorfismo sexual (macho/hembra).</li>
             <li><strong>Explicabilidad con PCA:</strong> Las primeras 2 componentes principales retienen más del <strong>80% de la varianza total</strong>, proyectando clusters aislados y centroides definidos.</li>
           </ul>
@@ -321,7 +349,7 @@
         </div>
       </section>
 
-      <!-- PROYECTO 3: Tono Hueso (#f9f6f0) -->
+      <!-- PROYECTO 3 -->
       <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 15px;">
         <h3 style="font-size: 1.5rem; color: #1a202c;">3. Predicción de Días de Alquiler de Películas DVD</h3>
         
@@ -336,8 +364,8 @@
         </div>
 
         <div style="margin-top: 10px;">
-          <h4 style="font-size: 1.05rem; color: #2d3748; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
-          <ul style="color: #4a5568; line-height: 1.6; padding-left: 20px;">
+          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+          <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
             <li><strong>Reducción de variables con Lasso:</strong> Filtrado automático de 14 variables iniciales a solo 4 características financieras/morfológicas clave.</li>
             <li><strong>Meta superada:</strong> El modelo <code>RandomForestRegressor</code> alcanzó un <strong>MSE de 2.39</strong> en prueba, superando el requerimiento del negocio (MSE ≤ 3.0).</li>
           </ul>
@@ -348,7 +376,7 @@
         </div>
       </section>
 
-      <!-- PROYECTO 4: Tono Azul Suave (#f0f4f8) -->
+      <!-- PROYECTO 4 -->
       <section class="card card-about" style="flex-direction: column; align-items: flex-start; gap: 15px;">
         <h3 style="font-size: 1.5rem; color: #1a202c;">4. Análisis Estadístico de Goles en el Fútbol Internacional</h3>
         
@@ -363,8 +391,8 @@
         </div>
 
         <div style="margin-top: 10px;">
-          <h4 style="font-size: 1.05rem; color: #2d3748; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
-          <ul style="color: #4a5568; line-height: 1.6; padding-left: 20px;">
+          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+          <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
             <li><strong>Prueba U de Mann-Whitney:</strong> Arrojó un <strong>p-value de 0.0051</strong> (mucha menor significancia que el α = 0.10 establecido).</li>
             <li><strong>Conclusión estadística:</strong> Se rechazó H₀, confirmando con solidez metodológica que en los partidos femeninos de Copas del Mundo se anotan más goles por partido en promedio.</li>
           </ul>
@@ -383,6 +411,16 @@
     </div> <!-- Cierre de #proyectos -->
 
   </div> <!-- Cierre del container principal -->
+
+  <!-- Footer al final de la página -->
+  <footer>
+    <div>© Maximiliano Rojas Taboada</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/maximilianorojastaboada" target="_blank">LinkedIn</a>
+      <a href="https://github.com/maxrtab" target="_blank">GitHub</a>
+      <a href="mailto:maxrt520@gmail.com">maxrt520@gmail.com</a>
+    </div>
+  </footer>
 
 </body>
 </html>
