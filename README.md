@@ -81,8 +81,8 @@ El objetivo de este proyecto es determinar la variable edafoclimática del suelo
 ### Relevancia técnica y comercial:
 Optimización de costos en campo: Si un agricultor cuenta con presupuesto limitado y solo puede medir una propiedad química del suelo, se recomienda priorizar el potasio ($K$), ya que ofrece casi el doble de capacidad discriminatoria que el fósforo.
 Implementación práctica: Priorizar la medición de potasio permite realizar una preselección eficiente del cultivo idóneo antes de realizar inversiones mayores en análisis químicos completos.
-
 **Explora más detalles del proyecto en el [repositorio completo](https://github.com/maxrtab/optimizacion-cultivos-ml).**
+
 ---
 
 ## 2. Agrupación de Especies de Pingüinos de la Antartica con Aprendizaje No Supervisado (K-Means & PCA) 
