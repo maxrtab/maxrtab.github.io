@@ -37,7 +37,8 @@ Cuento con experiencia práctica en todo el ciclo de vida de los datos: desde **
   <img src="https://img.shields.io/badge/GITHUB-f4ebe1?style=flat&logo=github&logoColor=000000" alt="GitHub" />
 </p>
 
-**Competencias clave:** Pensamiento analítico, adaptación a entornos cambiantes, comunicación efectiva y trabajo colaborativo.
+### Competencias clave
+Pensamiento analítico, adaptación a entornos cambiantes, comunicación efectiva y trabajo colaborativo.
 
 ---
 
