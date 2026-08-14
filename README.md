@@ -34,7 +34,7 @@ Cuento con experiencia práctica en todo el ciclo de vida de los datos: desde **
 ### Habilidades tecnológicas
 
 <p align="left">
-  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat&logo=python&logoColor=000000" alt="Python" />
+  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat-square&logo=python&logoColor=000000" alt="Python" />
   <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat&logo=pandas&logoColor=000000" alt="Pandas" />
   <img src="https://img.shields.io/badge/NUMPY-f4ebe1?style=flat&logo=numpy&logoColor=000000" alt="NumPy" />
   <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
