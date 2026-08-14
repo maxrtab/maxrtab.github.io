@@ -11,8 +11,11 @@
       </p>
       <br>
       <!-- Botones de contacto con estilo hueso -->
-      <a href="https://www.linkedin.com/in/maximilianorojastaboada"><img src="https://img.shields.io/badge/LinkedIn-f4ebe1?style=flat&logo=linkedin&logoColor=000000" alt="LinkedIn" /></a>
-      <a href="mailto:maxrt520@gmail.com"><img src="https://img.shields.io/badge/Email-f4ebe1?style=flat&logo=mail&logoColor=000000" alt="Email" /></a>
+      <!-- Estilo moderno plano (Flat Square) -->
+<p align="left">
+  <a href="https://www.linkedin.com/in/maximilianorojastaboada"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:maxrt520@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
     </td>
     <td width="35%" align="center" valign="middle">
       <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/maxrtab/maxrtab.github.io/main/MifotoMax.jpeg&w=220&h=220&fit=cover&mask=circle" width="220" alt="Maximiliano Rojas Taboada">
