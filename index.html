@@ -221,6 +221,43 @@
         margin: 0 10px;
       }
     }
+
+    /* Estilo Pill para el botón de detalles */
+    .details-pill {
+      border: 1px solid #e2e8f0;
+      border-radius: 50px;
+      background-color: #ffffff;
+      padding: 12px 24px;
+      transition: all 0.3s ease;
+      margin-bottom: 5px;
+      width: 100%;
+    }
+    .details-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      border-color: #cbd5e0;
+    }
+    .details-pill summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #1a202c;
+      font-size: 0.95rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .details-pill summary::-webkit-details-marker {
+      display: none;
+    }
+    .details-pill summary::after {
+      content: '↓';
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+    .details-pill[open] summary::after {
+      transform: rotate(180deg);
+    }
   </style>
 </head>
 <body>
@@ -288,7 +325,7 @@
       <h2 style="font-size: 1.8rem; margin: 40px 0 20px 0; color: #1a202c;">Mis Proyectos</h2>
 
       <!-- PROYECTO 1 -->
-      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 20px;">
+      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 18px;">
         <h3 style="font-size: 1.5rem; color: #1a202c;">1. Modelado Predictivo para la Optimización de Cultivos Agrícolas</h3>
         
         <p style="color: #2d3748;">
@@ -296,7 +333,7 @@
         </p>
 
         <!-- Etiquetas tecnológicas -->
-        <div class="skills-section" style="margin-top: 0;">
+        <div class="skills-section" style="margin-top: 0; margin-bottom: 5px;">
           <span class="skill-tag">Python</span>
           <span class="skill-tag">Pandas</span>
           <span class="skill-tag">Scikit-Learn</span>
@@ -307,20 +344,9 @@
           <span class="skill-tag">Aprendizaje Supervisado</span>
         </div>
 
-        <!-- Hallazgos y Resultados Clave (Visibles de inmediato) -->
-        <div style="width: 100%;">
-          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
-          <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
-            <li><strong>Potasio (K) determinante:</strong> La evaluación del <em>Weighted F₁-score</em> identificó al Potasio como la variable de mayor relevancia con un puntaje de <strong>0.2511</strong> (frente a 0.1360 del Fósforo, 0.0946 del Nitrógeno y 0.0453 del pH).</li>
-            <li><strong>Optimización de costos en campo:</strong> Si un agricultor cuenta con presupuesto limitado para análisis de laboratorio, priorizar la medición de Potasio ofrece casi el doble de capacidad discriminatoria que cualquier otro elemento para una preselección eficiente del cultivo.</li>
-          </ul>
-        </div>
-
-        <!-- Acordeón Desplegable: Preguntas clave y Metodología -->
-        <details style="width: 100%; background-color: #ffffff; padding: 16px 20px; border-radius: 12px; border: 1px solid #e2e8f0; cursor: pointer;">
-          <summary style="font-weight: 600; color: #1a202c; font-size: 0.95rem;">
-            Ver preguntas clave y metodología del proyecto
-          </summary>
+        <!-- 1. Botón Pill Desplegable (Primero) -->
+        <details class="details-pill">
+          <summary>Ver preguntas clave y metodología del proyecto</summary>
           
           <div style="margin-top: 15px; border-top: 1px solid #edf2f7; padding-top: 15px; cursor: default;">
             <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Preguntas clave:</h5>
@@ -340,9 +366,18 @@
           </div>
         </details>
 
+        <!-- 2. Hallazgos y Resultados Clave (Después) -->
+        <div style="width: 100%;">
+          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
+          <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
+            <li><strong>Potasio (K) determinante:</strong> La evaluación del <em>Weighted F₁-score</em> identificó al Potasio como la variable de mayor relevancia con un puntaje de <strong>0.2511</strong> (frente a 0.1360 del Fósforo, 0.0946 del Nitrógeno y 0.0453 del pH).</li>
+            <li><strong>Optimización de costos en campo:</strong> Si un agricultor cuenta con presupuesto limitado para análisis de laboratorio, priorizar la medición de Potasio ofrece casi el doble de capacidad discriminatoria que cualquier otro elemento para una preselección eficiente del cultivo.</li>
+          </ul>
+        </div>
+
         <!-- Botón al repositorio -->
-        <div style="margin-top: 5px;">
-          <a href="https://github.com/maxrtab/optimizacion-cultivos-ml" target="_blank" class="btn btn-primary">Ver Repositorio Completo en GitHub ↗</a>
+        <div style="margin-top: 10px;">
+          <a href="https://github.com/maxrtab/optimizacion-cultivos-ml" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
         </div>
       </section>
 
@@ -362,7 +397,7 @@
         </div>
 
         <div style="margin-top: 10px;">
-          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
           <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
             <li><strong>k = 4 óptimo:</strong> Identificado mediante el Método del Codo, diferenciando con precisión combinaciones de especie y dimorfismo sexual (macho/hembra).</li>
             <li><strong>Explicabilidad con PCA:</strong> Las primeras 2 componentes principales retienen más del <strong>80% de la varianza total</strong>, proyectando clusters aislados y centroides definidos.</li>
@@ -376,7 +411,7 @@
         </div>
 
         <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/Clustering-Penguin-Species" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/Clustering-Penguin-Species" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio en GitHub ↗</a>
         </div>
       </section>
 
@@ -395,7 +430,7 @@
         </div>
 
         <div style="margin-top: 10px;">
-          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
           <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
             <li><strong>Reducción de variables con Lasso:</strong> Filtrado automático de 14 variables iniciales a solo 4 características financieras/morfológicas clave.</li>
             <li><strong>Meta superada:</strong> El modelo <code>RandomForestRegressor</code> alcanzó un <strong>MSE de 2.39</strong> en prueba, superando el requerimiento del negocio (MSE ≤ 3.0).</li>
@@ -403,7 +438,7 @@
         </div>
 
         <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/Rental-Length-Prediction" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/Rental-Length-Prediction" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio en GitHub ↗</a>
         </div>
       </section>
 
@@ -422,7 +457,7 @@
         </div>
 
         <div style="margin-top: 10px;">
-          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
           <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
             <li><strong>Prueba U de Mann-Whitney:</strong> Arrojó un <strong>p-value de 0.0051</strong> (mucha menor significancia que el α = 0.10 establecido).</li>
             <li><strong>Conclusión estadística:</strong> Se rechazó H₀, confirmando con solidez metodológica que en los partidos femeninos de Copas del Mundo se anotan más goles por partido en promedio.</li>
@@ -435,7 +470,7 @@
         </div>
 
         <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/International-Football-Goal-Analysis" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/International-Football-Goal-Analysis" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio en GitHub ↗</a>
         </div>
       </section>
 
