@@ -2,7 +2,7 @@
 <table border="0">
   <tr>
     <td width="65%" valign="middle">
-      <h1>¡Hola!, Soy Maximiliano Rojas Taboada </h1>
+      <h1>¡Hola! Soy Maximiliano Rojas Taboada </h1>
       <h3>Data Scientist | Machine Learning & AI Specialist</h3>
       <p>
         ¡Te doy la bienvenida a mi portafolio de Ciencia de Datos e Inteligencia Artificial! 
