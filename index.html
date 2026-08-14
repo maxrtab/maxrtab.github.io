@@ -38,13 +38,13 @@
     nav a {
       margin-left: 20px;
       text-decoration: none;
-      color: #718096; /* Gris atenuado inicial */
+      color: #718096;
       font-weight: 500;
       font-size: 0.95rem;
       transition: color 0.25s ease;
     }
     nav a:hover {
-      color: #000000; /* Transición a negro marcado */
+      color: #000000;
     }
     
     /* Contenedor Principal */
@@ -97,7 +97,7 @@
       margin-bottom: 24px;
     }
 
-    /* Botones Interactivos */
+    /* Botones Interactivos Píldora */
     .btn-group {
       display: flex;
       gap: 12px;
@@ -105,8 +105,8 @@
     }
     .btn {
       display: inline-block;
-      padding: 10px 22px;
-      border-radius: 12px;
+      padding: 10px 24px;
+      border-radius: 50px; /* Borde de píldora redondeado */
       font-weight: 600;
       font-size: 0.9rem;
       text-decoration: none;
@@ -116,6 +116,7 @@
     .btn-primary {
       background-color: #1a202c;
       color: #ffffff;
+      border: 1px solid #1a202c;
     }
     .btn-primary:hover {
       background-color: #000000;
@@ -130,7 +131,8 @@
     .btn-secondary:hover {
       background-color: #f7fafc;
       transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      border-color: #cbd5e0;
     }
 
     /* Recuadro 2: Acerca de mí */
@@ -156,8 +158,12 @@
       margin-bottom: 12px;
       color: #1a202c;
     }
+
+    /* Etiquetas tecnológicas con logos */
     .skill-tag {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       background-color: #ffffff;
       color: #2d3748;
       padding: 8px 16px;
@@ -168,11 +174,19 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.03);
       transition: all 0.2s ease;
     }
+    .skill-tag img {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+    }
     .skill-tag:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       background-color: #1a202c;
       color: #ffffff;
+    }
+    .skill-tag:hover img {
+      filter: brightness(0) invert(1); /* Vuelve el icono blanco al hacer hover */
     }
 
     /* Footer Estilizado */
@@ -222,20 +236,20 @@
       }
     }
 
-    /* Estilo Pill para el botón de detalles */
+    /* Botón Pill Desplegable (Sin Borde) */
     .details-pill {
-      border: 1px solid #e2e8f0;
+      border: none; /* Se elimina el contorno */
       border-radius: 50px;
       background-color: #ffffff;
       padding: 12px 24px;
       transition: all 0.3s ease;
       margin-bottom: 5px;
       width: 100%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
     }
     .details-pill:hover {
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-      border-color: #cbd5e0;
     }
     .details-pill summary {
       cursor: pointer;
@@ -246,6 +260,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      user-select: none;
     }
     .details-pill summary::-webkit-details-marker {
       display: none;
@@ -253,10 +268,26 @@
     .details-pill summary::after {
       content: '↓';
       font-weight: bold;
-      transition: transform 0.3s ease;
+      transition: transform 0.4s ease;
     }
     .details-pill[open] summary::after {
       transform: rotate(180deg);
+    }
+
+    /* Transición Suave y Lenta para el Desplegable */
+    .details-pill .details-content {
+      animation: slideDown 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      overflow: hidden;
+    }
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -270,7 +301,6 @@
       <a href="https://github.com/maxrtab" target="_blank">GitHub</a>
       <a href="#proyectos">Mis Proyectos</a>
       <a href="mailto:maxrt520@gmail.com">Contacto</a>
-      <!-- Enlace directo para descargar el CV -->
       <a href="CV_Maximiliano_Rojas.pdf" download="CV_Maximiliano_Rojas.pdf">CV</a>
     </nav>
   </header>
@@ -300,18 +330,18 @@
 
       <div class="skills-section">
         <h4>Habilidades tecnológicas</h4>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">Pandas</span>
-        <span class="skill-tag">NumPy</span>
-        <span class="skill-tag">Scikit-Learn</span>
-        <span class="skill-tag">TensorFlow</span>
-        <span class="skill-tag">SciPy</span>
-        <span class="skill-tag">Matplotlib</span>
-        <span class="skill-tag">Seaborn</span>
-        <span class="skill-tag">Excel Avanzado</span>
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span>
+        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">Pandas</span>
+        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">NumPy</span>
+        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn">Scikit-Learn</span>
+        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">TensorFlow</span>
+        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="SciPy">SciPy</span>
+        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Matplotlib">Matplotlib</span>
+        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Seaborn">Seaborn</span>
+        <span class="skill-tag"><img src="https://img.icons8.com/color/48/000000/ms-excel.png" alt="Excel">Excel Avanzado</span>
+        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">SQL</span>
+        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">Git</span>
+        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">GitHub</span>
       </div>
 
       <div class="skills-section" style="margin-top: 15px;">
@@ -332,23 +362,23 @@
           El objetivo de este proyecto es determinar la variable edafoclimática del suelo con mayor capacidad predictiva individual para clasificar <strong>22 tipos de cultivo</strong> mediante <strong>Regresión Logística multiclase</strong>. El estudio busca ayudar a los agricultores a tomar decisiones informadas sobre la selección de cultivos cuando cuentan con recursos o presupuestos limitados para análisis de laboratorio.
         </p>
 
-        <!-- Etiquetas tecnológicas -->
+        <!-- Etiquetas tecnológicas con logos -->
         <div class="skills-section" style="margin-top: 0; margin-bottom: 5px;">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Pandas</span>
-          <span class="skill-tag">Scikit-Learn</span>
-          <span class="skill-tag">Logistic Regression</span>
-          <span class="skill-tag">Análisis Exploratorio</span>
-          <span class="skill-tag">Evaluación de Features</span>
-          <span class="skill-tag">Modelado Predictivo</span>
-          <span class="skill-tag">Aprendizaje Supervisado</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">Pandas</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn">Scikit-Learn</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Logistic Regression">Logistic Regression</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Análisis Exploratorio">Análisis Exploratorio</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Evaluación de Features">Evaluación de Features</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Modelado Predictivo">Modelado Predictivo</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Aprendizaje Supervisado">Aprendizaje Supervisado</span>
         </div>
 
-        <!-- 1. Botón Pill Desplegable (Primero) -->
+        <!-- 1. Botón Pill Desplegable (Sin Contorno) -->
         <details class="details-pill">
           <summary>Ver preguntas clave y metodología del proyecto</summary>
           
-          <div style="margin-top: 15px; border-top: 1px solid #edf2f7; padding-top: 15px; cursor: default;">
+          <div class="details-content" style="margin-top: 15px; border-top: 1px solid #edf2f7; padding-top: 15px; cursor: default;">
             <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Preguntas clave:</h5>
             <ol style="color: #2d3748; line-height: 1.6; padding-left: 20px; margin-bottom: 15px; font-size: 0.92rem;">
               <li>¿Cuál es la distribución y balanceo de las categorías de cultivos en el conjunto de datos?</li>
@@ -366,7 +396,7 @@
           </div>
         </details>
 
-        <!-- 2. Hallazgos y Resultados Clave (Después) -->
+        <!-- 2. Hallazgos y Resultados Clave -->
         <div style="width: 100%;">
           <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
           <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
@@ -377,7 +407,7 @@
 
         <!-- Botón al repositorio -->
         <div style="margin-top: 10px;">
-          <a href="https://github.com/maxrtab/optimizacion-cultivos-ml" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/optimizacion-cultivos-ml" target="_blank" class="btn btn-primary">Ver Repositorio Completo en GitHub ↗</a>
         </div>
       </section>
 
@@ -388,12 +418,12 @@
         <p>Agrupación morfológica y segmentación de dimorfismo sexual en especímenes de pingüinos de Palmer aplicando <strong>K-Means</strong> y reducción de dimensionalidad con <strong>PCA</strong> sin necesidad de etiquetas previas.</p>
 
         <div class="skills-section" style="margin-top: 5px;">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Scikit-Learn</span>
-          <span class="skill-tag">K-Means</span>
-          <span class="skill-tag">PCA</span>
-          <span class="skill-tag">Matplotlib</span>
-          <span class="skill-tag">Aprendizaje No Supervisado</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn">Scikit-Learn</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="K-Means">K-Means</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="PCA">PCA</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Matplotlib">Matplotlib</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Aprendizaje No Supervisado">Aprendizaje No Supervisado</span>
         </div>
 
         <div style="margin-top: 10px;">
@@ -411,7 +441,7 @@
         </div>
 
         <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/Clustering-Penguin-Species" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/Clustering-Penguin-Species" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
         </div>
       </section>
 
@@ -422,11 +452,11 @@
         <p>Construcción de un modelo de regresión supervisado para predecir el tiempo de retención de alquileres de DVD, optimizando la gestión de inventario y evitando quiebres de stock.</p>
 
         <div class="skills-section" style="margin-top: 5px;">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Scikit-Learn</span>
-          <span class="skill-tag">Random Forest</span>
-          <span class="skill-tag">Lasso Regularization</span>
-          <span class="skill-tag">Feature Engineering</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn">Scikit-Learn</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Random Forest">Random Forest</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Lasso Regularization">Lasso Regularization</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Feature Engineering">Feature Engineering</span>
         </div>
 
         <div style="margin-top: 10px;">
@@ -438,7 +468,7 @@
         </div>
 
         <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/Rental-Length-Prediction" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/Rental-Length-Prediction" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
         </div>
       </section>
 
@@ -449,11 +479,11 @@
         <p>Prueba de hipótesis no paramétrica para determinar si en los partidos internacionales de fútbol femenino se marcan significativamente más goles por partido que en los masculinos desde 2002.</p>
 
         <div class="skills-section" style="margin-top: 5px;">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">SciPy</span>
-          <span class="skill-tag">Mann-Whitney U Test</span>
-          <span class="skill-tag">Prueba de Hipótesis</span>
-          <span class="skill-tag">Estadística Inferencial</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="SciPy">SciPy</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Mann-Whitney U Test">Mann-Whitney U Test</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Prueba de Hipótesis">Prueba de Hipótesis</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Estadística Inferencial">Estadística Inferencial</span>
         </div>
 
         <div style="margin-top: 10px;">
@@ -470,7 +500,7 @@
         </div>
 
         <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/International-Football-Goal-Analysis" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/International-Football-Goal-Analysis" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
         </div>
       </section>
 
