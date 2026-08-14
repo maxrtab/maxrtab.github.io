@@ -11,7 +11,35 @@
       </p>
       <br>
       <!-- Botones de contacto con estilo hueso -->
+      <a href="https://<!-- Encabezado Estilo "Hi, I'm Hannah" (Lado a Lado) -->
+<table border="0">
+  <tr>
+    <td width="65%" valign="middle">
+      <h1>Hi, I'm Max 👋</h1>
+      <h3>Data Scientist | Machine Learning & AI Specialist</h3>
+      <p>
+        ¡Te doy la bienvenida a mi portafolio de Ciencia de Datos e Inteligencia Artificial! 
+        Aquí encontrarás proyectos donde transformo datos complejos en modelos predictivos, 
+        análisis estadísticos y soluciones accionables, combinando el rigor del método científico con la tecnología.
+      </p>
+      <br>
+      <!-- Botones de contacto con estilo hueso -->
       <a href="https://www.linkedin.com/in/TU-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-f4ebe1?style=flat&logo=linkedin&logoColor=000000" alt="LinkedIn" /></a>
+      <a href="mailto:maxrt520@gmail.com"><img src="https://img.shields.io/badge/Email-f4ebe1?style=flat&logo=mail&logoColor=000000" alt="Email" /></a>
+    </td>
+    <td width="35%" align="center" valign="middle">
+      <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/maxrtab/maxrtab.github.io/main/MifotoMax.jpeg&w=220&h=220&fit=cover&mask=circle" width="220" alt="Maximiliano Rojas Taboada">
+    </td>
+  </tr>
+</table>
+
+---
+
+## Acerca de mí
+
+Soy **Egresado en Diseño Molecular y Nanoquímica** con un **Diplomado en Inteligencia Artificial** por la Universidad Anáhuac. Apasionado por la intersección entre la ciencia y la tecnología, me especializo en aplicar herramientas de **Ciencia de Datos, Machine Learning y Deep Learning** al análisis y optimización de sistemas complejos.
+
+Cuento con experiencia práctica en todo el ciclo de vida de los datos: desde **Análisis Exploratorio de Datos (EDA)**, **Ingeniería de Características** y **Modelado Predictivo**, hasta el manejo avanzado de **Excel** adquirido en el sector bancario."><img src="https://img.shields.io/badge/LinkedIn-f4ebe1?style=flat&logo=linkedin&logoColor=000000" alt="LinkedIn" /></a>
       <a href="mailto:maxrt520@gmail.com"><img src="https://img.shields.io/badge/Email-f4ebe1?style=flat&logo=mail&logoColor=000000" alt="Email" /></a>
     </td>
     <td width="35%" align="center" valign="middle">
