@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="tu_foto.jpg" width="180" style="border-radius: 50%;" alt="Maximiliano Rojas Taboada">
+  <img src="MifotoMax.jpeg" width="180" style="border-radius: 50%;" alt="Maximiliano Rojas Taboada">
 </p>
 
 <h1 align="center">Maximiliano Rojas Taboada</h1>
