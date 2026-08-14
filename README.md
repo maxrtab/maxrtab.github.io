@@ -29,7 +29,7 @@ Cuento con experiencia práctica en todo el ciclo de vida de los datos: desde **
 
 # Proyectos seleccionados
 
----
+
 
 ## 1. Modelado Predictivo para la Optimización de Cultivos Agrícolas
 
