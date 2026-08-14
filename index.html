@@ -256,19 +256,34 @@
     </section>
 
   </div>
-  <!-- SECCIÓN PROYECTOS -->
+  
+  <!-- SECCIÓN PROYECTOS UNIFICADOS CON ESTILO SUPERIOR -->
 <section id="proyectos" style="margin-top: 50px;">
-  <h2 style="font-size: 28px; margin-bottom: 30px; border-bottom: 2px solid #eaeaea; padding-bottom: 10px;">Proyectos Seleccionados</h2>
+  <h2 style="font-size: 26px; color: #2c3e50; margin-bottom: 25px; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px;">Proyectos Seleccionados</h2>
 
-  <!-- PROYECTO 1 -->
-  <article class="card" style="background: #ffffff; border-radius: 12px; padding: 30px; margin-bottom: 35px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee;">
-    <h3 style="font-size: 22px; color: #1a1a1a; margin-top: 0;">1. Modelado Predictivo para la Optimización de Cultivos Agrícolas</h3>
+  <!-- CSS para el efecto Hover en las tarjetas -->
+  <style>
+    .project-card {
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      transition: all 0.3s ease-in-out;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12) !important;
+    }
+  </style>
+
+  <!-- PROYECTO 1 (Estilo Hueso / Beige) -->
+  <article class="project-card" style="background-color: #F9F6F0; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+    <h3 style="font-size: 22px; color: #2c3e50; margin-top: 0;">1. Modelado Predictivo para la Optimización de Cultivos Agrícolas</h3>
     
-    <p style="color: #555; font-size: 15px;">
+    <p style="color: #4A5568; font-size: 15px; line-height: 1.6;">
       Determiné la variable edafoclimática del suelo con mayor capacidad predictiva univariada para clasificar <strong>22 tipos de cultivo</strong> mediante <strong>Regresión Logística multiclase</strong>, permitiendo optimizar costos de análisis de laboratorio para agricultores.
     </p>
 
-    <!-- Badges de Tecnologías -->
     <div style="margin: 15px 0;">
       <span class="skill-tag">Python</span>
       <span class="skill-tag">Pandas</span>
@@ -279,23 +294,23 @@
     </div>
 
     <div style="margin-top: 20px;">
-      <h4 style="font-size: 16px; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
-      <ul style="color: #444; line-height: 1.7; padding-left: 20px;">
+      <h4 style="font-size: 16px; color: #2c3e50; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+      <ul style="color: #4A5568; line-height: 1.7; padding-left: 20px;">
         <li><strong>Potasio (K) determinante:</strong> Logró el mayor poder predictivo univariado con un <strong>Weighted F₁-score de 0.2511</strong> (frente a 0.1360 del Fósforo y 0.0946 del Nitrógeno).</li>
         <li><strong>Impacto comercial:</strong> Priorizar la medición de potasio permite realizar una preselección eficiente del cultivo con presupuesto limitado antes de realizar análisis químicos complejos.</li>
       </ul>
     </div>
 
     <div style="margin-top: 25px;">
-      <a href="https://github.com/maxrtab/optimizacion-cultivos-ml" target="_blank" class="btn" style="background: #1a1a1a; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 600; display: inline-block;">Ver Repositorio en GitHub ↗</a>
+      <a href="https://github.com/maxrtab/optimizacion-cultivos-ml" target="_blank" class="btn" style="background: #2c3e50; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 600; display: inline-block;">Ver Repositorio en GitHub ↗</a>
     </div>
   </article>
 
-  <!-- PROYECTO 2 -->
-  <article class="card" style="background: #ffffff; border-radius: 12px; padding: 30px; margin-bottom: 35px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee;">
-    <h3 style="font-size: 22px; color: #1a1a1a; margin-top: 0;">2. Agrupación de Especies de Pingüinos con Aprendizaje No Supervisado (K-Means & PCA)</h3>
+  <!-- PROYECTO 2 (Estilo Azul Tenue) -->
+  <article class="project-card" style="background-color: #EBF3F5; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+    <h3 style="font-size: 22px; color: #2c3e50; margin-top: 0;">2. Agrupación de Especies de Pingüinos con Aprendizaje No Supervisado (K-Means & PCA)</h3>
     
-    <p style="color: #555; font-size: 15px;">
+    <p style="color: #4A5568; font-size: 15px; line-height: 1.6;">
       Agrupación morfológica y segmentación de dimorfismo sexual en especímenes de pingüinos de Palmer aplicando <strong>K-Means</strong> y reducción de dimensionalidad con <strong>PCA</strong> sin necesidad de etiquetas previas.
     </p>
 
@@ -309,30 +324,29 @@
     </div>
 
     <div style="margin-top: 20px;">
-      <h4 style="font-size: 16px; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
-      <ul style="color: #444; line-height: 1.7; padding-left: 20px;">
+      <h4 style="font-size: 16px; color: #2c3e50; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+      <ul style="color: #4A5568; line-height: 1.7; padding-left: 20px;">
         <li><strong>k = 4 óptimo:</strong> Identificado mediante el Método del Codo, diferenciando con precisión combinaciones de especie y dimorfismo sexual (macho/hembra).</li>
         <li><strong>Explicabilidad con PCA:</strong> Las primeras 2 componentes principales retienen más del <strong>80% de la varianza total</strong>, proyectando clusters aislados y centroides definidos.</li>
       </ul>
     </div>
 
-    <!-- Visualizaciones en grid -->
     <div style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
-      <img src="Metodo_codo.png" alt="Método del Codo" style="width: 31%; min-width: 200px; border-radius: 8px; border: 1px solid #ddd;">
-      <img src="varianza_pca.png" alt="Varianza PCA" style="width: 31%; min-width: 200px; border-radius: 8px; border: 1px solid #ddd;">
-      <img src="clusters_pca.png" alt="Clusters PCA" style="width: 31%; min-width: 200px; border-radius: 8px; border: 1px solid #ddd;">
+      <img src="Metodo_codo.png" alt="Método del Codo" style="width: 31%; min-width: 200px; border-radius: 8px; border: 1px solid #c8d6e5;">
+      <img src="varianza_pca.png" alt="Varianza PCA" style="width: 31%; min-width: 200px; border-radius: 8px; border: 1px solid #c8d6e5;">
+      <img src="clusters_pca.png" alt="Clusters PCA" style="width: 31%; min-width: 200px; border-radius: 8px; border: 1px solid #c8d6e5;">
     </div>
 
     <div style="margin-top: 25px;">
-      <a href="https://github.com/maxrtab/segmentacion-pinguinos-kmeans-pca" target="_blank" class="btn" style="background: #1a1a1a; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 600; display: inline-block;">Ver Repositorio en GitHub ↗</a>
+      <a href="https://github.com/maxrtab/segmentacion-pinguinos-kmeans-pca" target="_blank" class="btn" style="background: #2c3e50; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 600; display: inline-block;">Ver Repositorio en GitHub ↗</a>
     </div>
   </article>
 
-  <!-- PROYECTO 3 -->
-  <article class="card" style="background: #ffffff; border-radius: 12px; padding: 30px; margin-bottom: 35px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee;">
-    <h3 style="font-size: 22px; color: #1a1a1a; margin-top: 0;">3. Predicción de Días de Alquiler de Películas DVD</h3>
+  <!-- PROYECTO 3 (Estilo Hueso / Beige) -->
+  <article class="project-card" style="background-color: #F9F6F0; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+    <h3 style="font-size: 22px; color: #2c3e50; margin-top: 0;">3. Predicción de Días de Alquiler de Películas DVD</h3>
     
-    <p style="color: #555; font-size: 15px;">
+    <p style="color: #4A5568; font-size: 15px; line-height: 1.6;">
       Construcción de un modelo de regresión supervisado para predecir el tiempo de retención de alquileres de DVD, optimizando la gestión de inventario y evitando quiebres de stock.
     </p>
 
@@ -345,23 +359,23 @@
     </div>
 
     <div style="margin-top: 20px;">
-      <h4 style="font-size: 16px; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
-      <ul style="color: #444; line-height: 1.7; padding-left: 20px;">
+      <h4 style="font-size: 16px; color: #2c3e50; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+      <ul style="color: #4A5568; line-height: 1.7; padding-left: 20px;">
         <li><strong>Reducción de variables con Lasso:</strong> Filtrado automático de 14 variables iniciales a solo 4 características financieras/morfológicas clave.</li>
         <li><strong>Meta superada:</strong> El modelo <code>RandomForestRegressor</code> alcanzó un <strong>MSE de 2.39</strong> en prueba, superando el requerimiento del negocio (MSE ≤ 3.0).</li>
       </ul>
     </div>
 
     <div style="margin-top: 25px;">
-      <a href="https://github.com/maxrtab/prediccion-alquiler-dvd-adaboost" target="_blank" class="btn" style="background: #1a1a1a; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 600; display: inline-block;">Ver Repositorio en GitHub ↗</a>
+      <a href="https://github.com/maxrtab/prediccion-alquiler-dvd-adaboost" target="_blank" class="btn" style="background: #2c3e50; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 600; display: inline-block;">Ver Repositorio en GitHub ↗</a>
     </div>
   </article>
 
-  <!-- PROYECTO 4 -->
-  <article class="card" style="background: #ffffff; border-radius: 12px; padding: 30px; margin-bottom: 35px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee;">
-    <h3 style="font-size: 22px; color: #1a1a1a; margin-top: 0;">4. Análisis Estadístico de Goles en el Fútbol Internacional</h3>
+  <!-- PROYECTO 4 (Estilo Azul Tenue) -->
+  <article class="project-card" style="background-color: #EBF3F5; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+    <h3 style="font-size: 22px; color: #2c3e50; margin-top: 0;">4. Análisis Estadístico de Goles en el Fútbol Internacional</h3>
     
-    <p style="color: #555; font-size: 15px;">
+    <p style="color: #4A5568; font-size: 15px; line-height: 1.6;">
       Prueba de hipótesis no paramétrica para determinar si en los partidos internacionales de fútbol femenino se marcan significativamente más goles por partido que en los masculinos desde 2002.
     </p>
 
@@ -374,20 +388,20 @@
     </div>
 
     <div style="margin-top: 20px;">
-      <h4 style="font-size: 16px; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
-      <ul style="color: #444; line-height: 1.7; padding-left: 20px;">
+      <h4 style="font-size: 16px; color: #2c3e50; margin-bottom: 8px;">💡 Hallazgos y Resultados Clave:</h4>
+      <ul style="color: #4A5568; line-height: 1.7; padding-left: 20px;">
         <li><strong>Prueba U de Mann-Whitney:</strong> Arrojó un <strong>p-value de 0.0051</strong> (mucha menor significancia que el α = 0.10 establecido).</li>
         <li><strong>Conclusión estadística:</strong> Se rechazó H₀, confirmando con solidez metodológica que en los partidos femeninos de Copas del Mundo se anotan más goles por partido en promedio.</li>
       </ul>
     </div>
 
     <div style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
-      <img src="gol_m.png" alt="Distribución Masculina" style="width: 48%; min-width: 220px; border-radius: 8px; border: 1px solid #ddd;">
-      <img src="grafica_h_gol.png" alt="Distribución Femenina" style="width: 48%; min-width: 220px; border-radius: 8px; border: 1px solid #ddd;">
+      <img src="gol_m.png" alt="Distribución Masculina" style="width: 48%; min-width: 220px; border-radius: 8px; border: 1px solid #c8d6e5;">
+      <img src="grafica_h_gol.png" alt="Distribución Femenina" style="width: 48%; min-width: 220px; border-radius: 8px; border: 1px solid #c8d6e5;">
     </div>
 
     <div style="margin-top: 25px;">
-      <a href="https://github.com/maxrtab/analisis-estadistico-goles-futbol" target="_blank" class="btn" style="background: #1a1a1a; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 600; display: inline-block;">Ver Repositorio en GitHub ↗</a>
+      <a href="https://github.com/maxrtab/analisis-estadistico-goles-futbol" target="_blank" class="btn" style="background: #2c3e50; color: #fff; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: 600; display: inline-block;">Ver Repositorio en GitHub ↗</a>
     </div>
   </article>
 </section>
