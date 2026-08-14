@@ -1,14 +1,18 @@
+<!-- Foto de perfil circular -->
 <p align="center">
-  <img src="MifotoMax.jpeg" width="180" style="border-radius: 50%;" alt="Maximiliano Rojas Taboada">
+  <img src="MifotoMax.jpeg" width="180" height="180" style="border-radius: 50%; object-fit: cover;" alt="Maximiliano Rojas Taboada">
 </p>
 
 <h1 align="center">Maximiliano Rojas Taboada</h1>
 <h3 align="center">Data Scientist | Machine Learning & AI Specialist</h3>
 
+<!-- Botones de contacto con esquinas redondeadas -->
 <p align="center">
-  <a href="https://www.linkedin.com/in/maximilianorojastaboada"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:maxrt520@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/TU-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:tu-correo@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
+
+---
 
 ## Acerca de mí
 
@@ -16,12 +20,8 @@
 
 Cuento con experiencia práctica en todo el ciclo de vida de los datos: desde **Análisis Exploratorio de Datos (EDA)**, **Ingeniería de Características** y **Modelado Predictivo**, hasta el manejo avanzado de **Excel** adquirido en el sector bancario.
 
-### Áreas de Especialización
-* **Data Science & ML:** Aprendizaje Supervisado, No Supervisado y de Refuerzo.
-* **Deep Learning:** Redes Neurionales Profundas (CNN, RNN).
-* **Análisis Cuantitativo:** Inferencia Estadística, Pruebas de Hipótesis y Tratamiento de Datos Complejos.
+### Habilidades tecnológicas
 
-### Habilidades Tecnológicas
 <p align="left">
   <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat&logo=python&logoColor=000000" alt="Python" />
   <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat&logo=pandas&logoColor=000000" alt="Pandas" />
@@ -36,6 +36,8 @@ Cuento con experiencia práctica en todo el ciclo de vida de los datos: desde **
   <img src="https://img.shields.io/badge/GIT-f4ebe1?style=flat&logo=git&logoColor=000000" alt="Git" />
   <img src="https://img.shields.io/badge/GITHUB-f4ebe1?style=flat&logo=github&logoColor=000000" alt="GitHub" />
 </p>
+
+**Competencias clave:** Pensamiento analítico, adaptación a entornos cambiantes, comunicación efectiva y trabajo colaborativo.
 
 ---
 
