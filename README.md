@@ -2,7 +2,7 @@
 <table border="0">
   <tr>
     <td width="65%" valign="middle">
-      <h1>¡Hola!, Soy Max 👋</h1>
+      <h1>¡Hola!, Soy Max </h1>
       <h3>Data Scientist | Machine Learning & AI Specialist</h3>
       <p>
         ¡Te doy la bienvenida a mi portafolio de Ciencia de Datos e Inteligencia Artificial! 
@@ -11,20 +11,7 @@
       </p>
       <br>
       <!-- Botones de contacto con estilo hueso -->
-      <a href="https://<!-- Encabezado Estilo "Hi, I'm Hannah" (Lado a Lado) -->
-<table border="0">
-  <tr>
-    <td width="65%" valign="middle">
-      <h1>Hi, I'm Max 👋</h1>
-      <h3>Data Scientist | Machine Learning & AI Specialist</h3>
-      <p>
-        ¡Te doy la bienvenida a mi portafolio de Ciencia de Datos e Inteligencia Artificial! 
-        Aquí encontrarás proyectos donde transformo datos complejos en modelos predictivos, 
-        análisis estadísticos y soluciones accionables, combinando el rigor del método científico con la tecnología.
-      </p>
-      <br>
-      <!-- Botones de contacto con estilo hueso -->
-      <a href="https://www.linkedin.com/in/TU-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-f4ebe1?style=flat&logo=linkedin&logoColor=000000" alt="LinkedIn" /></a>
+      <a href="https://www.linkedin.com/in/maximilianorojastaboada"><img src="https://img.shields.io/badge/LinkedIn-f4ebe1?style=flat&logo=linkedin&logoColor=000000" alt="LinkedIn" /></a>
       <a href="mailto:maxrt520@gmail.com"><img src="https://img.shields.io/badge/Email-f4ebe1?style=flat&logo=mail&logoColor=000000" alt="Email" /></a>
     </td>
     <td width="35%" align="center" valign="middle">
@@ -32,7 +19,6 @@
     </td>
   </tr>
 </table>
-
 ---
 
 ## Acerca de mí
