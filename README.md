@@ -82,6 +82,7 @@ El objetivo de este proyecto es determinar la variable edafoclimática del suelo
 Optimización de costos en campo: Si un agricultor cuenta con presupuesto limitado y solo puede medir una propiedad química del suelo, se recomienda priorizar el potasio ($K$), ya que ofrece casi el doble de capacidad discriminatoria que el fósforo.
 Implementación práctica: Priorizar la medición de potasio permite realizar una preselección eficiente del cultivo idóneo antes de realizar inversiones mayores en análisis químicos completos.
 
+**Explora más detalles del proyecto en el [repositorio completo](https://github.com/maxrtab/optimizacion-cultivos-ml).**
 ---
 
 ## 2. Agrupación de Especies de Pingüinos de la Antartica con Aprendizaje No Supervisado (K-Means & PCA) 
@@ -148,7 +149,7 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
 
   **Interpretabilidad visual:** La proyección 2D confirma cuatro agrupaciones compactas y aisladas entre sí, con los centroides ($X$ rojas) perfectamente posicionados en el centro de densidad de cada grupo.
 
-
+**Explora más detalles del proyecto en el [repositorio completo](https://github.com/maxrtab/segmentacion-pinguinos-kmeans-pca).**
 ---
 
 ## 3. Predicción de Días de Alquiler de Películas DVD
@@ -195,6 +196,7 @@ El objetivo de este proyecto es construir un **modelo de regresión supervisado*
 * **Optimización de inventario:** La capacidad de predecir la duración del alquiler permite calcular con precisión el retorno de películas y evitar quiebres de stock en tienda.
 * **Estrategias comerciales:** El peso predictivo de las variables financieras (amount y rental_rate) confirma que la tarifa de alquiler condiciona directamente el tiempo de retención del DVD, lo que permite diseñar políticas de precios para incentivar devoluciones más rápidas en títulos de alta demanda.
 
+**Explora más detalles del proyecto en el [repositorio completo](https://github.com/maxrtab/prediccion-alquiler-dvd-adaboost).**
 ---
 
 ## 4. Análisis Estadístico de Goles en el Fútbol Internacional
@@ -252,3 +254,5 @@ El objetivo de este proyecto es realizar una **prueba de hipótesis no paramétr
 <p align="center">
   <img src="grafica_h_gol.png" width="550" alt="Histograma Goles Femenino">
 </p>
+
+**Explora más detalles del proyecto en el [repositorio completo](https://github.com/maxrtab/analisis-estadistico-goles-futbol).**
