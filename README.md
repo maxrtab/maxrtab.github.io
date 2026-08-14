@@ -142,19 +142,19 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
 ### Visualizaciones destacadas
 1. **Método del Codo para $k$ óptimo:** Determinación de $k$ = 4 mediante la inercia del modelo.
 <p align="center">
-  <img src="Metodo_codo.png" width="550" alt="Método del Codo">
+  <img src="Metodo_codo.png" width="400" alt="Método del Codo">
 </p>
 
 2. **Varianza explicada por Componentes Principales:**
 <p align="center">
-  <img src="varianza_pca.png" width="550" alt="Varianza Explicada PCA">
+  <img src="varianza_pca.png" width="400" alt="Varianza Explicada PCA">
 </p>
 
   **Conservación de varianza con PCA:** La primera componente principal (PC1) explica la mayor proporción de la variabilidad, y en conjunto con PC2 capturan más del 80% de la varianza total del dataset.
 
 3. **Proyección 2D con PCA y Centroides:** Visualización de los cuatro clusters formados y la ubicación de sus centroides.
 <p align="center">
-  <img src="clusters_pca.png" width="600" alt="Clusters 2D con PCA">
+  <img src="clusters_pca.png" width="400" alt="Clusters 2D con PCA">
 </p>
 
   **Interpretabilidad visual:** La proyección 2D confirma cuatro agrupaciones compactas y aisladas entre sí, con los centroides ($X$ rojas) perfectamente posicionados en el centro de densidad de cada grupo.
@@ -259,12 +259,25 @@ El objetivo de este proyecto es realizar una **prueba de hipótesis no paramétr
 
 1. **Distribución de Goles en el Fútbol Masculino:** Histogramas que muestran el sesgo a la derecha y no-normalidad de los datos.
 <p align="center">
-  <img src="gol_m.png" width="550" alt="Histograma Goles Masculino">
+  <img src="gol_m.png" width="400" alt="Histograma Goles Masculino">
 </p>
 
 2. **Distribución de Goles en el Fútbol Femenino:**
 <p align="center">
-  <img src="grafica_h_gol.png" width="550" alt="Histograma Goles Femenino">
+  <img src="grafica_h_gol.png" width="400" alt="Histograma Goles Femenino">
 </p>
 
 **Explora más detalles del proyecto en el [repositorio completo](https://github.com/maxrtab/analisis-estadistico-goles-futbol).**
+
+
+<!-- Script para procesar fórmulas de LaTeX en GitHub Pages -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
