@@ -35,17 +35,17 @@ Cuento con experiencia práctica en todo el ciclo de vida de los datos: desde **
 
 <p align="left">
   <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat-square&logo=python&logoColor=000000" alt="Python" />
-  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat&logo=pandas&logoColor=000000" alt="Pandas" />
-  <img src="https://img.shields.io/badge/NUMPY-f4ebe1?style=flat&logo=numpy&logoColor=000000" alt="NumPy" />
-  <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
-  <img src="https://img.shields.io/badge/TENSORFLOW-f4ebe1?style=flat&logo=tensorflow&logoColor=000000" alt="TensorFlow" />
-  <img src="https://img.shields.io/badge/SCIPY-f4ebe1?style=flat&logo=scipy&logoColor=000000" alt="SciPy" />
-  <img src="https://img.shields.io/badge/MATPLOTLIB-f4ebe1?style=flat&logoColor=000000" alt="Matplotlib" />
-  <img src="https://img.shields.io/badge/SEABORN-f4ebe1?style=flat&logoColor=000000" alt="Seaborn" />
-  <img src="https://img.shields.io/badge/EXCEL_AVANZADO-f4ebe1?style=flat&logo=microsoft-excel&logoColor=000000" alt="Excel" />
-  <img src="https://img.shields.io/badge/SQL-f4ebe1?style=flat&logoColor=000000" alt="SQL" />
-  <img src="https://img.shields.io/badge/GIT-f4ebe1?style=flat&logo=git&logoColor=000000" alt="Git" />
-  <img src="https://img.shields.io/badge/GITHUB-f4ebe1?style=flat&logo=github&logoColor=000000" alt="GitHub" />
+  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat-square&logo=pandas&logoColor=000000" alt="Pandas" />
+  <img src="https://img.shields.io/badge/NUMPY-f4ebe1?style=flat-square&logo=numpy&logoColor=000000" alt="NumPy" />
+  <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat-square&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/TENSORFLOW-f4ebe1?style=flat-square&logo=tensorflow&logoColor=000000" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/SCIPY-f4ebe1?style=flat-square&logo=scipy&logoColor=000000" alt="SciPy" />
+  <img src="https://img.shields.io/badge/MATPLOTLIB-f4ebe1?style=flat-square&logoColor=000000" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/SEABORN-f4ebe1?style=flat-square&logoColor=000000" alt="Seaborn" />
+  <img src="https://img.shields.io/badge/EXCEL_AVANZADO-f4ebe1?style=flat-square&logo=microsoft-excel&logoColor=000000" alt="Excel" />
+  <img src="https://img.shields.io/badge/SQL-f4ebe1?style=flat-square&logoColor=000000" alt="SQL" />
+  <img src="https://img.shields.io/badge/GIT-f4ebe1?style=flat-square&logo=git&logoColor=000000" alt="Git" />
+  <img src="https://img.shields.io/badge/GITHUB-f4ebe1?style=flat-square&logo=github&logoColor=000000" alt="GitHub" />
 </p>
 
 ### Competencias clave
@@ -61,14 +61,14 @@ El objetivo de este proyecto es determinar la variable edafoclimática del suelo
 
 ### Herramientas y tipo de proyecto
 <p align="left">
-  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat&logo=python&logoColor=000000" alt="Python" />
-  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat&logo=pandas&logoColor=000000" alt="Pandas" />
-  <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
-  <img src="https://img.shields.io/badge/LOGISTIC_REGRESSION-f4ebe1?style=flat&logoColor=000000" alt="Logistic Regression" />
-  <img src="https://img.shields.io/badge/ANÁLISIS_EXPLORATORIO-f4ebe1?style=flat&logoColor=000000" alt="EDA" />
-  <img src="https://img.shields.io/badge/EVALUACIÓN_DE_FEATURES-f4ebe1?style=flat&logoColor=000000" alt="Features" />
-  <img src="https://img.shields.io/badge/MODELADO_PREDICTIVO-f4ebe1?style=flat&logoColor=000000" alt="Modelado" />
-  <img src="https://img.shields.io/badge/APRENDIZAJE_SUPERVISADO-f4ebe1?style=flat&logoColor=000000" alt="Supervisado" />
+  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat-square&logo=python&logoColor=000000" alt="Python" />
+  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat-square&logo=pandas&logoColor=000000" alt="Pandas" />
+  <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat-square&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/LOGISTIC_REGRESSION-f4ebe1?style=flat-square&logoColor=000000" alt="Logistic Regression" />
+  <img src="https://img.shields.io/badge/ANÁLISIS_EXPLORATORIO-f4ebe1?style=flat-square&logoColor=000000" alt="EDA" />
+  <img src="https://img.shields.io/badge/EVALUACIÓN_DE_FEATURES-f4ebe1?style=flat-square&logoColor=000000" alt="Features" />
+  <img src="https://img.shields.io/badge/MODELADO_PREDICTIVO-f4ebe1?style=flat-square&logoColor=000000" alt="Modelado" />
+  <img src="https://img.shields.io/badge/APRENDIZAJE_SUPERVISADO-f4ebe1?style=flat-square&logoColor=000000" alt="Supervisado" />
 </p>
 
 ### Preguntas clave
@@ -105,17 +105,17 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
 
 ### Herramientas y tipo de proyecto
 <p align="left">
-  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat&logo=python&logoColor=000000" alt="Python" />
-  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat&logo=pandas&logoColor=000000" alt="Pandas" />
-  <img src="https://img.shields.io/badge/MATPLOTLIB-f4ebe1?style=flat&logoColor=000000" alt="Matplotlib" />
-  <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
-  <img src="https://img.shields.io/badge/K--MEANS-f4ebe1?style=flat&logoColor=000000" alt="K-Means" />
-  <img src="https://img.shields.io/badge/PCA-f4ebe1?style=flat&logoColor=000000" alt="PCA" />
-  <img src="https://img.shields.io/badge/LIMPIEZA_DE_DATOS-f4ebe1?style=flat&logoColor=000000" alt="Limpieza de Datos" />
-  <img src="https://img.shields.io/badge/TRANSFORMACIÓN_DE_DATOS-f4ebe1?style=flat&logoColor=000000" alt="Transformación" />
-  <img src="https://img.shields.io/badge/APRENDIZAJE_NO_SUPERVISADO-f4ebe1?style=flat&logoColor=000000" alt="No Supervisado" />
-  <img src="https://img.shields.io/badge/REDUCCIÓN_DE_DIMENSIONALIDAD-f4ebe1?style=flat&logoColor=000000" alt="Dimensionalidad" />
-  <img src="https://img.shields.io/badge/VISUALIZACIÓN_DE_DATOS-f4ebe1?style=flat&logoColor=000000" alt="Visualización" />
+  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat-square&logo=python&logoColor=000000" alt="Python" />
+  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat-square&logo=pandas&logoColor=000000" alt="Pandas" />
+  <img src="https://img.shields.io/badge/MATPLOTLIB-f4ebe1?style=flat-square&logoColor=000000" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat-square&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/K--MEANS-f4ebe1?style=flat-square&logoColor=000000" alt="K-Means" />
+  <img src="https://img.shields.io/badge/PCA-f4ebe1?style=flat-square&logoColor=000000" alt="PCA" />
+  <img src="https://img.shields.io/badge/LIMPIEZA_DE_DATOS-f4ebe1?style=flat-square&logoColor=000000" alt="Limpieza de Datos" />
+  <img src="https://img.shields.io/badge/TRANSFORMACIÓN_DE_DATOS-f4ebe1?style=flat-square&logoColor=000000" alt="Transformación" />
+  <img src="https://img.shields.io/badge/APRENDIZAJE_NO_SUPERVISADO-f4ebe1?style=flat-square&logoColor=000000" alt="No Supervisado" />
+  <img src="https://img.shields.io/badge/REDUCCIÓN_DE_DIMENSIONALIDAD-f4ebe1?style=flat-square&logoColor=000000" alt="Dimensionalidad" />
+  <img src="https://img.shields.io/badge/VISUALIZACIÓN_DE_DATOS-f4ebe1?style=flat-square&logoColor=000000" alt="Visualización" />
 </p>
 
 ### Preguntas clave
@@ -171,17 +171,17 @@ El objetivo de este proyecto es construir un **modelo de regresión supervisado*
 
 ### Herramientas y tipo de proyecto
 <p align="left">
-  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat&logo=python&logoColor=000000" alt="Python" />
-  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat&logo=pandas&logoColor=000000" alt="Pandas" />
-  <img src="https://img.shields.io/badge/NUMPY-f4ebe1?style=flat&logo=numpy&logoColor=000000" alt="NumPy" />
-  <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
-  <img src="https://img.shields.io/badge/LASSO-f4ebe1?style=flat&logoColor=000000" alt="Lasso" />
-  <img src="https://img.shields.io/badge/RANDOM_FOREST-f4ebe1?style=flat&logoColor=000000" alt="Random Forest" />
-  <img src="https://img.shields.io/badge/ANÁLISIS_EXPLORATORIO-f4ebe1?style=flat&logoColor=000000" alt="EDA" />
-  <img src="https://img.shields.io/badge/INGENIERÍA_DE_CARACTERÍSTICAS-f4ebe1?style=flat&logoColor=000000" alt="Feature Engineering" />
-  <img src="https://img.shields.io/badge/MODELO_PREDICTIVO-f4ebe1?style=flat&logoColor=000000" alt="Modelado" />
-  <img src="https://img.shields.io/badge/APRENDIZAJE_SUPERVISADO-f4ebe1?style=flat&logoColor=000000" alt="Supervisado" />
-  <img src="https://img.shields.io/badge/REGRESIÓN-f4ebe1?style=flat&logoColor=000000" alt="Regresión" />
+  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat-square&logo=python&logoColor=000000" alt="Python" />
+  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat-square&logo=pandas&logoColor=000000" alt="Pandas" />
+  <img src="https://img.shields.io/badge/NUMPY-f4ebe1?style=flat-square&logo=numpy&logoColor=000000" alt="NumPy" />
+  <img src="https://img.shields.io/badge/SCIKIT--LEARN-f4ebe1?style=flat-square&logo=scikit-learn&logoColor=000000" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/LASSO-f4ebe1?style=flat-square&logoColor=000000" alt="Lasso" />
+  <img src="https://img.shields.io/badge/RANDOM_FOREST-f4ebe1?style=flat-square&logoColor=000000" alt="Random Forest" />
+  <img src="https://img.shields.io/badge/ANÁLISIS_EXPLORATORIO-f4ebe1?style=flat-square&logoColor=000000" alt="EDA" />
+  <img src="https://img.shields.io/badge/INGENIERÍA_DE_CARACTERÍSTICAS-f4ebe1?style=flat-square&logoColor=000000" alt="Feature Engineering" />
+  <img src="https://img.shields.io/badge/MODELO_PREDICTIVO-f4ebe1?style=flat-square&logoColor=000000" alt="Modelado" />
+  <img src="https://img.shields.io/badge/APRENDIZAJE_SUPERVISADO-f4ebe1?style=flat-square&logoColor=000000" alt="Supervisado" />
+  <img src="https://img.shields.io/badge/REGRESIÓN-f4ebe1?style=flat-square&logoColor=000000" alt="Regresión" />
 </p>
 
 ### Preguntas clave
@@ -218,16 +218,16 @@ El objetivo de este proyecto es realizar una **prueba de hipótesis no paramétr
 
 ### Herramientas y tipo de proyecto
 <p align="left">
-  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat&logo=python&logoColor=000000" alt="Python" />
-  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat&logo=pandas&logoColor=000000" alt="Pandas" />
-  <img src="https://img.shields.io/badge/MATPLOTLIB-f4ebe1?style=flat&logoColor=000000" alt="Matplotlib" />
-  <img src="https://img.shields.io/badge/SCIPY-f4ebe1?style=flat&logo=scipy&logoColor=000000" alt="SciPy" />
-  <img src="https://img.shields.io/badge/MANN--WHITNEY_U_TEST-f4ebe1?style=flat&logoColor=000000" alt="Mann-Whitney U Test" />
-  <img src="https://img.shields.io/badge/LIMPIEZA_DE_DATOS-f4ebe1?style=flat&logoColor=000000" alt="Limpieza de Datos" />
-  <img src="https://img.shields.io/badge/FILTRADO_TEMPORAL-f4ebe1?style=flat&logoColor=000000" alt="Filtrado Temporal" />
-  <img src="https://img.shields.io/badge/PRUEBA_DE_NORMALIDAD-f4ebe1?style=flat&logoColor=000000" alt="Normalidad" />
-  <img src="https://img.shields.io/badge/ESTADÍSTICA_INFERENCIAL-f4ebe1?style=flat&logoColor=000000" alt="Inferencia" />
-  <img src="https://img.shields.io/badge/PRUEBA_DE_HIPÓTESIS-f4ebe1?style=flat&logoColor=000000" alt="Prueba de Hipótesis" />
+  <img src="https://img.shields.io/badge/PYTHON-f4ebe1?style=flat-square&logo=python&logoColor=000000" alt="Python" />
+  <img src="https://img.shields.io/badge/PANDAS-f4ebe1?style=flat-square&logo=pandas&logoColor=000000" alt="Pandas" />
+  <img src="https://img.shields.io/badge/MATPLOTLIB-f4ebe1?style=flat-square&logoColor=000000" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/SCIPY-f4ebe1?style=flat-square&logo=scipy&logoColor=000000" alt="SciPy" />
+  <img src="https://img.shields.io/badge/MANN--WHITNEY_U_TEST-f4ebe1?style=flat-square&logoColor=000000" alt="Mann-Whitney U Test" />
+  <img src="https://img.shields.io/badge/LIMPIEZA_DE_DATOS-f4ebe1?style=flat-square&logoColor=000000" alt="Limpieza de Datos" />
+  <img src="https://img.shields.io/badge/FILTRADO_TEMPORAL-f4ebe1?style=flat-square&logoColor=000000" alt="Filtrado Temporal" />
+  <img src="https://img.shields.io/badge/PRUEBA_DE_NORMALIDAD-f4ebe1?style=flat-square&logoColor=000000" alt="Normalidad" />
+  <img src="https://img.shields.io/badge/ESTADÍSTICA_INFERENCIAL-f4ebe1?style=flat-square&logoColor=000000" alt="Inferencia" />
+  <img src="https://img.shields.io/badge/PRUEBA_DE_HIPÓTESIS-f4ebe1?style=flat-square&logoColor=000000" alt="Prueba de Hipótesis" />
 </p>
 
 ### Preguntas clave
