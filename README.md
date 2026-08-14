@@ -1,17 +1,29 @@
-# Maximiliano Rojas Taboada | Portafolio de Data Science
+<p align="center">
+  <img src="tu_foto.jpg" width="180" style="border-radius: 50%;" alt="Maximiliano Rojas Taboada">
+</p>
+
+<h1 align="center">Maximiliano Rojas Taboada</h1>
+<h3 align="center">Data Scientist | Machine Learning & AI Specialist</h3>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/TU-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:tu-correo@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
 
 ## Acerca de mí
 
-¡Hola! Soy **Maximiliano Rojas Taboada**, apasionado por transformar datos complejos en soluciones analíticas de alto impacto. Mi enfoque se centra en **Data Science**, **Machine Learning** y **Estadística Aplicada**, combinando el rigor matemático con el desarrollo de código limpio y reproducible en **Python**.
+¡Hola! Soy **Egresado en Diseño Molecular y Nanoquímica** con un **Diplomado en Inteligencia Artificial** por la Universidad Anáhuac. Apasionado por la intersección entre la ciencia y la tecnología, me especializo en aplicar herramientas de **Ciencia de Datos, Machine Learning y Deep Learning** al análisis y optimización de sistemas complejos.
 
-A través de mi trabajo me especializo en:
-* **Modelado Predictivo:** Desarrollo y ajuste de algoritmos supervisados (Regresión, Árboles de Decisión, Random Forest, AdaBoost) para resolver problemas de clasificación y regresión.
-* **Aprendizaje No Supervisado:** Agrupamiento estratégico (*Clustering* con K-Means) y reducción de dimensionalidad (*PCA*) para descubrir patrones en datos multidimensionales.
-* **Inferencia Estadística y Pruebas de Hipótesis:** Validación rigurosa de hipótesis mediante pruebas paramétricas y no paramétricas (*Mann-Whitney U Test*) para sustentar la toma de decisiones.
+Cuento con experiencia práctica en todo el ciclo de vida de los datos: desde **Análisis Exploratorio de Datos (EDA)**, **Ingeniería de Características** y **Modelado Predictivo**, hasta el manejo avanzado de **Excel** adquirido en el sector bancario.
 
-### Habilidades tecnológicas
-* **Lenguajes y Librerías:** `PYTHON` / `PANDAS` / `NUMPY` / `SCIKIT-LEARN` / `SCIPY` / `MATPLOTLIB` / `SEABORN`
-* **Metodologías:** Limpieza y Preparación de Datos, Ingeniería de Características, Pruebas de Hipótesis, Modelos de Clasificación, Regresión y Clustering.
+### Áreas de Especialización
+* **Data Science & ML:** Aprendizaje Supervisado, No Supervisado y de Refuerzo.
+* **Deep Learning:** Redes Neurionales Profundas (CNN, RNN).
+* **Análisis Cuantitativo:** Inferencia Estadística, Pruebas de Hipótesis y Tratamiento de Datos Complejos.
+
+### Habilidades Tecnológicas
+* **Lenguajes y Librerías:** `PYTHON` / `PANDAS` / `NUMPY` / `SCIKIT-LEARN` / `TENSORFLOW` / `SCIPY` / `MATPLOTLIB` / `SEABORN`
+* **Herramientas de Gestión:** `EXCEL AVANZADO` / `SQL` / `GIT` / `GITHUB`
 
 ---
 
