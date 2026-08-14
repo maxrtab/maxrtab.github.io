@@ -81,7 +81,7 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
   * **Cluster 1:** Especie grande hembras (pico delgado: 45.56 mm largo / 14.24 mm profundidad, aletas largas: 212.71 mm, masa: 4,679.74 g).
   * **Cluster 2:** Especie pequeña hembras (pico más corto y menor tamaño general: 40.22 mm largo, masa: 3,419.16 g).
   * **Cluster 3:** Especie grande machos (los especímenes de mayor tamaño y masa corporal: 221.54 mm aleta, masa: 5,484.84 g).
-  * 
+ 
 * **Segmentación biológica natural:** Separación de género implícita: Sin supervisión, K-Means separó naturalmente la variabilidad de especies y el dimorfismo sexual interno.
 * **Conservación de varianza con PCA:** La proyección 2D captura más del **80% de la varianza total** del dataset, mostrando cuatro agrupaciones aisladas entre sí con sus centroides correctamente posicionados.
 
@@ -104,7 +104,7 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
 </p>
 
   **Interpretabilidad visual:** La proyección 2D confirma cuatro agrupaciones compactas y aisladas entre sí, con los centroides ($X$ rojas) perfectamente posicionados en el centro de densidad de cada grupo.
-### 
+
 
 ---
 
