@@ -1,6 +1,6 @@
 <!-- Foto de perfil circular -->
 <p align="center">
-  <img src="MifotoMax.jpeg" width="180" height="180" style="border-radius: 50%; object-fit: cover;" alt="Maximiliano Rojas Taboada">
+  <img src="https://images.weserv.nl/?url=raw.githubusercontent.com/maxrtab/maxrtab.github.io/main/MifotoMax.jpeg&w=180&h=180&fit=cover&mask=circle" alt="Maximiliano Rojas Taboada">
 </p>
 
 <h1 align="center">Maximiliano Rojas Taboada</h1>
