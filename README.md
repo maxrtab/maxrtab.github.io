@@ -96,14 +96,14 @@ El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos 
   <img src="varianza_pca.png" width="550" alt="Varianza Explicada PCA">
 </p>
 
-**Conservación de varianza con PCA:** La primera componente principal (PC1) explica la mayor proporción de la variabilidad, y en conjunto con PC2 capturan más del 80% de la varianza total del dataset.
+  **Conservación de varianza con PCA:** La primera componente principal (PC1) explica la mayor proporción de la variabilidad, y en conjunto con PC2 capturan más del 80% de la varianza total del dataset.
 
 3. **Proyección 2D con PCA y Centroides:** Visualización de los cuatro clusters formados y la ubicación de sus centroides.
 <p align="center">
   <img src="clusters_pca.png" width="600" alt="Clusters 2D con PCA">
 </p>
 
-**Interpretabilidad visual:** La proyección 2D confirma cuatro agrupaciones compactas y aisladas entre sí, con los centroides ($X$ rojas) perfectamente posicionados en el centro de densidad de cada grupo.
+  **Interpretabilidad visual:** La proyección 2D confirma cuatro agrupaciones compactas y aisladas entre sí, con los centroides ($X$ rojas) perfectamente posicionados en el centro de densidad de cada grupo.
 ### 
 
 ---
