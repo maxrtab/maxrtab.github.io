@@ -1,4 +1,4 @@
-<!-- Encabezado Estilo "Hi, I'm Hannah" (Lado a Lado) -->
+<!-- Encabezado Estilo -->
 <table border="0">
   <tr>
     <td width="65%" valign="middle">
