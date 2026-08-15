@@ -113,7 +113,7 @@
       transition: all 0.25s ease;
       cursor: pointer;
     }
-    /* Botón primario suavizado: tono verde azulado apagado, en línea con la paleta pastel */
+    /* Botón primario por defecto (fallback) */
     .btn-primary {
       background-color: #4a6363;
       color: #ffffff;
@@ -123,6 +123,71 @@
       background-color: #3a504f;
       transform: translateY(-3px);
       box-shadow: 0 6px 15px rgba(74,99,99,0.25);
+    }
+
+    /* ============================================
+       BOTONES POR TARJETA
+       Cada botón es una versión más profunda y
+       saturada del color pastel de su propia tarjeta,
+       para que combine en vez de competir.
+    ============================================ */
+
+    /* Hero (crema #f9f6f0) → dorado / tostado cálido */
+    .btn-hero {
+      background-color: #b08c5f;
+      border: 1px solid #b08c5f;
+    }
+    .btn-hero:hover {
+      background-color: #96754c;
+      box-shadow: 0 6px 15px rgba(176,140,95,0.3);
+    }
+
+    /* Proyecto 1 (verde salvia #eef2ec) → verde bosque suave */
+    .btn-proyecto-1 {
+      background-color: #6f8f6f;
+      border: 1px solid #6f8f6f;
+    }
+    .btn-proyecto-1:hover {
+      background-color: #58755a;
+      box-shadow: 0 6px 15px rgba(111,143,111,0.3);
+    }
+
+    /* Proyecto 2 (azul grisáceo #f0f4f8) → azul pizarra */
+    .btn-proyecto-2 {
+      background-color: #5d7c96;
+      border: 1px solid #5d7c96;
+    }
+    .btn-proyecto-2:hover {
+      background-color: #496379;
+      box-shadow: 0 6px 15px rgba(93,124,150,0.3);
+    }
+
+    /* Proyecto 3 (beige rosado #f5f0ec) → terracota suave */
+    .btn-proyecto-3 {
+      background-color: #b17e63;
+      border: 1px solid #b17e63;
+    }
+    .btn-proyecto-3:hover {
+      background-color: #93664e;
+      box-shadow: 0 6px 15px rgba(177,126,99,0.3);
+    }
+
+    /* Proyecto 4 (lavanda gris #f1eff5) → morado grisáceo */
+    .btn-proyecto-4 {
+      background-color: #83739c;
+      border: 1px solid #83739c;
+    }
+    .btn-proyecto-4:hover {
+      background-color: #685b80;
+      box-shadow: 0 6px 15px rgba(131,115,156,0.3);
+    }
+
+    .btn-hero, .btn-proyecto-1, .btn-proyecto-2, .btn-proyecto-3, .btn-proyecto-4 {
+      color: #ffffff;
+    }
+    .btn-hero:hover, .btn-proyecto-1:hover, .btn-proyecto-2:hover,
+    .btn-proyecto-3:hover, .btn-proyecto-4:hover {
+      transform: translateY(-3px);
     }
     .btn-secondary {
       background-color: #ffffff;
@@ -326,7 +391,7 @@
         <h3>Data Scientist | Machine Learning & AI Specialist</h3>
         <p>¡Te doy la bienvenida a mi portafolio de Ciencia de Datos e Inteligencia Artificial! Aquí encontrarás proyectos donde transformo datos complejos en modelos predictivos, análisis estadísticos y soluciones accionables, combinando el rigor del método científico con la tecnología.</p>
         <div class="btn-group">
-          <a href="#proyectos" class="btn btn-primary">Ver Mis Proyectos</a>
+          <a href="#proyectos" class="btn btn-hero">Ver Mis Proyectos</a>
           <a href="mailto:maxrt520@gmail.com" class="btn btn-secondary">Contactar</a>
         </div>
       </div>
@@ -418,7 +483,7 @@
 
         <!-- Botón al repositorio -->
         <div style="margin-top: 10px;">
-          <a href="https://github.com/maxrtab/optimizacion-cultivos-ml" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/optimizacion-cultivos-ml" target="_blank" class="btn btn-proyecto-1" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
         </div>
       </section>
 
@@ -485,7 +550,7 @@
         </div>
 
         <div style="margin-top: 35px;">
-          <a href="https://github.com/maxrtab/segmentacion-pinguinos-kmeans-pca" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/Penguin-Species-Clustering-Unsupervised" target="_blank" class="btn btn-proyecto-2" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
         </div>
       </section>
 
@@ -558,7 +623,7 @@
         </div>
 
         <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/prediccion-alquiler-dvd-adaboost" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/prediccion-alquiler-dvd-adaboost" target="_blank" class="btn btn-proyecto-3" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
         </div>
       </section>
 
@@ -635,7 +700,7 @@
         </div>
 
         <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/analisis-estadistico-goles-futbol" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/analisis-estadistico-goles-futbol" target="_blank" class="btn btn-proyecto-4" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
         </div>
       </section>
 
