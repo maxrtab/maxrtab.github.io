@@ -106,7 +106,7 @@
     .btn {
       display: inline-block;
       padding: 10px 24px;
-      border-radius: 50px; /* Borde de píldora redondeado */
+      border-radius: 50px;
       font-weight: 600;
       font-size: 0.9rem;
       text-decoration: none;
@@ -126,13 +126,12 @@
     .btn-secondary {
       background-color: #ffffff;
       color: #1a202c;
-      border: 1px solid #e2e8f0;
+      border: none; /* Se elimina el contorno */
     }
     .btn-secondary:hover {
-      background-color: #f7fafc;
+      background-color: #edf2f7; /* Gris suave al hacer hover */
       transform: translateY(-3px);
       box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-      border-color: #cbd5e0;
     }
 
     /* Recuadro 2: Acerca de mí */
@@ -159,7 +158,7 @@
       color: #1a202c;
     }
 
-    /* Etiquetas tecnológicas con logos */
+    /* Etiquetas tecnológicas con logos selectivos */
     .skill-tag {
       display: inline-flex;
       align-items: center;
@@ -186,7 +185,7 @@
       color: #ffffff;
     }
     .skill-tag:hover img {
-      filter: brightness(0) invert(1); /* Vuelve el icono blanco al hacer hover */
+      filter: brightness(0) invert(1);
     }
 
     /* Footer Estilizado */
@@ -236,9 +235,9 @@
       }
     }
 
-    /* Botón Pill Desplegable (Sin Borde) */
+    /* Botón Pill Desplegable (Sin Borde e Interactivo) */
     .details-pill {
-      border: none; /* Se elimina el contorno */
+      border: none;
       border-radius: 50px;
       background-color: #ffffff;
       padding: 12px 24px;
@@ -274,7 +273,7 @@
       transform: rotate(180deg);
     }
 
-    /* Transición Suave y Lenta para el Desplegable */
+    /* Transición Suave y Lenta para el Desplegable (0.6s) */
     .details-pill .details-content {
       animation: slideDown 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
       overflow: hidden;
@@ -362,16 +361,16 @@
           El objetivo de este proyecto es determinar la variable edafoclimática del suelo con mayor capacidad predictiva individual para clasificar <strong>22 tipos de cultivo</strong> mediante <strong>Regresión Logística multiclase</strong>. El estudio busca ayudar a los agricultores a tomar decisiones informadas sobre la selección de cultivos cuando cuentan con recursos o presupuestos limitados para análisis de laboratorio.
         </p>
 
-        <!-- Etiquetas tecnológicas con logos -->
+        <!-- Etiquetas tecnológicas con logos selectivos -->
         <div class="skills-section" style="margin-top: 0; margin-bottom: 5px;">
           <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span>
           <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">Pandas</span>
           <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn">Scikit-Learn</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Logistic Regression">Logistic Regression</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Análisis Exploratorio">Análisis Exploratorio</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Evaluación de Features">Evaluación de Features</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Modelado Predictivo">Modelado Predictivo</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Aprendizaje Supervisado">Aprendizaje Supervisado</span>
+          <span class="skill-tag">Logistic Regression</span>
+          <span class="skill-tag">Análisis Exploratorio</span>
+          <span class="skill-tag">Evaluación de Features</span>
+          <span class="skill-tag">Modelado Predictivo</span>
+          <span class="skill-tag">Aprendizaje Supervisado</span>
         </div>
 
         <!-- 1. Botón Pill Desplegable (Sin Contorno) -->
@@ -407,30 +406,63 @@
 
         <!-- Botón al repositorio -->
         <div style="margin-top: 10px;">
-          <a href="https://github.com/maxrtab/optimizacion-cultivos-ml" target="_blank" class="btn btn-primary">Ver Repositorio Completo en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/optimizacion-cultivos-ml" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
         </div>
       </section>
 
       <!-- PROYECTO 2 -->
-      <section class="card card-about" style="flex-direction: column; align-items: flex-start; gap: 15px;">
-        <h3 style="font-size: 1.5rem; color: #1a202c;">2. Agrupación de Especies de Pingüinos con Aprendizaje No Supervisado (K-Means & PCA)</h3>
+      <section class="card card-about" style="flex-direction: column; align-items: flex-start; gap: 18px;">
+        <h3 style="font-size: 1.5rem; color: #1a202c;">2. Agrupación de Especies de Pingüinos de la Antartica con Aprendizaje No Supervisado (K-Means & PCA)</h3>
         
-        <p>Agrupación morfológica y segmentación de dimorfismo sexual en especímenes de pingüinos de Palmer aplicando <strong>K-Means</strong> y reducción de dimensionalidad con <strong>PCA</strong> sin necesidad de etiquetas previas.</p>
+        <p style="color: #2d3748;">
+          El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos de Palmer mediante <strong>K-Means y PCA (Análisis de Componentes Principales)</strong> a partir de sus dimensiones físicas y sexo. El estudio busca comprender la <strong>estructura natural de los datos morfológicos</strong>, identificar patrones de <strong>dimorfismo sexual</strong> e interpretar cómo se relacionan las características físicas sin requerir etiquetas previas.
+        </p>
 
-        <div class="skills-section" style="margin-top: 5px;">
+        <!-- Etiquetas tecnológicas con logos selectivos -->
+        <div class="skills-section" style="margin-top: 0; margin-bottom: 5px;">
           <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn">Scikit-Learn</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="K-Means">K-Means</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="PCA">PCA</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">Pandas</span>
           <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Matplotlib">Matplotlib</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Aprendizaje No Supervisado">Aprendizaje No Supervisado</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn">Scikit-Learn</span>
+          <span class="skill-tag">K-Means</span>
+          <span class="skill-tag">PCA</span>
+          <span class="skill-tag">Limpieza de Datos</span>
+          <span class="skill-tag">Transformación de Datos</span>
+          <span class="skill-tag">Aprendizaje No Supervisado</span>
+          <span class="skill-tag">Reducción de Dimensionalidad</span>
+          <span class="skill-tag">Visualización de Datos</span>
         </div>
 
-        <div style="margin-top: 10px;">
+        <!-- 1. Botón Pill Desplegable (Sin Contorno) -->
+        <details class="details-pill">
+          <summary>Ver preguntas clave y metodología del proyecto</summary>
+          
+          <div class="details-content" style="margin-top: 15px; border-top: 1px solid #edf2f7; padding-top: 15px; cursor: default;">
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Preguntas clave:</h5>
+            <ol style="color: #2d3748; line-height: 1.6; padding-left: 20px; margin-bottom: 15px; font-size: 0.92rem;">
+              <li>¿Cuál es la cantidad óptima de clusters (<em>k</em>) para agrupar los datos morfológicos y de sexo de los pingüinos?</li>
+              <li>¿Cómo se distribuyen los promedios morfológicos de cada variable en las agrupaciones identificadas?</li>
+              <li>¿Qué porcentaje de la varianza total del conjunto de datos retienen las componentes principales?</li>
+              <li>¿Permiten las componentes principales proyectar los datos en 2D con una clara separación entre clusters y centroides?</li>
+            </ol>
+
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Metodología resumida:</h5>
+            <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px; font-size: 0.92rem;">
+              <li><strong>Preprocesamiento:</strong> Análisis exploratorio de 332 registros limpios del archivo <em>penguins.csv</em> y conversión categórica con <em>One-Hot Encoding</em> (`sex_MALE`).</li>
+              <li><strong>Estandarización:</strong> Escalado de variables numéricas con <code>StandardScaler</code> para equilibrar el peso de magnitudes físicas.</li>
+              <li><strong>Clusters (*k* óptimo):</strong> Evaluación de inercia mediante **Método del Codo** para *k* entre 1-9, identificando **k = 4**.</li>
+              <li><strong>Modelado No Supervisado:</strong> Entrenamiento de K-Means (*k = 4*), asignación de etiquetas y cálculo de resumen de promedios.</li>
+              <li><strong>Reducción y visualización:</strong> Aplicación de PCA (`n_components = 2`) para proyectar el espacio multidimensional y ubicar centroides.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- 2. Hallazgos y Resultados Clave -->
+        <div style="width: 100%;">
           <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
-          <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
-            <li><strong>k = 4 óptimo:</strong> Identificado mediante el Método del Codo, diferenciando con precisión combinaciones de especie y dimorfismo sexual (macho/hembra).</li>
-            <li><strong>Explicabilidad con PCA:</strong> Las primeras 2 componentes principales retienen más del <strong>80% de la varianza total</strong>, proyectando clusters aislados y centroides definidos.</li>
+          <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px; margin-bottom: 15px;">
+            <li><strong>k = 4 óptimo:</strong> Diferencia con precisión combinaciones de especie y dimorfismo sexual (macho/hembra), permitiendo interpretar clusters compactos con centroides correctamente posicionados.</li>
+            <li><strong>Conservación de varianza con PCA:</strong> La proyección 2D captura más del <strong>80% de la varianza total</strong> del dataset, mostrando cuatro agrupaciones aisladas entre sí.</li>
           </ul>
         </div>
 
@@ -441,56 +473,657 @@
         </div>
 
         <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/Clustering-Penguin-Species" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/segmentacion-pinguinos-kmeans-pca" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
         </div>
       </section>
 
       <!-- PROYECTO 3 -->
-      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 15px;">
+      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 18px;">
         <h3 style="font-size: 1.5rem; color: #1a202c;">3. Predicción de Días de Alquiler de Películas DVD</h3>
         
-        <p>Construcción de un modelo de regresión supervisado para predecir el tiempo de retención de alquileres de DVD, optimizando la gestión de inventario y evitando quiebres de stock.</p>
+        <p style="color: #2d3748;">
+          El objetivo de este proyecto es construir un **modelo de regresión supervisado** que prediga con precisión el número de días que un cliente mantendrá un DVD alquilado. La empresa requiere un modelo con un **MSE de 3.0 o menor** en prueba para **optimizar la gestión de inventario** y planificación logística.
+        </p>
 
-        <div class="skills-section" style="margin-top: 5px;">
+        <!-- Etiquetas tecnológicas con logos selectivos -->
+        <div class="skills-section" style="margin-top: 0; margin-bottom: 5px;">
           <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">Pandas</span>
+          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">NumPy</span>
           <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn">Scikit-Learn</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Random Forest">Random Forest</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Lasso Regularization">Lasso Regularization</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Feature Engineering">Feature Engineering</span>
+          <span class="skill-tag">Lasso</span>
+          <span class="skill-tag">Random Forest</span>
+          <span class="skill-tag">Análisis Exploratorio</span>
+          <span class="skill-tag">Ingeniería de Características</span>
+          <span class="skill-tag">Modelo Predictivo</span>
+          <span class="skill-tag">Aprendizaje Supervisado</span>
+          <span class="skill-tag">Regresión</span>
         </div>
 
-        <div style="margin-top: 10px;">
+        <!-- 1. Botón Pill Desplegable (Sin Contorno) -->
+        <details class="details-pill">
+          <summary>Ver preguntas clave y metodología del proyecto</summary>
+          
+          <div class="details-content" style="margin-top: 15px; border-top: 1px solid #edf2f7; padding-top: 15px; cursor: default;">
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Preguntas clave:</h5>
+            <ol style="color: #2d3748; line-height: 1.6; padding-left: 20px; margin-bottom: 15px; font-size: 0.92rem;">
+              <li>¿Cómo se calcula la duración exacta del alquiler a partir de los datos registrados?</li>
+              <li>¿Qué características morfológicas o financieras aportan mayor información predictiva?</li>
+              <li>¿Cómo seleccionar de forma automatizada las características más relevantes para reducir la complejidad?</li>
+              <li>¿Es posible lograr un error cuadrático medio (MSE) inferior al objetivo de 3.0?</li>
+            </ol>
+
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Metodología resumida:</h5>
+            <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px; font-size: 0.92rem;">
+              <li><strong>EDA & Feature Engineering:</strong> Exploración (15,861 registros), cálculo de *rental_length_days* y extracción binaria en *special_features*.</li>
+              <li><strong>Preprocesamiento & División:</strong> Eliminación de fechas/texto, matriz X (14 variables), división 80/20 con `random_state = 9`.</li>
+              <li><strong>Selección por Regularización Lasso:</strong> Entrenamiento (α = 0.3) para descartar variables irrelevantes ajustando coeficientes a cero.</li>
+              <li><strong>Modelado & Evaluación:</strong> Entrenamiento de ensamble `RandomForestRegressor` con características optimizadas y evaluación del desempeño mediante **MSE**.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- 2. Hallazgos y Resultados Clave -->
+        <div style="width: 100%;">
+          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave¡Entendido, Max! Quedó clarísimo. Es verdad que poner logos genéricos puede distraer más que aportar. He realizado la limpieza selectiva de logos en las etiquetas de **todos** los proyectos, asegurando que solo los que tú mencionaste (herramientas específicas) conserven su ícono.
+
+Además, he unificado la estructura interactiva para los 4 proyectos y he quitado el contorno al botón "Contactar" de la bienvenida, aplicando el efecto hover que definimos.
+
+Con esto, damos por concluida la fase de contenido al 100%. ¡Aquí tienes el código completo y listo!
+
+### 📄 Código Completo Final (`index.html`):
+
+Copia todo este bloque de código y reemplaza el contenido de tu archivo `index.html` en GitHub:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maximiliano Rojas Taboada | Portafolio Ciencia de Datos</title>
+  <style>
+    /* Estilos Generales y Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      background-color: #ffffff;
+      color: #2d3748;
+      line-height: 1.6;
+    }
+    
+    /* Navegación Superior */
+    header {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 25px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-name {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #1a202c;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #718096;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.25s ease;
+    }
+    nav a:hover {
+      color: #000000;
+    }
+    
+    /* Contenedor Principal */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px 40px 20px;
+    }
+
+    /* Recuadros Redondeados (Tarjetas) */
+    .card {
+      border-radius: 24px;
+      padding: 45px;
+      margin-bottom: 35px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    /* Recuadro 1: Hero / Bienvenida */
+    .card-hero {
+      background-color: #f9f6f0;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .hero-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 20px;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+    .hero-text h1 {
+      font-size: 2.2rem;
+      color: #1a202c;
+      margin-bottom: 8px;
+    }
+    .hero-text h3 {
+      font-size: 1.15rem;
+      color: #2d3748;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .hero-text p {
+      color: #2d3748;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    /* Botones Interactivos Píldora */
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background-color: #1a202c;
+      color: #ffffff;
+      border: 1px solid #1a202c;
+    }
+    .btn-primary:hover {
+      background-color: #000000;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .btn-secondary {
+      background-color: #ffffff;
+      color: #1a202c;
+      border: none; /* Se elimina el contorno */
+    }
+    .btn-secondary:hover {
+      background-color: #edf2f7; /* Gris suave al hacer hover */
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    }
+
+    /* Recuadro 2: Acerca de mí */
+    .card-about {
+      background-color: #f0f4f8;
+    }
+    .card-about h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #1a202c;
+    }
+    .card-about p {
+      margin-bottom: 16px;
+      color: #2d3748;
+      font-size: 1.02rem;
+    }
+    
+    .skills-section {
+      margin-top: 25px;
+    }
+    .skills-section h4 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: #1a202c;
+    }
+
+    /* Etiquetas tecnológicas con logos selectivos */
+    .skill-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #ffffff;
+      color: #2d3748;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin: 4px 4px 8px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+      transition: all 0.2s ease;
+    }
+    .skill-tag img {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+    }
+    .skill-tag:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      background-color: #1a202c;
+      color: #ffffff;
+    }
+    .skill-tag:hover img {
+      filter: brightness(0) invert(1);
+    }
+
+    /* Footer Estilizado */
+    footer {
+      max-width: 1000px;
+      margin: 20px auto 40px auto;
+      padding: 25px 20px 0 20px;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      color: #718096;
+    }
+    .footer-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #718096;
+      font-weight: 500;
+      transition: color 0.25s ease;
+    }
+    .footer-links a:hover {
+      color: #000000;
+    }
+
+    /* Responsivo para celulares */
+    @media (max-width: 768px) {
+      .card-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+      }
+      .hero-img {
+        width: 160px;
+        height: 160px;
+      }
+      .btn-group {
+        justify-content: center;
+      }
+      header, footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+      nav a, .footer-links a {
+        margin: 0 10px;
+      }
+    }
+
+    /* Botón Pill Desplegable (Sin Borde e Interactivo) */
+    .details-pill {
+      border: none;
+      border-radius: 50px;
+      background-color: #ffffff;
+      padding: 12px 24px;
+      transition: all 0.3s ease;
+      margin-bottom: 5px;
+      width: 100%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+    .details-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+    .details-pill summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #1a202c;
+      font-size: 0.95rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+    }
+    .details-pill summary::-webkit-details-marker {
+      display: none;
+    }
+    .details-pill summary::after {
+      content: '↓';
+      font-weight: bold;
+      transition: transform 0.4s ease;
+    }
+    .details-pill[open] summary::after {
+      transform: rotate(180deg);
+    }
+
+    /* Transición Suave y Lenta para el Desplegable (0.6s) */
+    .details-pill .details-content {
+      animation: slideDown 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      overflow: hidden;
+    }
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navegación Superior -->
+  <header>
+    <div class="logo-name">Maximiliano Rojas Taboada</div>
+    <nav>
+      <a href="[https://www.linkedin.com/in/maximilianorojastaboada](https://www.linkedin.com/in/maximilianorojastaboada)" target="_blank">LinkedIn</a>
+      <a href="[https://github.com/maxrtab](https://github.com/maxrtab)" target="_blank">GitHub</a>
+      <a href="#proyectos">Mis Proyectos</a>
+      <a href="mailto:maxrt520@gmail.com">Contacto</a>
+      <a href="CV_Maximiliano_Rojas.pdf" download="CV_Maximiliano_Rojas.pdf">CV</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    
+    <!-- Recuadro 1: Bienvenida -->
+    <section class="card card-hero">
+      <img src="MifotoMax.jpeg" alt="Maximiliano Rojas Taboada" class="hero-img">
+      <div class="hero-text">
+        <h1>¡Hola! Soy Maximiliano Rojas Taboada</h1>
+        <h3>Data Scientist | Machine Learning & AI Specialist</h3>
+        <p>¡Te doy la bienvenida a mi portafolio de Ciencia de Datos e Inteligencia Artificial! Aquí encontrarás proyectos donde transformo datos complejos en modelos predictivos, análisis estadísticos y soluciones accionables, combinando el rigor del método científico con la tecnología.</p>
+        <div class="btn-group">
+          <a href="#proyectos" class="btn btn-primary">Ver Mis Proyectos</a>
+          <a href="mailto:maxrt520@gmail.com" class="btn btn-secondary">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recuadro 2: Acerca de mí -->
+    <section class="card card-about">
+      <h2>Acerca de mí</h2>
+      <p>Soy <strong>Egresado en Diseño Molecular y Nanoquímica</strong> con un <strong>Diplomado en Inteligencia Artificial</strong> por la Universidad Anáhuac. Apasionado por la intersección entre la ciencia y la tecnología, me especializo en aplicar herramientas de <strong>Ciencia de Datos, Machine Learning y Deep Learning</strong> al análisis y optimización de sistemas complejos.</p>
+      
+      <p>Cuento con experiencia práctica en todo el ciclo de vida de los datos: desde <strong>Análisis Exploratorio de Datos (EDA)</strong>, <strong>Ingeniería de Características</strong> y <strong>Modelado Predictivo</strong>, hasta el manejo avanzado de <strong>Excel</strong> adquirido en el sector bancario.</p>
+
+      <div class="skills-section">
+        <h4>Habilidades tecnológicas</h4>
+        <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg)" alt="Python">Python</span>
+        <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg)" alt="Pandas">Pandas</span>
+        <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg)" alt="NumPy">NumPy</span>
+        <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg)" alt="Scikit-Learn">Scikit-Learn</span>
+        <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg)" alt="TensorFlow">TensorFlow</span>
+        <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg)" alt="SciPy">SciPy</span>
+        <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg)" alt="Matplotlib">Matplotlib</span>
+        <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg)" alt="Seaborn">Seaborn</span>
+        <span class="skill-tag"><img src="[https://img.icons8.com/color/48/000000/ms-excel.png](https://img.icons8.com/color/48/000000/ms-excel.png)" alt="Excel">Excel Avanzado</span>
+        <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg)" alt="SQL">SQL</span>
+        <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg)" alt="Git">Git</span>
+        <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg)" alt="GitHub">GitHub</span>
+      </div>
+
+      <div class="skills-section" style="margin-top: 15px;">
+        <h4>Competencias clave</h4>
+        <p style="margin-bottom: 0;">Pensamiento analítico, adaptación a entornos cambiantes, comunicación efectiva y trabajo colaborativo.</p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE PROYECTOS -->
+    <div id="proyectos">
+      <h2 style="font-size: 1.8rem; margin: 40px 0 20px 0; color: #1a202c;">Mis Proyectos</h2>
+
+      <!-- PROYECTO 1 -->
+      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 18px;">
+        <h3 style="font-size: 1.5rem; color: #1a202c;">1. Modelado Predictivo para la Optimización de Cultivos Agrícolas</h3>
+        
+        <p style="color: #2d3748;">
+          El objetivo de este proyecto es determinar la variable edafoclimática del suelo con mayor capacidad predictiva individual para clasificar <strong>22 tipos de cultivo</strong> mediante <strong>Regresión Logística multiclase</strong>. El estudio busca ayudar a los agricultores a tomar decisiones informadas sobre la selección de cultivos cuando cuentan con recursos o presupuestos limitados para análisis de laboratorio.
+        </p>
+
+        <!-- Etiquetas tecnológicas con logos selectivos -->
+        <div class="skills-section" style="margin-top: 0; margin-bottom: 5px;">
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg)" alt="Python">Python</span>
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg)" alt="Pandas">Pandas</span>
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg)" alt="Scikit-Learn">Scikit-Learn</span>
+          <span class="skill-tag">Logistic Regression</span>
+          <span class="skill-tag">Análisis Exploratorio</span>
+          <span class="skill-tag">Evaluación de Features</span>
+          <span class="skill-tag">Modelado Predictivo</span>
+          <span class="skill-tag">Aprendizaje Supervisado</span>
+        </div>
+
+        <!-- 1. Botón Pill Desplegable (Sin Contorno) -->
+        <details class="details-pill">
+          <summary>Ver preguntas clave y metodología del proyecto</summary>
+          
+          <div class="details-content" style="margin-top: 15px; border-top: 1px solid #edf2f7; padding-top: 15px; cursor: default;">
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Preguntas clave:</h5>
+            <ol style="color: #2d3748; line-height: 1.6; padding-left: 20px; margin-bottom: 15px; font-size: 0.92rem;">
+              <li>¿Cuál es la distribución y balanceo de las categorías de cultivos en el conjunto de datos?</li>
+              <li>De las cuatro variables del suelo (<em>N</em>, <em>P</em>, <em>K</em>, <em>pH</em>), ¿cuál posee el mayor poder predictivo univariado para clasificar los cultivos?</li>
+              <li>¿Qué métrica de evaluación refleja de mejor manera el rendimiento de un modelo multiclase balanceado?</li>
+            </ol>
+
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Metodología resumida:</h5>
+            <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px; font-size: 0.92rem;">
+              <li><strong>Análisis Exploratorio (EDA):</strong> Verificación de nulos en los 2,200 registros y confirmación de balance perfecto (100 observaciones por cultivo).</li>
+              <li><strong>División de datos:</strong> Entrenamiento (80%) y prueba (20%) con <code>random_state = 42</code>.</li>
+              <li><strong>Modelado univariado:</strong> Entrenamiento de 4 modelos independientes de <code>LogisticRegression</code> (algoritmo multinomial, <code>max_iter = 200</code>), uno por cada propiedad del suelo.</li>
+              <li><strong>Evaluación:</strong> Cálculo del <em>Weighted F₁-score</em> sobre el conjunto de prueba para medir la precisión discriminatoria individual.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- 2. Hallazgos y Resultados Clave -->
+        <div style="width: 100%;">
           <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
           <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
-            <li><strong>Reducción de variables con Lasso:</strong> Filtrado automático de 14 variables iniciales a solo 4 características financieras/morfológicas clave.</li>
-            <li><strong>Meta superada:</strong> El modelo <code>RandomForestRegressor</code> alcanzó un <strong>MSE de 2.39</strong> en prueba, superando el requerimiento del negocio (MSE ≤ 3.0).</li>
+            <li><strong>Potasio (K) determinante:</strong> La evaluación del <em>Weighted F₁-score</em> identificó al Potasio como la variable de mayor relevancia con un puntaje de <strong>0.2511</strong> (frente a 0.1360 del Fósforo, 0.0946 del Nitrógeno y 0.0453 del pH).</li>
+            <li><strong>Optimización de costos en campo:</strong> Si un agricultor cuenta con presupuesto limitado para análisis de laboratorio, priorizar la medición de Potasio ofrece casi el doble de capacidad discriminatoria que cualquier otro elemento para una preselección eficiente del cultivo.</li>
+          </ul>
+        </div>
+
+        <!-- Botón al repositorio -->
+        <div style="margin-top: 10px;">
+          <a href="[https://github.com/maxrtab/optimizacion-cultivos-ml](https://github.com/maxrtab/optimizacion-cultivos-ml)" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
+        </div>
+      </section>
+
+      <!-- PROYECTO 2 -->
+      <section class="card card-about" style="flex-direction: column; align-items: flex-start; gap: 18px;">
+        <h3 style="font-size: 1.5rem; color: #1a202c;">2. Agrupación de Especies de Pingüinos con Aprendizaje No Supervisado (K-Means & PCA)</h3>
+        
+        <p style="color: #2d3748;">
+          El objetivo de este proyecto es agrupar y clasificar especímenes de pingüinos de Palmer mediante <strong>K-Means y PCA (Análisis de Componentes Principales)</strong> a partir de sus dimensiones físicas y sexo. El estudio busca comprender la <strong>estructura natural de los datos morfológicos</strong>, identificar patrones de <strong>dimorfismo sexual</strong> e interpretar cómo se relacionan las características físicas sin requerir etiquetas previas.
+        </p>
+
+        <!-- Etiquetas tecnológicas con logos selectivos -->
+        <div class="skills-section" style="margin-top: 0; margin-bottom: 5px;">
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg)" alt="Python">Python</span>
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg)" alt="Pandas">Pandas</span>
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg)" alt="Matplotlib">Matplotlib</span>
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg)" alt="Scikit-Learn">Scikit-Learn</span>
+          <span class="skill-tag">K-Means</span>
+          <span class="skill-tag">PCA</span>
+          <span class="skill-tag">Limpieza de Datos</span>
+          <span class="skill-tag">Transformación de Datos</span>
+          <span class="skill-tag">Aprendizaje No Supervisado</span>
+          <span class="skill-tag">Reducción de Dimensionalidad</span>
+          <span class="skill-tag">Visualización de Datos</span>
+        </div>
+
+        <!-- 1. Botón Pill Desplegable (Sin Contorno) -->
+        <details class="details-pill">
+          <summary>Ver preguntas clave y metodología del proyecto</summary>
+          
+          <div class="details-content" style="margin-top: 15px; border-top: 1px solid #edf2f7; padding-top: 15px; cursor: default;">
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Preguntas clave:</h5>
+            <ol style="color: #2d3748; line-height: 1.6; padding-left: 20px; margin-bottom: 15px; font-size: 0.92rem;">
+              <li>¿Cuál es la cantidad óptima de clusters (<em>k</em>) para agrupar los datos morfológicos y de sexo de los pingüinos?</li>
+              <li>¿Cómo se distribuyen los promedios morfológicos de cada variable en las agrupaciones identificadas?</li>
+              <li>¿Qué porcentaje de la varianza total del conjunto de datos retienen las componentes principales?</li>
+              <li>¿Permiten las componentes principales proyectar los datos en 2D con una clara separación entre clusters y centroides?</li>
+            </ol>
+
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Metodología resumida:</h5>
+            <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px; font-size: 0.92rem;">
+              <li><strong>Preprocesamiento:</strong> Análisis exploratorio de 332 registros limpios del archivo <em>penguins.csv</em> y conversión categórica con <em>One-Hot Encoding</em> (`sex_MALE`).</li>
+              <li><strong>Estandarización:</strong> Escalado de variables numéricas con <code>StandardScaler</code> para equilibrar el peso de magnitudes físicas.</li>
+              <li><strong>Clusters (*k* óptimo):</strong> Evaluación de inercia mediante **Método del Codo** para *k* entre 1-9, identificando **k = 4**.</li>
+              <li><strong>Modelado No Supervisado:</strong> Entrenamiento de K-Means (*k = 4*), asignación de etiquetas y cálculo de resumen de promedios.</li>
+              <li><strong>Reducción y visualización:</strong> Aplicación de PCA (`n_components = 2`) para proyectar el espacio multidimensional y ubicar centroides.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- 2. Hallazgos y Resultados Clave -->
+        <div style="width: 100%;">
+          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
+          <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px; margin-bottom: 15px;">
+            <li><strong>k = 4 óptimo:</strong> Diferencia con precisión combinaciones de especie y dimorfismo sexual (macho/hembra), permitiendo interpretar clusters compactos con centroides correctamente posicionados.</li>
+            <li><strong>Conservación de varianza con PCA:</strong> La proyección 2D captura más del <strong>80% de la varianza total</strong> del dataset, mostrando cuatro agrupaciones aisladas entre sí.</li>
+          </ul>
+        </div>
+
+        <div style="display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap; width: 100%;">
+          <img src="Metodo_codo.png" alt="Método del Codo" style="width: 31%; min-width: 200px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+          <img src="varianza_pca.png" alt="Varianza PCA" style="width: 31%; min-width: 200px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+          <img src="clusters_pca.png" alt="Clusters PCA" style="width: 31%; min-width: 200px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+        </div>
+
+        <div style="margin-top: 15px;">
+          <a href="[https://github.com/maxrtab/segmentacion-pinguinos-kmeans-pca](https://github.com/maxrtab/segmentacion-pinguinos-kmeans-pca)" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
+        </div>
+      </section>
+
+      <!-- PROYECTO 3 -->
+      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 18px;">
+        <h3 style="font-size: 1.5rem; color: #1a202c;">3. Predicción de Días de Alquiler de Películas DVD</h3>
+        
+        <p style="color: #2d3748;">
+          Construcción de un modelo de regresión supervisado para predecir el tiempo de retención de alquileres de DVD, optimizando la gestión de inventario y evitando quiebres de stock.
+        </p>
+
+        <!-- Etiquetas tecnológicas con logos selectivos -->
+        <div class="skills-section" style="margin-top: 0; margin-bottom: 5px;">
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg)" alt="Python">Python</span>
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg)" alt="Pandas">Pandas</span>
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg)" alt="NumPy">NumPy</span>
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg)" alt="Scikit-Learn">Scikit-Learn</span>
+          <span class="skill-tag">Lasso</span>
+          <span class="skill-tag">Random Forest</span>
+          <span class="skill-tag">Análisis Exploratorio</span>
+          <span class="skill-tag">Ingeniería de Características</span>
+          <span class="skill-tag">Modelo Predictivo</span>
+          <span class="skill-tag">Aprendizaje Supervisado</span>
+          <span class="skill-tag">Regresión</span>
+        </div>
+
+        <!-- 1. Botón Pill Desplegable (Sin Contorno) -->
+        <details class="details-pill">
+          <summary>Ver preguntas clave y metodología del proyecto</summary>
+          
+          <div class="details-content" style="margin-top: 15px; border-top: 1px solid #edf2f7; padding-top: 15px; cursor: default;">
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Preguntas clave:</h5>
+            <ol style="color: #2d3748; line-height: 1.6; padding-left: 20px; margin-bottom: 15px; font-size: 0.92rem;">
+              <li>¿Cómo se calcula la duración exacta del alquiler a partir de los datos registrados?</li>
+              <li>¿Qué características morfológicas o financieras aportan mayor información predictiva?</li>
+              <li>¿Cómo seleccionar de forma automatizada las características más relevantes para reducir la complejidad?</li>
+              <li>¿Es posible lograr un error cuadrático medio (MSE) inferior al objetivo de 3.0?</li>
+            </ol>
+
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Metodología resumida:</h5>
+            <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px; font-size: 0.92rem;">
+              <li><strong>EDA & Feature Engineering:</strong> Exploración (15,861 registros), cálculo de *rental_length_days* y extracción binaria en *special_features*.</li>
+              <li><strong>Preprocesamiento & División:</strong> Eliminación de fechas/texto, matriz X (14 variables), división 80/20 con `random_state = 9`.</li>
+              <li><strong>Selección por Regularización Lasso:</strong> Entrenamiento (α = 0.3) para descartar variables irrelevantes ajustando coeficientes a cero.</li>
+              <li><strong>Modelado & Evaluación:</strong> Entrenamiento de ensamble `RandomForestRegressor` con características optimizadas y evaluación del desempeño mediante **MSE**.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- 2. Hallazgos y Resultados Clave -->
+        <div style="width: 100%;">
+          <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
+          <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
+            <li><strong>Reducción efectiva de dimensionalidad:</strong> La regularización Lasso filtró automáticamente las 14 variables iniciales a solo 4 características clave.</li>
+            <li><strong>Cumplimiento de la meta de negocio:</strong> El modelo final `RandomForestRegressor` alcanzó un <strong>MSE de 2.39</strong> en prueba, superando exitosamente el umbral de 3.0 exigido.</li>
           </ul>
         </div>
 
         <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/Rental-Length-Prediction" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
+          <a href="[https://github.com/maxrtab/Rental-Length-Prediction](https://github.com/maxrtab/Rental-Length-Prediction)" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
         </div>
       </section>
 
       <!-- PROYECTO 4 -->
-      <section class="card card-about" style="flex-direction: column; align-items: flex-start; gap: 15px;">
+      <section class="card card-about" style="flex-direction: column; align-items: flex-start; gap: 18px;">
         <h3 style="font-size: 1.5rem; color: #1a202c;">4. Análisis Estadístico de Goles en el Fútbol Internacional</h3>
         
-        <p>Prueba de hipótesis no paramétrica para determinar si en los partidos internacionales de fútbol femenino se marcan significativamente más goles por partido que en los masculinos desde 2002.</p>
+        <p style="color: #2d3748;">
+          Prueba de hipótesis no paramétrica para determinar si en los partidos internacionales de fútbol femenino se marcan significativamente más goles por partido que en los masculinos desde 2002.
+        </p>
 
-        <div class="skills-section" style="margin-top: 5px;">
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="SciPy">SciPy</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Mann-Whitney U Test">Mann-Whitney U Test</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Prueba de Hipótesis">Prueba de Hipótesis</span>
-          <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Estadística Inferencial">Estadística Inferencial</span>
+        <!-- Etiquetas tecnológicas con logos selectivos -->
+        <div class="skills-section" style="margin-top: 0; margin-bottom: 5px;">
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg)" alt="Python">Python</span>
+          <span class="skill-tag"><img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg)" alt="SciPy">SciPy</span>
+          <span class="skill-tag">Mann-Whitney U Test</span>
+          <span class="skill-tag">Prueba de Hipótesis</span>
+          <span class="skill-tag">Estadística Inferencial</span>
+          <span class="skill-tag">Limpieza de Datos</span>
+          <span class="skill-tag">Filtrado Temporal</span>
+          <span class="skill-tag">Prueba de Normalidad</span>
         </div>
 
-        <div style="margin-top: 10px;">
+        <!-- 1. Botón Pill Desplegable (Sin Contorno) -->
+        <details class="details-pill">
+          <summary>Ver preguntas clave y metodología del proyecto</summary>
+          
+          <div class="details-content" style="margin-top: 15px; border-top: 1px solid #edf2f7; padding-top: 15px; cursor: default;">
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Preguntas clave:</h5>
+            <ol style="color: #2d3748; line-height: 1.6; padding-left: 20px; margin-bottom: 15px; font-size: 0.92rem;">
+              <li>¿Sigue la variable de total de goles por partido una distribución normal en ambos grupos?</li>
+              <li>¿Qué prueba de hipótesis es la adecuada para comparar dos distribuciones numéricas independientes no normales?</li>
+              <li>¿Existe evidencia estadística suficiente para rechazar la hipótesis nula (**H₀**) con α = 0.10?</li>
+              <li>¿Se marcan estadísticamente más goles por partido en la Copa Mundial Femenina que en la Masculina?</li>
+            </ol>
+
+            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Metodología resumida:</h5>
+            <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px; font-size: 0.92rem;">
+              <li><strong>Preprocesamiento & Filtrado:</strong> Carga y conversión temporal (post-2002), creación de variable objetivo *total_score*.</li>
+              <li><strong>Evaluación de Normalidad:</strong> Histogramas y confirmación visual de sesgo a la derecha, descartando pruebas paramétricas.</li>
+              <li><strong>Prueba No Paramétrica:</strong> Ejecución de **U de Mann-Whitney** unilateral hacia la derecha para evaluar si la distribución femenina es mayor.</li>
+              <li><strong>Planteamiento de hipótesis:</strong> H₀ (goles iguales) vs Hₐ (goles femeninos mayores), evaluado contra α = 0.10.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- 2. Hallazgos y Resultados Clave -->
+        <div style="width: 100%;">
           <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
-          <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
-            <li><strong>Prueba U de Mann-Whitney:</strong> Arrojó un <strong>p-value de 0.0051</strong> (mucha menor significancia que el α = 0.10 establecido).</li>
-            <li><strong>Conclusión estadística:</strong> Se rechazó H₀, confirmando con solidez metodológica que en los partidos femeninos de Copas del Mundo se anotan más goles por partido en promedio.</li>
+          <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px; margin-bottom: 15px;">
+            <li><strong>Decisión Estadística:</strong> Se rechazó H₀ (p-value = 0.0051 ≤ 0.10), confirmando que se anotan más goles en partidos femeninos en promedio.</li>
+            <li><strong>Sólido respaldo:</strong> El resultado del p-value (0.0051) es inferior incluso a α = 0.01, sustentando con rigor metodológico el artículo de investigación.</li>
           </ul>
         </div>
 
@@ -500,7 +1133,7 @@
         </div>
 
         <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/International-Football-Goal-Analysis" target="_blank" class="btn btn-primary">Ver Repositorio en GitHub ↗</a>
+          <a href="[https://github.com/maxrtab/International-Football-Goal-Analysis](https://github.com/maxrtab/International-Football-Goal-Analysis)" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
         </div>
       </section>
 
@@ -512,8 +1145,8 @@
   <footer>
     <div>© Maximiliano Rojas Taboada</div>
     <div class="footer-links">
-      <a href="https://www.linkedin.com/in/maximilianorojastaboada" target="_blank">LinkedIn</a>
-      <a href="https://github.com/maxrtab" target="_blank">GitHub</a>
+      <a href="[https://www.linkedin.com/in/maximilianorojastaboada](https://www.linkedin.com/in/maximilianorojastaboada)" target="_blank">LinkedIn</a>
+      <a href="[https://github.com/maxrtab](https://github.com/maxrtab)" target="_blank">GitHub</a>
       <a href="mailto:maxrt520@gmail.com">maxrt520@gmail.com</a>
     </div>
   </footer>
