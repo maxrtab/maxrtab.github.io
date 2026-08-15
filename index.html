@@ -113,15 +113,16 @@
       transition: all 0.25s ease;
       cursor: pointer;
     }
+    /* Botón primario suavizado: tono verde azulado apagado, en línea con la paleta pastel */
     .btn-primary {
-      background-color: #1a202c;
+      background-color: #4a6363;
       color: #ffffff;
-      border: 1px solid #1a202c;
+      border: 1px solid #4a6363;
     }
     .btn-primary:hover {
-      background-color: #000000;
+      background-color: #3a504f;
       transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 15px rgba(74,99,99,0.25);
     }
     .btn-secondary {
       background-color: #ffffff;
@@ -187,6 +188,17 @@
     .skill-tag:hover img {
       filter: brightness(0) invert(1);
     }
+
+    /* ============================================
+       PALETA ARMÓNICA PARA TARJETAS DE PROYECTOS
+       Misma familia tonal que .card-hero (#f9f6f0)
+       y .card-about (#f0f4f8): pasteles de baja
+       saturación para mantener sensación de calma.
+    ============================================ */
+    .card-proyecto-1 { background-color: #eef2ec; } /* verde salvia suave */
+    .card-proyecto-2 { background-color: #f0f4f8; } /* azul grisáceo (igual que Acerca de mí) */
+    .card-proyecto-3 { background-color: #f5f0ec; } /* beige rosado suave */
+    .card-proyecto-4 { background-color: #f1eff5; } /* lavanda gris muy claro */
 
     /* Footer Estilizado */
     footer {
@@ -354,7 +366,7 @@
       <h2 style="font-size: 1.8rem; margin: 40px 0 20px 0; color: #1a202c;">Mis Proyectos</h2>
 
       <!-- PROYECTO 1 -->
-      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 18px;">
+      <section class="card card-proyecto-1" style="flex-direction: column; align-items: flex-start; gap: 18px;">
         <h3 style="font-size: 1.5rem; color: #1a202c;">1. Modelado Predictivo para la Optimización de Cultivos Agrícolas</h3>
         
         <p style="color: #2d3748;">
@@ -411,7 +423,7 @@
       </section>
 
       <!-- PROYECTO 2 -->
-      <section class="card card-about" style="flex-direction: column; align-items: flex-start; gap: 18px;">
+      <section class="card card-proyecto-2" style="flex-direction: column; align-items: flex-start; gap: 18px;">
         <h3 style="font-size: 1.5rem; color: #1a202c; margin-bottom: 12px;">2. Agrupación de Especies de Pingüinos de la Antártida con Aprendizaje No Supervisado (K-Means & PCA)</h3>
         
         <p style="color: #2d3748;">
@@ -478,7 +490,7 @@
       </section>
 
       <!-- PROYECTO 3 -->
-      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 18px;">
+      <section class="card card-proyecto-3" style="flex-direction: column; align-items: flex-start; gap: 18px;">
         <h3 style="font-size: 1.5rem; color: #1a202c; margin-bottom: 8px;">3. Predicción de Días de Alquiler de Películas DVD</h3>
         
         <p style="color: #2d3748;">
@@ -551,7 +563,7 @@
       </section>
 
       <!-- PROYECTO 4 -->
-      <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 18px;">
+      <section class="card card-proyecto-4" style="flex-direction: column; align-items: flex-start; gap: 18px;">
         <h3 style="font-size: 1.5rem; color: #1a202c; margin-bottom: 12px;">4. Análisis Estadístico de Goles en el Fútbol Internacional</h3>
         
         <p style="color: #2d3748;">
