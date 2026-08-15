@@ -479,10 +479,10 @@
 
       <!-- PROYECTO 3 -->
       <section class="card card-hero" style="flex-direction: column; align-items: flex-start; gap: 18px;">
-        <h3 style="font-size: 1.5rem; color: #1a202c;">3. Predicción de Días de Alquiler de Películas DVD</h3>
+        <h3 style="font-size: 1.5rem; color: #1a202c; margin-bottom: 12px;">3. Predicción de Días de Alquiler de Películas DVD</h3>
         
         <p style="color: #2d3748;">
-          Construcción de un modelo de regresión supervisado para predecir el tiempo de retención de alquileres de DVD, optimizando la gestión de inventario y evitando quiebres de stock.
+          El objetivo de este proyecto es construir un <strong>modelo de regresión supervisado</strong> que prediga con precisión el número de días que un cliente mantendrá un DVD alquilado. La empresa de alquiler requiere un modelo con un <strong>MSE de 3.0 o menor</strong> en el conjunto de prueba para <strong>optimizar la gestión de inventario</strong> y la planificación logística.
         </p>
 
         <!-- Etiquetas tecnológicas -->
@@ -507,18 +507,24 @@
           <div class="details-content" style="margin-top: 15px; border-top: 1px solid #edf2f7; padding-top: 15px; cursor: default;">
             <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Preguntas clave:</h5>
             <ol style="color: #2d3748; line-height: 1.6; padding-left: 20px; margin-bottom: 15px; font-size: 0.92rem;">
-              <li>¿Cómo se calcula la duración exacta del alquiler a partir de los datos registrados?</li>
-              <li>¿Qué características morfológicas o financieras aportan mayor información predictiva?</li>
-              <li>¿Cómo seleccionar de forma automatizada las características más relevantes para reducir la complejidad?</li>
-              <li>¿Es posible lograr un error cuadrático medio (MSE) inferior al objetivo de 3.0?</li>
+              <li>¿Cómo se calcula la duración exacta del alquiler a partir de los datos de fecha y hora registrados?</li>
+              <li>¿Qué características morfológicas del contenido o financieras (tarifas, costos, características especiales) aportan mayor información predictiva?</li>
+              <li>¿Cómo seleccionar de forma automatizada las características más relevantes para reducir la complejidad del modelo?</li>
+              <li>¿Es posible lograr un error cuadrático medio (MSE) inferior al objetivo de 3.0 requerido por el negocio?</li>
             </ol>
 
             <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Metodología resumida:</h5>
             <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px; font-size: 0.92rem;">
-              <li><strong>EDA & Feature Engineering:</strong> Exploración (15,861 registros), cálculo de *rental_length_days* y extracción binaria en *special_features*.</li>
-              <li><strong>Preprocesamiento & División:</strong> Eliminación de fechas/texto, matriz X (14 variables), división 80/20 con `random_state = 9`.</li>
-              <li><strong>Selección por Regularización Lasso:</strong> Entrenamiento (α = 0.3) para descartar variables irrelevantes ajustando coeficientes a cero.</li>
-              <li><strong>Modelado & Evaluación:</strong> Entrenamiento de ensamble `RandomForestRegressor` con características optimizadas y evaluación del desempeño mediante **MSE**.</li>
+              <li><strong>Análisis Exploratorio e Ingeniería de características (EDA & Feature Engineering):</strong>
+                <ul>
+                  <li>Exploración inicial del dataset (15,861 registros) para verificar tipos de datos, distribuciones y ausencia de nulos.</li>
+                  <li>Conversión de las columnas <code>rental_date</code> y <code>return_date</code> a formato fecha para calcular la variable objetivo <code>rental_length_days</code> (duración en días).</li>
+                  <li>Extracción de variables binarias a partir de texto no estructurado en <code>special_features</code> (<code>deleted_scenes</code> y <code>behind_the_scenes</code>).</li>
+                </ul>
+              </li>
+              <li><strong>Preprocesamiento y división del dataset:</strong> Eliminación de variables de fecha y texto para conformar la matriz de características <strong>X</strong> (14 variables) y división en datos de entrenamiento (80%) y prueba (20%) con <code>random_state = 9</code>.</li>
+              <li><strong>Selección de características mediante Regularización Lasso:</strong> Entrenamiento de un modelo Lasso (α = 0.3, <code>random_state = 9</code>) para descartar variables irrelevantes ajustando sus coeficientes a cero.</li>
+              <li><strong>Modelado predictivo y evaluación:</strong> Entrenamiento de un modelo de ensamble <code>RandomForestRegressor</code> (100 estimadores, <code>random_state = 9</code>) utilizando únicamente las características optimizadas por Lasso y evaluación del desempeño en el conjunto de prueba mediante el <strong>Error Cuadrático Medio (MSE)</strong>.</li>
             </ul>
           </div>
         </details>
@@ -527,13 +533,14 @@
         <div style="width: 100%;">
           <h4 style="font-size: 1.05rem; color: #1a202c; margin-bottom: 8px;">Hallazgos y Resultados Clave</h4>
           <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px;">
-            <li><strong>Reducción efectiva de dimensionalidad:</strong> La regularización Lasso filtró automáticamente las 14 variables iniciales a solo 4 características clave.</li>
-            <li><strong>Cumplimiento de la meta de negocio:</strong> El modelo final `RandomForestRegressor` alcanzó un <strong>MSE de 2.39</strong> en prueba, superando exitosamente el umbral de 3.0 exigido.</li>
+            <li><strong>Reducción efectiva de dimensionalidad:</strong> La regularización Lasso filtró automáticamente las 14 variables iniciales a solo 4 características clave: <code>['amount', 'amount_2', 'length_2', 'rental_rate_2']</code>.</li>
+            <li><strong>Cumplimiento de la meta de negocio:</strong> El modelo final <code>RandomForestRegressor</code> alcanzó un <strong>MSE de 2.39</strong> en el conjunto de prueba, superando exitosamente el umbral máximo de 3.0 exigido por la empresa.</li>
+            <li><strong>Optimización de inventario e impacto:</strong> La capacidad de predecir la duración del alquiler permite calcular con precisión el retorno de películas, evitar quiebres de stock y confirmar que las tarifas de alquiler (<code>amount</code> y <code>rental_rate</code>) condicionan directamente el tiempo de retención.</li>
           </ul>
         </div>
 
         <div style="margin-top: 15px;">
-          <a href="https://github.com/maxrtab/Rental-Length-Prediction" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
+          <a href="https://github.com/maxrtab/prediccion-alquiler-dvd-adaboost" target="_blank" class="btn btn-primary" style="border-radius: 50px;">Ver Repositorio Completo en GitHub ↗</a>
         </div>
       </section>
 
