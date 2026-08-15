@@ -446,13 +446,24 @@
               <li>¿Permiten los componentes principales proyectar los datos en 2D con una clara separación entre clusters y centroides?</li>
             </ol>
 
-            <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Metodología resumida:</h5>
+           <h5 style="font-size: 0.95rem; color: #1a202c; margin-bottom: 8px;">Metodología resumida:</h5>
             <ul style="color: #2d3748; line-height: 1.6; padding-left: 20px; font-size: 0.92rem;">
-              <li><strong>Preprocesamiento:</strong> Análisis exploratorio de 332 registros limpios del archivo <code>penguins.csv</code> y conversión categórica con <em>One-Hot Encoding</em> (<code>sex_MALE</code>).</li>
-              <li><strong>Estandarización:</strong> Escalado de variables numéricas con <code>StandardScaler</code> para equilibrar el peso de magnitudes físicas.</li>
-              <li><strong>Clusters (<em>k</em> óptimo):</strong> Evaluación de inercia mediante <strong>Método del Codo</strong> para <em>k</em> entre 1-9, identificando <strong>k = 4</strong>.</li>
-              <li><strong>Modelado No Supervisado:</strong> Entrenamiento de K-Means (<em>k = 4</em>), asignación de etiquetas y cálculo de resumen de promedios.</li>
-              <li><strong>Reducción y visualización:</strong> Aplicación de PCA (<code>n_components = 2</code>) para proyectar el espacio multidimensional y ubicar centroides.</li>
+              <li style="margin-bottom: 8px;">
+                <strong>Análisis Exploratorio e Ingeniería de características (EDA & Feature Engineering):</strong> 
+                Exploración (15,861 registros), cálculo de <code>rental_length_days</code> y extracción binaria en <code>special_features</code>.
+              </li>
+              <li style="margin-bottom: 8px;">
+                <strong>Preprocesamiento y división del dataset:</strong> 
+                Eliminación de variables de fecha y texto para conformar la matriz de características <strong>X</strong> (14 variables) y división en datos de entrenamiento (80%) y prueba (20%) con <code>random_state = 9</code>.
+              </li>
+              <li style="margin-bottom: 8px;">
+                <strong>Selección de características mediante Regularización Lasso:</strong> 
+                Entrenamiento de un modelo Lasso (&alpha; = 0.3, <code>random_state = 9</code>) para descartar variables irrelevantes ajustando sus coeficientes a cero.
+              </li>
+              <li style="margin-bottom: 8px;">
+                <strong>Modelado predictivo y evaluación:</strong> 
+                Entrenamiento de un modelo de ensamble <code>RandomForestRegressor</code> (100 estimadores, <code>random_state = 9</code>) utilizando únicamente las características optimizadas por Lasso y evaluación del desempeño en el conjunto de prueba mediante el <strong>Error Cuadrático Medio (MSE)</strong>.
+              </li>
             </ul>
           </div>
         </details>
